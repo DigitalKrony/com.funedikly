@@ -1,6 +1,11 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import { makeStyles, mergeClasses } from '@griffel/react';
-import type { ShellSlots, ShellState } from './Shell.types';
 import type { SlotClassNames } from '@fluentui/react-utilities';
+
+import type { ShellSlots, ShellState } from './Shell.types';
 
 export const shellClassNames: SlotClassNames<ShellSlots> = {
   root: 'fn-shell',
@@ -19,7 +24,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     color: 'rgba(220, 220, 220, 1)',
     backgroundColor: 'rgba(20, 20, 20, 1)',
-  }
+  },
 });
 
 /**
@@ -30,7 +35,7 @@ export const useShellStyles = (state: ShellState): ShellState => {
 
   state.root.className = mergeClasses(
     shellClassNames.root,
-    styles.root
+    styles.root,
   );
 
   return state;

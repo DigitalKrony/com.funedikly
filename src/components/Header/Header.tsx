@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import * as React from "react";
 
 import type { HeaderProps } from "./Header.types";
@@ -8,12 +12,13 @@ import { useHeaderStyles } from "./Header.styles";
  */
 export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const { children } = props;
-  const styles = useHeaderStyles();
+  const classes = useHeaderStyles();
 
   return (
-    <div className={styles.root}>
-      <h1 className={styles.pageTitle}>Design: Funedikly</h1>
-      <p className={styles.titleBy}>From Adam Sivins</p>
+    <div className={classes.root}>
+      <h1 className={classes.pageTitle}>Design: Funedikly</h1>
+      <p className={classes.titleBy}>From Adam Sivins</p>
     </div>
   );
 };
+ 

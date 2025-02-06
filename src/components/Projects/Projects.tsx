@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import * as React from 'react';
 
 import type { ProjectsProps } from './Projects.types';
