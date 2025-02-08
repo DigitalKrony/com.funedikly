@@ -5,6 +5,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { ThemeProvider } from './providers/ThemeProvider';
+
 import "./index.css";
 import { Shell } from "./Shell";
 
@@ -13,6 +15,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Shell />
+      <ThemeProvider>
+        <Shell />
+      </ThemeProvider>
   </React.StrictMode>
 );

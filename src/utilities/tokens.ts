@@ -26,9 +26,39 @@ const type_size_values = {
   hero_size_l: '80px',
 }
 
+const spacing = {
+  spacing_horz_none: '0px',
+  spacing_horz_xxs: '1px',
+  spacing_horz_xs: '1px',
+  spacing_horz_sm: '2px',
+  spacing_horz_md: '4px',
+  spacing_horz_lg: '8px',
+  spacing_horz_xl: '16px',
+  spacing_horz_xxl: '16px',
+  
+  spacing_vert_none: '0px',
+  spacing_vert_xxs: '1px',
+  spacing_vert_xs: '1px',
+  spacing_vert_sm: '2px',
+  spacing_vert_md: '4px',
+  spacing_vert_lg: '8px',
+  spacing_vert_xl: '16px',
+  spacing_vert_xxl: '16px',
+  
+  spacing_none: '0px',
+  spacing_xxs: '1px',
+  spacing_xs: '1px',
+  spacing_sm: '2px',
+  spacing_md: '4px',
+  spacing_lg: '8px',
+  spacing_xl: '16px',
+  spacing_xxl: '16px',
+}
+
 export const tokenValues = {
   ...type_size_values,
-  ...breakpoint_values
+  ...breakpoint_values,
+  ...spacing,
 };
 
 export const buildTokens = () => {
@@ -39,4 +69,5 @@ export const buildTokens = () => {
   return newTokens;
 };
 
+export const breakpointValues = breakpoint_values;
 export const tokens = buildTokens();

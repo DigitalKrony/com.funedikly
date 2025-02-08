@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders a default state 1`] = `
+<div>
+  <div
+    class="fn-grid"
+  >
+    Default Grid
+  </div>
+</div>
+`;

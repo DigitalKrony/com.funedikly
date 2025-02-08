@@ -5,10 +5,10 @@
 import * as React from 'react';
 import { getSlots } from '@fluentui/react-utilities';
 
-import { ThemeProvider } from './../providers/ThemeProvider';
-
+import { Grid } from './../components/Grid';
 import { siteData } from './../assets/data';
 import { Skills, Tags, Header, Footer } from './../components';
+
 import { ShellContext } from './context/ShellContext';
 import type { ShellContextValues } from './context/ShellContext.types';
 import type { ShellSlots, ShellState } from './Shell.types';
@@ -21,10 +21,9 @@ export const renderShell = (state: ShellState, contextValues: ShellContextValues
 
   return (
     <ShellContext.Provider value={contextValues.shell}>
-      <ThemeProvider>
         <slots.root {...slotProps.root}>
           <Header />
-          <article className={''}>
+          <Grid container as={'article'} itemDirection='column' rowSpacing={{ base: 'xl'}}>
             <p>
               Established in 2006 with the idea of working on <Skills skillList={siteData.skills} /> to
               enhance the digital experience for users.
@@ -35,10 +34,9 @@ export const renderShell = (state: ShellState, contextValues: ShellContextValues
             <p>
               I've worked with <span>_____</span> and it's teams on <span>_____</span>
             </p>
-          </article>
+          </Grid>
           <Footer />
         </slots.root>
-      </ThemeProvider>
     </ShellContext.Provider>
   );
 };

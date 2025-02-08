@@ -33,7 +33,9 @@
     ]
   },
   "dependencies": {
+    "@fluentui/react-components": "^9.58.3",
     "@fluentui/react-context-selector": "^9.1.69",
+    "@fluentui/react-icons": "^2.0.274",
     "@fluentui/react-utilities": "^9.18.16",
     "@griffel/react": "^1.5.29",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
@@ -63,6 +65,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/parser": "^8.23.0",
+    "chromatic": "^11.25.2",
     "component_scaffold": "^0.6.0",
     "del": "8.0.0",
     "eslint-plugin-notice": "^1.0.0",
