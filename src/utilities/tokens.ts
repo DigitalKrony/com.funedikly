@@ -21,9 +21,11 @@ const type_size_values = {
   heading_size_md: '28px',
   heading_size_lg: '32px',
   heading_size_xl: '36px',
-  hero_size_s: '60px',
-  hero_size_m: '70px',
-  hero_size_l: '80px',
+  hero_size_xs: '50px',
+  hero_size_sm: '60px',
+  hero_size_md: '70px',
+  hero_size_lg: '80px',
+  hero_size_xl: '100px',
 }
 
 const spacing = {

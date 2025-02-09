@@ -4,10 +4,7 @@
 
 import * as React from "react";
 
-import LinkedIn from "./../../assets/images/linkedIn.svg";
-import Github from "./../../assets/images/github.svg";
-import Azure from "./../../assets/images/azure-devops.svg";
-
+import { Github, LinkedIn, Devops } from './../icons';
 import { Grid } from './../Grid';
 
 import type { FooterProps } from "./Footer.types";
@@ -29,7 +26,7 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             href={"https://www.linkedin.com/in/funedikly/"}
             target={"_blank"}
           >
-            <img src={LinkedIn} />
+            <LinkedIn />
           </a>
         </Grid>
         <Grid item>
@@ -38,7 +35,7 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             href={"https://dev.azure.com/DesignFunedikly/OpenSource"}
             target={"_blank"}
           >
-            <img src={Azure} />
+            <Devops />
           </a>
         </Grid>
         <Grid item>
@@ -47,7 +44,7 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             href={"https://github.com/DigitalKrony"}
             target={"_blank"}
           >
-            <img src={Github} />
+            <Github />
           </a>
         </Grid>
       </Grid>

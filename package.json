@@ -35,8 +35,10 @@
   "dependencies": {
     "@fluentui/react-components": "^9.58.3",
     "@fluentui/react-context-selector": "^9.1.69",
+    "@fluentui/react-icon-provider": "^1.3.78",
     "@fluentui/react-icons": "^2.0.274",
     "@fluentui/react-utilities": "^9.18.16",
+    "@fluentui/utilities": "^8.15.19",
     "@griffel/react": "^1.5.29",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
     "jest-environment-jsdom": "^29.7.0",
