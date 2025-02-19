@@ -4,6 +4,8 @@
 
 import * as React from 'react';
 
+import { useShellContext } from './../../Shell/context/ShellContext';
+
 import type { ProjectsProps } from './Projects.types';
 import { useProjectsStyles } from './Projects.styles';
 
@@ -11,8 +13,9 @@ import { useProjectsStyles } from './Projects.styles';
  * Render the final JSX of Projects
  */
 export const Projects: React.FC<ProjectsProps> = (props: ProjectsProps) => {
-  const { children } = props;
+  const { coProjList } = props;
   const styles = useProjectsStyles();
+  let oId = useShellContext( ctx => ctx.coProgId);
 
-  return <div className={styles.root}>{children}</div>;
+  return <div className={styles.root}>{coProjList[oId].pj}</div>;
 };

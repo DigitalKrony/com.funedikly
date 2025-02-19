@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import * as React from 'react';
 import { use%name.pascal% } from './use%name.pascal%';
 import { render%name.pascal% } from './render%name.pascal%';

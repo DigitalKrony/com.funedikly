@@ -6,5 +6,6 @@
  *  TagsProps
  */
 export type TagsProps = React.PropsWithChildren & {
+  className?: string;
   tagList: string[];
 };

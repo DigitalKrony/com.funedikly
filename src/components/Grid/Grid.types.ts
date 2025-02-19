@@ -85,65 +85,75 @@ export type GridSlots = {
 /**
  * @description This base TYPE deviates between either a parent wrapper and a child element.
  */
-type GridTypeProps =
-  | {
-      /**
-       * @description Set to `true`, it notes that the implemented component is a parent wrapper and changes the types associated.
-       */
-      container: true;
+type GridTypeProps = {
+  /**
+  * @description Set to `true`, it notes that the implemented component is a parent wrapper and changes the types associated.
+  */
+ container?: boolean;
 
-      /**
-       * @description Set to `true`, it notes that the implemented component is a child item and changes the types associated.
-       */
-      item?: false;
+  /**
+   * @description Set to `true`, it notes that the implemented component is a child item and changes the types associated.
+   */
+  item?: boolean;
 
-      /**
-       * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Ignores `columnSpacing` and `rowSpacing` when added.
-       */
-      spacing?: ObjectSpacing;
+  /**
+   * @description Set to `true`, it prevents the flex container from allowing the children wrapping to new rows.
+   */
+  noWrap?: boolean;
 
-      /**
-       * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Blocked by `spacing`.
-       */
-      columnSpacing?: ObjectSpacing;
+  /**
+   * @description "Mobile" first (Style rendering applies from base -> xs -> xl)
+   */
+  columns?: ContainerColumns;
 
-      /**
-       * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Blocked by `spacing`.
-       */
-      rowSpacing?: ObjectSpacing;
+  /**
+   * @description "Mobile" first (Style rendering applies from base -> xs -> xl)
+   */
+  hide?: ObjectHiding;
 
-      /**
-       * @default row
-       * @description Set direction of child items.
-       */
-      itemDirection?: ItemDirections;
+   /**
+    * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Ignores `columnSpacing` and `rowSpacing` when added.
+    */
+   spacing?: ObjectSpacing;
 
-      /**
-       * @default start
-       * @description Set directions aware vertical alignment of child items.
-       */
-      itemVerticalAlignment?: WrapperAlignments;
+   /**
+    * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Blocked by `spacing`.
+    */
+   columnSpacing?: ObjectSpacing;
 
-      /**
-       * @default start
-       * @description Set directions aware horizontal alignment of child items.
-       */
-      itemHorizontalAlignment?: WrapperAlignments;
-    }
-  | {
-      container?: false;
-      item: true;
+   /**
+    * @description "Mobile" first (Style rendering applies from base -> xs -> xl). Blocked by `spacing`.
+    */
+   rowSpacing?: ObjectSpacing;
 
-      /**
-       * @description "Mobile" first (Style rendering applies from base -> xs -> xl)
-       */
-      columns?: ContainerColumns;
+   /**
+    * @default row
+    * @description Set direction of child items.
+    */
+   itemDirection?: ItemDirections;
 
-      /**
-       * @description "Mobile" first (Style rendering applies from base -> xs -> xl)
-       */
-      hide?: ObjectHiding;
-    };
+   /**
+    * @default start
+    * @description Set directions aware vertical alignment of child items.
+    */
+   itemVerticalAlignment?: WrapperAlignments;
+
+   /**
+    * @default start
+    * @description Set directions aware horizontal alignment of child items.
+    */
+   itemHorizontalAlignment?: WrapperAlignments;
+
+   /**
+    * @description
+    */
+   contentAlignment?: 'start' | 'center' | 'even' | 'end';
+
+   /**
+    * @description
+    */
+   selfAlign?: 'start' | 'end';
+};
 
 /**
  *  @description GridProps

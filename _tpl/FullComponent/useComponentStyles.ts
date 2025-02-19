@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import { makeStyles, mergeClasses } from '@griffel/react';
 import type { %name.pascal%Slots, %name.pascal%State } from './%name.pascal%.types';
 import type { SlotClassNames } from '@fluentui/react-utilities';

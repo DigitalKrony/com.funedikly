@@ -9,7 +9,8 @@ export const useShellContextValues = (state: ShellState): ShellContextValues => 
   const { loaded } = state;
 
   const shell: ShellContextValue = {
-    loaded
+    loaded,
+    coProgId: 0
   };
 
   return { shell };

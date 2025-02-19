@@ -4,6 +4,8 @@
 
 import * as React from 'react';
 
+import { useShellContext } from './../../Shell/context/ShellContext';
+
 import type { CompaniesProps } from './Companies.types';
 import { useCompaniesStyles } from './Companies.styles';
 
@@ -11,8 +13,9 @@ import { useCompaniesStyles } from './Companies.styles';
  * Render the final JSX of Companies
  */
 export const Companies: React.FC<CompaniesProps> = (props: CompaniesProps) => {
-  const { children } = props;
+  const { coProjList } = props;
   const styles = useCompaniesStyles();
+  let oId = useShellContext( ctx => ctx.coProgId);
 
-  return <div className={styles.root}>{children}</div>;
+  return <div className={styles.root}>{coProjList[oId].co}</div>;
 };

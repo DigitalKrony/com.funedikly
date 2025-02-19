@@ -12,12 +12,12 @@ expect.extend(toHaveNoViolations);
 
 describe('Projects', () => {
   it('should not have a11y violations', async () => {
-    const { container } = render(<Projects>Default Projects A11y</Projects>);
+    const { container } = render(<Projects coProjList={[{}]} />);
     expect(await axe(container)).toHaveNoViolations();
   });
 
   it('renders a default state', () => {
-    const { container } = render(<Projects>Default Projects</Projects>);
+    const { container } = render(<Projects coProjList={[{}]} />);
     expect(container).toMatchSnapshot();
   });
 });

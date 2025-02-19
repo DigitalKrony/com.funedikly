@@ -6,21 +6,21 @@ import * as React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import { withPerformance } from 'storybook-addon-performance';
 
-import { Typography, TypographyProps } from './..';
+import { Type, TypeProps } from './..';
 
 export default {
-  title: 'Controls/Typography',
-  component: Typography,
+  title: 'Controls/Type',
+  component: Type,
   decorators: [withPerformance],
 } as Meta;
 
-const Template: StoryFn<TypographyProps> = (args) => {
-  return <Typography {...args} />;
+const Template: StoryFn<TypeProps> = (args) => {
+  return <Type {...args} />;
 };
 
 export const Default = Template.bind({});
 
-Default.args = {} as TypographyProps;
+Default.args = {} as TypeProps;
 
 Default.parameters = {
   options: {  },

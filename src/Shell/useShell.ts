@@ -5,6 +5,8 @@
 import * as React from 'react';
 import { getIntrinsicElementProps, slot } from '@fluentui/react-utilities';
 
+import { siteData } from './../assets/data';
+
 import { useShellContext } from './context/ShellContext';
 import type { ShellProps, ShellState } from './Shell.types';
 
@@ -18,7 +20,22 @@ import type { ShellProps, ShellState } from './Shell.types';
  * @param ref - reference to root HTMLElement of Shell
  */
 export const useShell = (props: ShellProps, ref: React.Ref<HTMLElement> & React.Ref<HTMLDivElement>): ShellState => {
+  const { projects } = siteData;
   const loaded = useShellContext((ctx) => ctx.loaded);
+  const [useCoProj, setCoProj] = React.useState(0);
+
+  React.useEffect(() => {
+    const andChange = setInterval(() => {
+      if (useCoProj === projects.length - 1) {
+        setCoProj(0);
+      } else {
+        setCoProj(useCoProj+1);
+      }
+
+    }, 2500);
+
+    return () => clearInterval(andChange || undefined) ;
+  }, [useCoProj, setCoProj, projects]);
 
   const root: ShellState['root'] = slot.always(
     getIntrinsicElementProps('div', {
@@ -31,7 +48,8 @@ export const useShell = (props: ShellProps, ref: React.Ref<HTMLElement> & React.
   const state: ShellState = {
     components: { root: 'div' },
     root,
-    loaded
+    loaded,
+    coProgId: useCoProj
   };
 
   return state;

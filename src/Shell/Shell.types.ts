@@ -22,4 +22,6 @@ export type ShellProps = ComponentProps<ShellSlots>;
 /**
  * State used in rendering Shell
  */
-export type ShellState = ComponentState<ShellSlots> & ShellProps & ShellContextValue;
+export type ShellState = ComponentState<ShellSlots> & ShellProps & ShellContextValue & {
+  coProgId: number;
+};

@@ -13,6 +13,7 @@ export const useFooterStyles = makeStyles({
     width: '32px',
     height: '32px',
     display: 'block',
+    lineHeigh: '1.2',
     color: 'inherit'
   }
 });

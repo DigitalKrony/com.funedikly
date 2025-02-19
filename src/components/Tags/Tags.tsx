@@ -3,6 +3,9 @@
  */
 
 import * as React from 'react';
+import { mergeClasses } from '@griffel/react';
+
+import { Type } from './../';
 
 import type { TagsProps } from './Tags.types';
 import { useTagsStyles } from './Tags.styles';
@@ -27,5 +30,5 @@ export const Tags: React.FC<TagsProps> = (props: TagsProps) => {
     return () => clearInterval(andChange || undefined) ;
   }, [tagList, useTag, setTag]);
 
-  return <span className={styles.root}>{tagList[useTag]}</span>;
+  return <Type className={mergeClasses(props.className, styles.root)} as={'h2'} type={'heading'} level={'lg'}>{tagList[useTag]}</Type>;
 };

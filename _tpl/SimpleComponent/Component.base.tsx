@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import * as React from 'react';
 import { getSlots } from '@fluentui/react-utilities';
 import type { %name.pascal%Slots, %name.pascal%State } from './%name.pascal%.types';

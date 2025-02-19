@@ -49,6 +49,9 @@ const useStyles = makeStyles({
     alignContent: 'flex-start',
     '--column-gap': '0px',
   },
+  container_nowrap: {
+    flexWrap: 'nowrap'
+  },
   item: {
     flexGrow: '0',
     ...shorthands.borderRadius(tokens.borderRadiusMedium),
@@ -599,6 +602,7 @@ const useXLHorizontalSpacing = makeStyles({
 /**
  * Styles for the container flex horizontal/column gaps
  */
+
 /**
  *
  * @description Please note that 'none' values are set with '0px' strings. A bug was found when setting these with the FluentUI Tokens where the value was just '0'
@@ -989,6 +993,12 @@ const useAlignmentStyles = makeStyles({
   align_end: {
     alignContent: 'end',
   },
+  self_align_start: {
+    alignSelf: 'start'
+  },
+  self_align_end: {
+    alignSelf: 'end'
+  }
 });
 
 /**
@@ -1006,6 +1016,7 @@ export const useGridStyles = (state: GridState): GridState => {
 
   if (container) {
     const {
+      noWrap,
       columnSpacing,
       rowSpacing,
       spacing,
@@ -1165,10 +1176,14 @@ export const useGridStyles = (state: GridState): GridState => {
       }
       objectStyleArray.push(a.dir_col);
     }
+
+    if (noWrap) {
+      objectStyleArray.push(styles.container_nowrap);
+    }
   }
 
   if (item) {
-    const { columns, hide } = state;
+    const { columns, hide, contentAlignment, selfAlign } = state;
     // Styles Grid Items
     objectStyleArray.push(styles.item);
 
@@ -1198,6 +1213,37 @@ export const useGridStyles = (state: GridState): GridState => {
       if (!!columns.xl) {
         objectStyleArray.push(b.xl[`widths_${columns.xl}`]);
       }
+    }
+
+    if (!!contentAlignment) {
+      switch(contentAlignment) {
+        case 'center':
+          objectStyleArray.push(a.align_center);
+          break
+        case 'even':
+          objectStyleArray.push(a.align_even);
+          break
+        case 'end':
+          objectStyleArray.push(a.align_end);
+          break
+        case 'start':
+        default:
+          objectStyleArray.push(a.align_start);
+          break
+      }
+    }
+
+    if (!!selfAlign) {
+      switch (selfAlign) {
+        case 'end':
+          objectStyleArray.push(a.self_align_end);
+          break;
+        case 'start':
+        default:
+          objectStyleArray.push(a.self_align_start);
+          break;
+      }
+
     }
 
     if (!!hide) {

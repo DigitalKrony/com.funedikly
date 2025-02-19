@@ -3,6 +3,9 @@
  */
 
 import * as React from "react";
+import { mergeClasses } from '@griffel/react';
+
+import { Type } from './../';
 
 import type { SkillsProps } from "./Skills.types";
 import { useSkillsStyles } from "./Skills.styles";
@@ -27,5 +30,5 @@ export const Skills: React.FC<SkillsProps> = (props: SkillsProps) => {
     return () => clearInterval(andChange || undefined) ;
   }, [skillList, useSkill, setSkill]);
 
-  return <span className={styles.root}>{skillList[useSkill]}</span>;
+  return <Type className={mergeClasses(props.className, styles.root)} as={'h2'} type={'heading'} level={'lg'}>{skillList[useSkill]}</Type>;
 };

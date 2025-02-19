@@ -6,18 +6,18 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
-import { Typography } from './../Typography';
+import { Type } from './../Type';
 
 expect.extend(toHaveNoViolations);
 
-describe('Typography', () => {
+describe('Type', () => {
   it('should not have a11y violations', async () => {
-    const { container } = render(<Typography>Default Typography A11y</Typography>);
+    const { container } = render(<Type>Default Type A11y</Type>);
     expect(await axe(container)).toHaveNoViolations();
   });
 
   it('renders a default state', () => {
-    const { container } = render(<Typography>Default Typography</Typography>);
+    const { container } = render(<Type>Default Type</Type>);
     expect(container).toMatchSnapshot();
   });
 });

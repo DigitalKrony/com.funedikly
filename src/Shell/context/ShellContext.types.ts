@@ -5,6 +5,7 @@
 
 export type ShellContextValue = {
   loaded: boolean;
+  coProgId: number;
 };
 
 export type ShellContextValues = {

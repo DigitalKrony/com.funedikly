@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
 
 /**

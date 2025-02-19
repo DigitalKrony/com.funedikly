@@ -9,6 +9,7 @@ import type { ShellContextValue } from "./ShellContext.types";
 
 const setDefaultShellContextValues: ShellContextValue = {
   loaded: false,
+  coProgId: 0
 };
 
 export const ShellContext: Context<ShellContextValue> = createContext<ShellContextValue | undefined>(undefined) as Context<ShellContextValue>;

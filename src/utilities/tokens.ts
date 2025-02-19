@@ -11,21 +11,41 @@ const breakpoint_values = {
 }
 
 const type_size_values = {
+  caption_size_sm: '6px',
+  caption_size_md: '7px',
+  caption_size_lg: '8px',
   text_size_xs: '10px',
   text_size_sm: '12px',
   text_size_md: '14px',
   text_size_lg: '16px',
   text_size_xl: '18px',
+  subheading_size_sm: '16px',
+  subheading_size_md: '20px',
+  subheading_size_lg: '28px',
   heading_size_xs: '20px',
   heading_size_sm: '24px',
   heading_size_md: '28px',
   heading_size_lg: '32px',
   heading_size_xl: '36px',
-  hero_size_xs: '50px',
   hero_size_sm: '60px',
   hero_size_md: '70px',
   hero_size_lg: '80px',
-  hero_size_xl: '100px',
+}
+
+const line_height_values = {
+  line_height_xs: '.8',
+  line_height_sm: '.9',
+  line_height_md: '1',
+  line_height_lg: '1.2',
+  line_height_xl: '1.5',
+}
+
+const font_weight_values = {
+  font_weight_xs: '100',
+  font_weight_sm: '300',
+  font_weight_md: '400',
+  font_weight_lg: '600',
+  font_weight_xl: '800',
 }
 
 const spacing = {
@@ -59,6 +79,8 @@ const spacing = {
 
 export const tokenValues = {
   ...type_size_values,
+  ...line_height_values,
+  ...font_weight_values,
   ...breakpoint_values,
   ...spacing,
 };

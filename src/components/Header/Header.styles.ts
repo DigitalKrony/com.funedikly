@@ -14,21 +14,18 @@ export const useHeaderStyles = makeStyles({
     margin: '0 0 24px',
   },
   pageTitle: {
-    fontSize: tokens.hero_size_lg,
-    lineHeight: `1.2`,
-    transform: `rotate(90deg) translate(-150px, 40px)`,
-    transition: `150ms ease-in-out transform`,
-    '@media(min-width: 430px)': {
-      transform: `rotate(90deg) translate(-80px, 50px)`,
-    },
-    '@media(min-width: 768px)': {
-      fontSize: tokens.hero_size_md,
-      transform: `rotate(0deg)`,
-    }
+    // transform: `rotate(90deg) translate(-150px, 40px)`,
+    // transition: `150ms ease-in-out transform`,
+    // '@media(min-width: 430px)': {
+    //   transform: `rotate(90deg) translate(-80px, 50px)`,
+    // },
+    // '@media(min-width: 768px)': {
+    //   transform: `rotate(0deg)`,
+    // }
   },
   titleBy: {
     width: '100%',
     display: 'block',
-    textAlign: 'end',
+    // textAlign: 'end',
   },
 });

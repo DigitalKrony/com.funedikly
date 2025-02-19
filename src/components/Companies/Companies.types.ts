@@ -6,4 +6,6 @@
  *  CompaniesProps
  */
 export type CompaniesProps = React.PropsWithChildren & {
+    className?: string;
+    coProjList: any[];
 };
