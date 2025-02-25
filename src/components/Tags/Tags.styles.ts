@@ -15,7 +15,6 @@ export const useTagsStyles = makeStyles({
     padding: `4px 12px`,
     margin: `12px 0`,
     display: 'inline-block',
-    textAlign: 'center',
     fontWeight: tokens.font_weight_lg,
     lineHeight: '2',
     borderBottom: `1px solid ${'white'}`, // ${tokens.}

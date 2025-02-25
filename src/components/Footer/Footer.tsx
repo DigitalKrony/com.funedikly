@@ -19,8 +19,8 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
 
   return (
     <div className={styles.root}>
-      <Grid container rowSpacing={{ base: 'xl' }} columnSpacing={{ base: 'xl'}}>
-        <Grid item>
+      <Grid container rowSpacing={{ base: 'xl' }} columnSpacing={{ base: 'xxl'}} noWrap>
+        <Grid item contentAlignment={'center'}>
         <a
             className={styles.socialLink}
             href={"https://www.linkedin.com/in/funedikly/"}
@@ -29,22 +29,22 @@ export const Footer: React.FC<FooterProps> = (props: FooterProps) => {
             <LinkedIn />
           </a>
         </Grid>
-        <Grid item>
-          <a
-            className={styles.socialLink}
-            href={"https://dev.azure.com/DesignFunedikly/OpenSource"}
-            target={"_blank"}
-          >
-            <Devops />
-          </a>
-        </Grid>
-        <Grid item>
+        <Grid item contentAlignment={'center'}>
           <a
             className={styles.socialLink}
             href={"https://github.com/DigitalKrony"}
             target={"_blank"}
           >
             <Github />
+          </a>
+        </Grid>
+        <Grid item contentAlignment={'center'}>
+          <a
+            className={styles.socialLink}
+            href={"https://dev.azure.com/DesignFunedikly/OpenSource"}
+            target={"_blank"}
+          >
+            <Devops />
           </a>
         </Grid>
       </Grid>

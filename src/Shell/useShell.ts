@@ -32,7 +32,7 @@ export const useShell = (props: ShellProps, ref: React.Ref<HTMLElement> & React.
         setCoProj(useCoProj+1);
       }
 
-    }, 2500);
+    }, 3100);
 
     return () => clearInterval(andChange || undefined) ;
   }, [useCoProj, setCoProj, projects]);

@@ -3,6 +3,9 @@
  */
 
 import * as React from 'react';
+import { mergeClasses } from '@griffel/react';
+
+import { Type } from './../';
 
 import { useShellContext } from './../../Shell/context/ShellContext';
 
@@ -17,5 +20,5 @@ export const Companies: React.FC<CompaniesProps> = (props: CompaniesProps) => {
   const styles = useCompaniesStyles();
   let oId = useShellContext( ctx => ctx.coProgId);
 
-  return <div className={styles.root}>{coProjList[oId].co}</div>;
+  return <Type className={mergeClasses(props.className, styles.root)} as={'h2'} type={'heading'} level={'lg'}>{coProjList[oId].co}</Type>;
 };

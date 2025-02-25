@@ -11,11 +11,10 @@ import { tokens } from './../../utilities';
  */
 export const useCompaniesStyles = makeStyles({
   root: {
-    width: '100%',
-    padding: `0 0`,
+    minWidth: '60%',
+    padding: `4px 12px`,
     margin: `12px 0`,
-    display: 'block',
-    textAlign: 'center',
+    display: 'inline-block',
     fontWeight: tokens.font_weight_lg,
     lineHeight: '2',
     borderBottom: `1px solid ${'white'}`,

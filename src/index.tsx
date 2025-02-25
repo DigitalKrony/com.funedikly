@@ -10,6 +10,8 @@ import { ThemeProvider } from './providers/ThemeProvider';
 import "./index.css";
 import { Shell } from "./Shell";
 
+console.log('This is a WIP, please check back for updates on a regular basis.')
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

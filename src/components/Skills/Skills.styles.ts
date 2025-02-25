@@ -11,13 +11,12 @@ import { tokens } from './../../utilities';
  */
 export const useSkillsStyles = makeStyles({
   root: {
-    width: '100%',
-    padding: `0 0`,
+    width: '75%',
+    padding: `4px 12px`,
     margin: `12px 0`,
     display: 'block',
-    textAlign: 'center',
     fontWeight: tokens.font_weight_lg,
     lineHeight: '2',
-    borderBottom: `1px solid ${'white'}`, // ${tokens.}
+    borderBottom: `1px solid ${'white'}`,
   },
 });

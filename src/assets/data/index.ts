@@ -3,8 +3,8 @@
  */
 
 export const siteData = {
-  skills: ['UX Design', 'UX Development'],
-  tags: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js', 'Node.js'],
+  skills: ['UX Design', 'UX Development', 'Design Engineering', 'Mentorship'],
+  tags: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Testing', 'Git', 'Project Management', 'SQL', 'NoSQL', 'MongoDB', 'Rest API', 'PHP', 'Figma Plugins'],
   projects: [
     {
       co: 'Microsoft',
@@ -33,6 +33,10 @@ export const siteData = {
     {
       co: 'Microsoft',
       pj: 'Red Tiger'
+    },
+    {
+      co: 'General Motors',
+      pj: 'C7 Corvet Cluster UX and Design'
     }
   ]
 };

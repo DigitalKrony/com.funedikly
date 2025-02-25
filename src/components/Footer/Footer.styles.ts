@@ -8,12 +8,12 @@ import { makeStyles } from '@griffel/react';
  * Styles for the Footer slots
  */
 export const useFooterStyles = makeStyles({
-  root: {},
+  root: {
+    height: '48px'
+  },
   socialLink: {
-    width: '32px',
-    height: '32px',
-    display: 'block',
-    lineHeigh: '1.2',
+    display: 'inline-block',
+    lineHeigh: '1.5',
     color: 'inherit'
   }
 });
