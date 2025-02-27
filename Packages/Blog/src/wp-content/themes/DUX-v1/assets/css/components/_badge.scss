@@ -1,0 +1,25 @@
+$badge-colors: $theme-colors;
+
+$badge-size: (
+  'large': 14px,
+  'medium': 12px,
+  'small': 10px
+);
+
+.badge {
+  font-size: map-get($badge-size, 'medium');
+}
+
+@each $size,
+  $value in $badge-size {
+    .badge-#{$size} {
+      font-size: $value
+    }
+  }
+
+// @each $color,
+//   $value in $badge-colors {
+//     .badge-#{$color} {
+//       background-color: rgba($value, 1);
+//     }
+//   }

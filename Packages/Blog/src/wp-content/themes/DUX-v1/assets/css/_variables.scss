@@ -1,0 +1,25 @@
+$fonts-glyphs-location: '/wp-content/themes/DUX-v1/assets/fonts/';
+$fonts-region: 'en-us';
+
+// START THE MISSING BOOTSTRAP VARS
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #141414;
+$body-bg:  #1D1D1D;
+
+// scss-docs-start box-shadow-variables
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
+
+// END THE MISSING BOOTSTRAP VARS

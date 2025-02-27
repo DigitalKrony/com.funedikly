@@ -1,0 +1,52 @@
+$paragraphs: () !default;
+$paragraphs: map-merge((
+  "1": 18px,
+  "2": 16px,
+  "3": 14px,
+  "4": 12px,
+  "5": 10px,
+  "6": 8px,
+), $paragraphs);
+
+.paragraph- {
+  @each $key, $value in $paragraphs {
+    &#{$key} {
+      font-size: $value;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-weight: 300;
+$display-line-height: $headings-line-height;
+
+// Type display classes
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    @include font-size($font-size);
+    font-weight: $display-font-weight;
+    line-height: $display-line-height;
+
+    font-weight: 600 !important;
+
+    background-color: white;
+    background-image: linear-gradient(45deg, #F5CCC9, #D09EC0, #C0BEDC, #B2DBF4);
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,16 @@
+.home-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  text-align: center;
+
+ > a {
+   > img {
+     width: 250px;
+     display: inline-block;
+   }
+ }
+}

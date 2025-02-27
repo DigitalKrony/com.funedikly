@@ -1,0 +1,108 @@
+@use "sass:math";
+
+.feature {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  position: relative;
+
+  .badge {
+    margin-block-end: 12px;
+  }
+
+  &__heading, &__subheading {
+    margin: 0 0 12px;
+  }
+
+  &__half {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+
+    &__content {
+      padding: $base-3x 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      order: 0;
+
+      text-align: center;
+
+      @media screen and (min-width: $bp-md) {
+        padding-#{$start}: $base-7x;
+        padding-#{$end}: $base-7x;
+
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+    }
+
+    &__media {
+      display: block;
+      order: -1;
+    }
+  }
+
+  @media screen and (min-width: $bp-md) {
+    &--align-left,
+    &--align-right {
+      flex-direction: row;
+    }
+
+    &--align-left &__half,
+    &--align-right &__half {
+      width: 50%;
+      align-items: flex-start;
+
+      &__content {
+        align-items: left;
+        text-align: $start;
+      }
+    }
+
+    &--align-left#{&}--image-priority &__half,
+    &--align-right#{&}--image-priority &__half {
+      &__content {
+        width: 34%;
+      }
+
+      &__media {
+        width: 66%;
+      }
+    }
+
+    &--align-left &__half {
+      &__content {
+        order: -1;
+      }
+
+      &__media {
+        order: 0;
+      }
+    }
+
+    &--align-right &__half {
+      &__content {
+        order: 0;
+      }
+
+      &__media {
+        order: -1;
+      }
+    }
+  }
+
+  &--reverse &__half__media {
+      order: 0;
+  }
+
+  &--align-center,
+  &__highlight > * {
+      width: 100%;
+  }
+}

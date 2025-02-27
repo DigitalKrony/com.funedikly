@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+$theme-default: "dark";
+$enable-full-bootstrap-support: true;
+
+// Sass dependencies
+$fonts-region: 'en-us';
+
+$form-check-input-size: 1.25rem;
+$input-border-width: 0.125rem;
+
+@import './../../../../../../node_modules/bootstrap/scss/functions';
+@import './../../../../../../node_modules/bootstrap/scss/mixins';
+@import './../../../../../../node_modules/bootstrap/scss/variables';
+
+@import './variables';
+
+// Components
+@import './utilities/_index';
+@import './helpers/_index';
+@import './components/_index';
+@import './templates/_index';
+
+body {
+  --wp--style--block-gap: 16px;
+}
+
+main {
+  margin-top: 0 !important;
+}
+
+div:empty, p:empty { display: none }
+
+// debug live site
+.wp-site-blocks {
+  > header, > footer {
+    margin: 0;
+  }
+}
+
+.full-bleed {
+  max-width: none !important;
+}

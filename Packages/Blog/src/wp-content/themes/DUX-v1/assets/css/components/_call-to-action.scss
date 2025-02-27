@@ -1,0 +1,118 @@
+@use "sass:math";
+
+$cta-distance: .3em !default;
+$cta-speed: 200ms !default;
+
+.cta {
+  padding: 0.625rem 0.75rem;
+  transition: 250ms transform ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @at-root a#{&}:hover &__string {
+    text-decoration: underline;
+  }
+
+  &__string {
+    display: inline-block;
+    position: relative;
+    transition: $cta-speed ease-in-out;
+    #{$start}: 0;
+  }
+
+  &.btn {
+    border-radius: 30px;
+  }
+
+  &.btn #{&}__string {
+    padding-inline-end: 10px;
+  }
+}
+
+.call-to-action {
+  padding: 0.625rem 0.75rem;
+  transition: 250ms transform ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @at-root a#{&}:hover &__string {
+    text-decoration: underline;
+  }
+
+  &__string,
+  &__glyph {
+    display: inline-block;
+    position: relative;
+    transition: $cta-speed ease-in-out;
+  }
+
+  &__string {
+    #{$start}: 0;
+  }
+
+  &__glyph {
+    #{$start}: 0;
+  }
+
+  &--icon-before#{&} &__glyph {
+    #{$start}: auto;
+    #{$end}: 0;
+  }
+
+  &--icon-after#{&} &__glyph {
+    #{$start}: auto;
+    #{$end}: 0;
+  }
+
+  &--icon-before#{&}--motion#{&}:hover &__string {
+    #{$start}: $cta-distance;
+  }
+
+  &--icon-before#{&}--motion#{&}:hover &__glyph {
+    #{$start}: auto;
+    #{$end}: $cta-distance;
+  }
+
+  &--icon-after#{&}--motion#{&}:hover &__string {
+    #{$start}: -$cta-distance;
+  }
+
+  &--icon-after#{&}--motion#{&}:hover &__glyph {
+    #{$start}: auto;
+    #{$end}: -$cta-distance;
+  }
+
+  &--icon-before#{&}--motion-reveal-icon#{&} &__string {
+    #{$start}: -($cta-distance * 2);
+  }
+
+  &--icon-after#{&}--motion-reveal-icon#{&} &__string {
+    #{$start}: $cta-distance * 2;
+  }
+
+  &--icon-before#{&}--motion-reveal-icon#{&}:hover &__string {
+    #{$start}: $cta-distance;
+  }
+
+  &--icon-after#{&}--motion-reveal-icon#{&}:hover &__string {
+    #{$start}: -$cta-distance;
+  }
+
+  &--icon-before#{&}--motion-reveal-icon &__glyph, &--icon-after#{&}--motion-reveal-icon &__glyph {
+    opacity: 0;
+  }
+
+  &--icon-before#{&}--motion-reveal-icon#{&}:hover &__glyph {
+    opacity: 1;
+    #{$end}: $cta-distance;
+  }
+
+  &--icon-after#{&}--motion-reveal-icon#{&}:hover &__glyph {
+    opacity: 1;
+    #{$end}: -$cta-distance;
+  }
+}

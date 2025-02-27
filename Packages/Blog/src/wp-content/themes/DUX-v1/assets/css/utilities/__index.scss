@@ -1,0 +1,13 @@
+$start: left !default;
+$end: right !default;
+
+$bp-xs: map-get($grid-breakpoints, xs) !default;
+$bp-sm: map-get($grid-breakpoints, sm) !default;
+$bp-md: map-get($grid-breakpoints, md) !default;
+$bp-lg: map-get($grid-breakpoints, lg) !default;
+$bp-xl: map-get($grid-breakpoints, xl) !default;
+
+$max-content-width: $bp-xl !default;
+$min-content-width: $bp-sm !default;
+
+@import './base';
