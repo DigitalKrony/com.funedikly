@@ -1,0 +1,71 @@
+{
+  "name": "@df/dux",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "~5.11.4",
+    "@testing-library/react": "~11.1.0",
+    "@testing-library/user-event": "~12.1.10",
+    "@types/jest": "~26.0.15",
+    "@types/node": "~12.0.0",
+    "@types/react": "~17.0.0",
+    "@types/react-dom": "~17.0.0",
+    "react": "~18.3.1",
+    "react-dom": "~18.3.1",
+    "react-scripts": "~4.0.3",
+    "web-vitals": "~1.0.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "~1.9.0",
+    "@storybook/addon-essentials": "~8.3.5",
+    "@storybook/addon-interactions": "~8.3.5",
+    "@storybook/addon-links": "~8.3.5",
+    "@storybook/addon-onboarding": "~8.3.5",
+    "@storybook/addon-webpack5-compiler-swc": "~1.0.5",
+    "@storybook/blocks": "~8.3.5",
+    "@storybook/preset-create-react-app": "~8.3.5",
+    "@storybook/react": "~8.3.5",
+    "@storybook/react-webpack5": "~8.3.5",
+    "@storybook/test": "~8.3.5",
+    "@types/react": "~18.3.11",
+    "@types/react-dom": "~18.3.1",
+    "component_scaffold": "^0.6.0",
+    "eslint-plugin-notice": "~1.0.0",
+    "eslint-plugin-storybook": "~0.9.0",
+    "jest-axe": "~9.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prop-types": "~15.8.1",
+    "react-scripts": "~5.0.1",
+    "storybook": "~8.3.5",
+    "storybook-addon-performance": "^0.17.3",
+    "typescript": "~5.7.2",
+    "webpack": "~5.95.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

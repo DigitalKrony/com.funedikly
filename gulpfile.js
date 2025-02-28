@@ -5,7 +5,8 @@
 
 const fs = require('fs');
 const gulp = require('gulp');
-const taskDir = './gulpfile/ci/';
+const ciDir = `./gulpfile/ci`;
+const taskDir = './gulpfile/tasks/';
 const configDir = './gulpfile/config/';
 
 gulp.config = {};

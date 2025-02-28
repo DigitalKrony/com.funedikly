@@ -4,7 +4,6 @@
   "localhost": "com.funedikly.blog",
   "author": "Adam Sivins <adam.sivins@gmail.com>",
   "private": true,
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "type": "commonjs",
   "keywords": [
     "Blog"
@@ -13,10 +12,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "new-component": "node ./node_modules/component_scaffold/bin/cli.js",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "new-component": "node ./node_modules/component_scaffold/bin/cli.js"
   },
   "eslintConfig": {
     "extends": [
@@ -84,5 +83,6 @@
     "storybook": "^8.3.5",
     "typescript": "~5.7.2",
     "webpack": "^5.95.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
