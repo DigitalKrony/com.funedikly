@@ -11,6 +11,7 @@
         "fluentui",
         "Funedikly",
         "griffel",
-        "Sivins"
+        "Sivins",
+        "uvicorn"
     ]
 }
