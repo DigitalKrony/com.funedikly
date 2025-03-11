@@ -1,0 +1,19 @@
+{
+  "name": "@df/utilities",
+  "version": "0.1.0",
+  "description": "General Shared Utils package",
+  "main": "./lib",
+  "author": "Adam Sivins<adam.sivins@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -w"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
