@@ -1,0 +1,28 @@
+'use strict';
+
+const fs = require('fs');
+// const utils = require('./local_modules/utils');
+const path = require('path');
+const glob = require('globule');
+
+let copyList = [
+    // {
+    //     "src": "",
+    //     "dest": ""
+    // }
+];
+
+for (let file of copyList) {
+    let fileListing = glob.find(file.src);
+
+    for ( let oldFile of fileListing ) {
+        let fileName = path.basename(oldFile);
+
+        // utils.copy(oldFile,
+        //     path.normalize(`${file.dest}/${fileName}`),
+        //     () => {
+        //         console.log(`${fileName} Copy complete.`);
+        //     }
+        // );
+    }
+}
