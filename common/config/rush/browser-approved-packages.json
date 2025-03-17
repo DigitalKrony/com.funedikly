@@ -1,0 +1,234 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@chromatic-com/storybook",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@df/utilities",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@fluentui/react-components",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@fluentui/react-context-selector",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@fluentui/react-icon-provider",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@fluentui/react-icons",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@fluentui/react-utilities",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@fluentui/utilities",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@griffel/react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/addon-essentials",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/addon-interactions",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/addon-links",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/addon-onboarding",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/addon-webpack5-compiler-swc",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/blocks",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/preset-create-react-app",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/react-webpack5",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@storybook/test",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@testing-library/jest-dom",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@testing-library/react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@testing-library/user-event",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "autoprefixer",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "chromatic",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "component_scaffold",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "cookie-parser",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "css-mqpacker",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "debug",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "del",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint-config-prettier",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint-plugin-notice",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "eslint-plugin-storybook",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "express",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "font-awesome",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "globule",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "gulp",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "gulp-nodemon",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "http-errors",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "jest-axe",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest-environment-jsdom",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "morgan",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "prettier",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "prop-types",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "pureimage",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-scripts",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "save",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "storybook",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "storybook-addon-performance",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "vite",
+      "allowedCategories": [ "production", "tools" ]
+    },
+    {
+      "name": "web-vitals",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "webpack",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}

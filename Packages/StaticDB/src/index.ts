@@ -4,13 +4,9 @@
  * Module dependencies.
  */
 
-import app from './dev.server';
+import { app } from './dev.server';
 import Debug from 'debug';
-import * as http from 'http';
-
-// var app = require('../dev.server');
-// var debug = require('debug')('dux:server');
-// var http = require('http');
+import http from 'http';
 
 /**
  * Normalize a port into a number, string, or false.

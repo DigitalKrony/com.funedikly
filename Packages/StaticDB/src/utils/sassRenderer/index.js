@@ -5,14 +5,14 @@ const emitter = require('events').EventEmitter;
 const fs = require('fs');
 const jsonToSass = require('../jsonToSass');
 const path = require('path');
-const postcss  = require('postcss');
+const postcss = require('postcss');
 const mqpacker = require("css-mqpacker");
 const sass = require('node-sass');
 const util = require('util');
 const utils = require('../utils');
 
-class sassRenderer {
-    compile (config = utils.required('config'), next = null) {
+export class sassRenderer {
+    compile(config = utils.required('config'), next = null) {
         let compiled = '';
         let scssTemplate = jsonToSass.map(config.variables);
 
@@ -30,7 +30,7 @@ class sassRenderer {
         }
 
         try {
-            compiled = postcss([autoprefixer, mqpacker]).process(sass.renderSync({data: scssTemplate, outputStyle: config.outputStyle}).css.toString()).css;
+            compiled = postcss([autoprefixer, mqpacker]).process(sass.renderSync({ data: scssTemplate, outputStyle: config.outputStyle }).css.toString()).css;
 
             if (process.env.NODE_ENV != 'production') {
                 utils.save('.tmp/scss/scss.scss', scssTemplate);
@@ -49,9 +49,9 @@ class sassRenderer {
             return compiled;
         }
     }
-    
-    complete () { this.emit('complete'); }    
+
+    complete() { this.emit('complete'); }
 }
 
-util.inherits(sassRenderer, emitter);
-module.exports = new sassRenderer();
+// util.inherits(sassRenderer, emitter);
+// module.exports = new sassRenderer();

@@ -1,25 +1,13 @@
 {
+  "extends": "../../common/config/typescript/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./lib",
-    "rootDir": "./src",
-    "target": "es6",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["node", "jest", "express"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "baseUrl": "./",
+    "outDir": "lib",
+    "rootDir": "src",
+    "baseUrl": "./src/",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["lib", "lib-cjs", "node_modules"]
 }

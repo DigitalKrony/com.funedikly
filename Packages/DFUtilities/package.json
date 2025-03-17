@@ -5,15 +5,16 @@
   "main": "./lib",
   "author": "Adam Sivins<adam.sivins@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "tsc -w"
+    "build": "vite build",
+    "start:dev": "vite"
   },
   "dependencies": {
-    "@types/express": "^5.0.0",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.9",
-    "typescript": "^5.8.2"
+    "@types/express": "~5.0.0",
+    "@types/jest": "~29.5.14",
+    "@types/node": "~22.13.10",
+    "typescript": "~5.8.2",
+    "vite": "~6.2.2"
   }
 }

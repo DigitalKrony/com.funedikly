@@ -8,7 +8,7 @@ const utils = require('../utils');
 
 const varReg = /\$[\S\s]*?\;[(\n| \n)]/g;
 
-String.prototype.stripComments = function() {
+String.prototype.stripComments = function () {
     return this
         .replace(new RegExp(/(\/\*[\S\s]*?\*\/)/ig), `\n`)
         .replace(new RegExp(/(\/\/ .*)|(\/\/\n)/ig), `\n`);
@@ -20,8 +20,8 @@ const defaults = {
     saveFile: true
 };
 
-class sassToJson {
-    constructor (...props) {
+export class sassToJson {
+    constructor(...props) {
         this.config = {
             ...defaults,
             ...props[0]
@@ -41,9 +41,9 @@ class sassToJson {
         }
     }
 
-    complete () { this.emit('complete'); }
+    complete() { this.emit('complete'); }
 
-    convertSass () {
+    convertSass() {
         let varArray = this.sassVariableString.match(varReg);
 
         for (let variable of varArray) {
@@ -51,10 +51,10 @@ class sassToJson {
 
             let newKey = newVariable.split(/\:[\S\s]*/)[0];
             let newValue = newVariable
-                .replace(`${newKey}:`,'')
+                .replace(`${newKey}:`, '')
                 .replace(' !default', '')
                 .trim();
-            
+
             this.variables[newKey] = newValue;
         }
 
@@ -62,5 +62,5 @@ class sassToJson {
     }
 }
 
-util.inherits(sassToJson, emitter);
-module.exports = sassToJson;
+// util.inherits(sassToJson, emitter);
+// module.exports = sassToJson;

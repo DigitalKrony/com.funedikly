@@ -1,0 +1,12 @@
+{
+  "name": "@rush-temp/utilities",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/express": "~5.0.0",
+    "@types/jest": "~29.5.14",
+    "@types/node": "~22.13.10",
+    "typescript": "~5.8.2",
+    "vite": "~6.2.2"
+  }
+}
