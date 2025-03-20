@@ -1,3 +1,8 @@
+
+/*!
+ * Copyright (C) Verizon. All rights reserved.
+ */
+
 module.exports = {
   parser: '@typescript-eslint/parser',
   ignorePatterns: ['_tpl/*'],
@@ -17,7 +22,7 @@ module.exports = {
   },
   rules: {
     'notice/notice': ['error', {
-      misMatch: "Copyright [(]C[)] Design:Funedikly. All rights reserved.",
+      misMatch: "Copyright [(]C[)] Design[:]Funedikly. All rights reserved.",
       template: `/*!
  * Copyright (C) Design:Funedikly. All rights reserved.
  */

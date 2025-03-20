@@ -1,12 +1,4 @@
 {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "notebook.defaultFormatter": "dbaeumer.vscode-eslint",
-    "eslint.format.enable": true,
-    "eslint.overrideConfig": "./.eslint.js",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
     "cSpell.words": [
         "aliceblue",
         "antiquewhite",

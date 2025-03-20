@@ -2,9 +2,7 @@
     "compilerOptions": {
       "module": "CommonJS",
       "target": "es5",
-      "jsx": "react",
       "lib": ["dom", "dom.iterable", "esnext"],
-      "types": ["node", "jest", "express"],
   
       "moduleResolution": "node",
       "useDefineForClassFields": true,
@@ -12,7 +10,6 @@
       "resolveJsonModule": true,
       "isolatedModules": true,
       "importHelpers": true,
-      "noEmitOnError": true,
       "declaration": true,
       "composite": true,
       "sourceMap": true,

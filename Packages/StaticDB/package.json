@@ -1,54 +1,46 @@
 {
   "name": "@df/static-db",
   "version": "0.1.0",
-  "description": "Static DB server for local dev and experimentation",
+  "description": "A thing",
   "main": "./lib",
   "author": "Adam Sivins<adam.sivins@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "scripts": {
-    "build": "vite build",
-    "start:dev": "vite",
-    "start:server": "node ./lib/index",
-    "postinstall": "node ./scripts/server-setup.ts"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build": "tsc",
+    "start:prod": "yarn build && yarn start:api --env=PROD",
+    "start:dev": "tsc --watch",
+    "build:db": "node ./lib/builder",
+    "start:api": "yarn build:db && nodemon lib/bin/www"
   },
   "dependencies": {
-    "@df/utilities": "~0.1.0",
-    "@types/cookie-parser": "~1.4.8",
-    "@types/debug": "~4.1.12",
-    "@types/express": "~5.0.0",
-    "@types/globule": "~1.1.9",
-    "@types/jest": "~29.5.14",
-    "@types/morgan": "~1.9.9",
-    "@types/node": "~22.13.10",
-    "@typescript-eslint/parser": "~8.26.1",
-    "autoprefixer": "~10.2.5",
-    "cookie-parser": "~1.4.5",
-    "css-mqpacker": "~7.0.0",
-    "debug": "~4.3.1",
-    "eslint": "~9.22.0",
-    "eslint-config-prettier": "~10.1.1",
-    "eslint-plugin-notice": "~1.0.0",
-    "express": "~4.17.1",
-    "font-awesome": "~4.7.0",
-    "globule": "~1.3.2",
-    "gulp": "~4.0.2",
-    "gulp-nodemon": "~2.5.0",
-    "http-errors": "~1.8.0",
-    "morgan": "~1.10.0",
-    "prettier": "~3.5.3",
-    "pureimage": "~0.1.6",
-    "save": "~2.3.2",
-    "typescript": "~5.8.2",
-    "vite": "~6.2.2"
+    "@df/utilities": "file:./../DFUtilities",
+    "chalk": "^5.4.1",
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.4.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-notice": "^1.0.0",
+    "express": "^4.21.2",
+    "glob": "^11.0.1",
+    "js-beautify": "^1.15.4",
+    "json-server": "^1.0.0-beta.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "pureimage": "^0.4.18",
+    "typescript": "^5.8.2"
   },
-  "_moduleAliases": {
-    "@": "./src"
-  }
+  "devDependencies": {
+    "@types/js-beautify": "^1",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.0",
+    "@types/json-server": "^0.14.7",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.10"
+  },
+  "eslintConfig": {
+    "extends": []
+  },
+  "packageManager": "yarn@4.7.0"
 }
