@@ -8,7 +8,7 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["src"],
+  "include": ["./src/**/*"],
   "typeRoots": ["node_modules/@types"],
   "exclude": ["lib", "lib-cjs", "node_modules"]
 }

@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 // import jsonServer from 'json-server';
 import cookieParser from 'cookie-parser';
 import express from 'express';

@@ -1,3 +1,8 @@
 {
-    "dest": "./.tmp/data/db.json"
+    "includeDefaults": true,
+    "extends": [
+        "./.tmp/file.a.json",
+        "./.tmp/file.b.json"
+    ],
+    "destination": "./.tmp/data/db.json"
 }

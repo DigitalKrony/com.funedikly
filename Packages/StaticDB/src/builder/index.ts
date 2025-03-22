@@ -1,3 +1,3 @@
-export { } from './Builder';
-export { } from './Builder.types';
-export { defaults } from './Builder.defaults';
+export * from './Builder';
+export * from './Builder.types';
+export * from './Builder.defaults';
