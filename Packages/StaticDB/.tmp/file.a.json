@@ -1,3 +1,76 @@
 {
-  "a": {}
+  "users": {
+    "schema": {
+      "uuid": "$i",
+      "username": "{{internet.username}}",
+      "firstName": "{{person.fullName}}",
+      "lastName": "{{person.lastName}}",
+      "email": "{{internet.email}}",
+      "phone": "{{phone.number}}"
+    },
+    "count": 20
+  },
+  "tasks": {
+    "schema": {
+      "guid": "$i",
+      "title": "TASK TYPE",
+      "friendly_name": "TASK TYPE AS A USER STRING",
+      "address": {
+        "addressLine1": "{{location.streetAddress}}",
+        "addressLine2": "{{location.secondaryAddress}}",
+        "city": "{{location.city}}",
+        "zip": "{{location.zipCode}}",
+        "geo": {
+          "lat": "{{location.latitude}}",
+          "long": "{{location.longitude}}"
+        }
+      },
+      "cost": "{{helpers.rangeToNumber({ min: 80, max: 150 })}}"
+    },
+    "count": 10
+  },
+  "clients": {
+    "schema": {
+      "guid": "$i",
+      "name": "{{company.name}}",
+      "phone": "{{phone.number}}",
+      "address": {
+        "addressLine1": "{{location.streetAddress}}",
+        "addressLine2": "{{location.secondaryAddress}}",
+        "city": "{{location.city}}",
+        "zip": "{{location.zipCode}}",
+        "geo": {
+          "lat": "{{location.latitude}}",
+          "long": "{{location.longitude}}"
+        }
+      }
+    },
+    "count": 40
+  },
+  "projects": {
+    "schema": {
+      "guid": "$i",
+      "title": "{{word.words({ count: 3 })}}",
+      "parentID": "$random(clients)",
+      "startDate": "{{date.anytime}}",
+      "endDate": "{{date.anytime}}",
+      "completeDate": "{{date.anytime}}",
+      "archive": "{{datatype.boolean({probability: 0.1})}}",
+      "em": "$random(users)",
+      "pm": "$random(users)",
+      "design": "$random(users)",
+      "engineer": "$random(users)"
+    },
+    "count": 200
+  },
+  "entries": {
+    "schema": {
+      "guid": "$i",
+      "task": "$random(tasks)",
+      "length": "{{helpers.rangeToNumber({ min: 1, max: 10 })}}",
+      "projectId": "$random(projects)",
+      "userId": "$random(users)"
+    },
+    "count": 1000
+  }
 }

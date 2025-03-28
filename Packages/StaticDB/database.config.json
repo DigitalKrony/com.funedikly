@@ -1,5 +1,5 @@
 {
-    "includeDefaults": true,
+    "includeDefaults": false,
     "extends": [
         "./.tmp/file.a.json",
         "./.tmp/file.b.json"

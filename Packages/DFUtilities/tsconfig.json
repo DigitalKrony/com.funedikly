@@ -1,5 +1,5 @@
 {
-  "extends": "./../../common/config/typescript/tsconfig.json",
+  "extends": "../../common/config/typescript/tsconfig.json",
   "compilerOptions": {
     "outDir": "lib",
     "rootDir": "src",
@@ -8,6 +8,7 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["lib", "lib-cjs", "node_modules"]
+  "typeRoots": ["node_modules/@types"],
+  "include": ["./src/**/*"],
+  "exclude": ["./lib", "./node_modules"]
 }

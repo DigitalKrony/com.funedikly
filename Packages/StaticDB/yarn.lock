@@ -10,10 +10,12 @@ __metadata:
   resolution: "@df/static-db@workspace:."
   dependencies:
     "@df/utilities": "file:./../DFUtilities"
+    "@faker-js/faker": "npm:^9.6.0"
     "@types/cookie-parser": "npm:^1.4.8"
     "@types/debug": "npm:^4.1.12"
     "@types/express": "npm:^5.0.0"
     "@types/js-beautify": "npm:^1"
+    "@types/js-yaml": "npm:^4"
     "@types/json-server": "npm:^0.14.7"
     "@types/morgan": "npm:^1.9.9"
     "@types/node": "npm:^22.13.10"
@@ -27,6 +29,7 @@ __metadata:
     express: "npm:^4.21.2"
     glob: "npm:^11.0.1"
     js-beautify: "npm:^1.15.4"
+    js-yaml: "npm:^4.1.0"
     json-server: "npm:^1.0.0-beta.3"
     morgan: "npm:^1.10.0"
     nodemon: "npm:^3.1.9"
@@ -168,6 +171,13 @@ __metadata:
     "@eslint/core": "npm:^0.12.0"
     levn: "npm:^0.4.1"
   checksum: 10c0/0a1aff1ad63e72aca923217e556c6dfd67d7cd121870eb7686355d7d1475d569773528a8b2111b9176f3d91d2ea81f7413c34600e8e5b73d59e005d70780b633
+  languageName: node
+  linkType: hard
+
+"@faker-js/faker@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "@faker-js/faker@npm:9.6.0"
+  checksum: 10c0/57f76aba8744ac5f588bfcf55e61ab6f1b61664f0d1cd6cc9d9ae5bf9376bdb48d867487ace638bee393de126257b7fe6ebd602c9efd3346e7ee10e8643f1cdc
   languageName: node
   linkType: hard
 
@@ -590,6 +600,13 @@ __metadata:
   version: 1.14.3
   resolution: "@types/js-beautify@npm:1.14.3"
   checksum: 10c0/e2e8cbe03c39bc596130151ae050884e4da25fc8dfb15cd1a0d0de92ee0963d43fc37b372de46fc8ba8ec99e6041debc70cdf92a1c160e3b472df3effa5b6c8f
+  languageName: node
+  linkType: hard
+
+"@types/js-yaml@npm:^4":
+  version: 4.0.9
+  resolution: "@types/js-yaml@npm:4.0.9"
+  checksum: 10c0/24de857aa8d61526bbfbbaa383aa538283ad17363fcd5bb5148e2c7f604547db36646440e739d78241ed008702a8920665d1add5618687b6743858fae00da211
   languageName: node
   linkType: hard
 

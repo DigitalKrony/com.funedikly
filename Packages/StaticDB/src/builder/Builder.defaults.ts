@@ -1,44 +1,44 @@
 export const defaults = {
-  posts: {
-    schema: {
-      "id": "$i",
-      "userId": "$random(users)",
-      "title": "{{lorem.sentence}}",
-      "body": "{{lorem.paragraph}}"
-    },
-    count: 100
-  },
   users: {
     schema: {
       "id": "$i",
-      "name": "{{name.findName}}",
-      "username": "{{internet.userName}}",
+      "name": "{{person.fullName}}",
+      "username": "{{internet.username}}",
       "email": "{{internet.email}}",
       "address": {
-        "addressLine1": "{{address.streetAddress}}",
-        "addressLine2": "{{address.secondaryAddress}}",
-        "city": "{{address.city}}",
-        "zip": "{{address.zipCode}}",
+        "addressLine1": "{{location.streetAddress}}",
+        "addressLine2": "{{location.secondaryAddress}}",
+        "city": "{{location.city}}",
+        "zip": "{{location.zipCode}}",
         "geo": {
-          "lat": '{{address.latitude}}',
-          "long": "{{address.longitude}}"
+          "lat": "{{location.latitude}}",
+          "long": "{{location.longitude}}"
         }
       },
-      "phone": "{{phone.phoneNumber}}",
+      "phone": "{{phone.number}}",
       "website": "{{internet.domainName}}",
       "company": {
-        "name": "{{company.companyName}}",
+        "name": "{{company.name}}",
         "catchPhrase": "{{company.catchPhraseDescriptor}}",
-        "bs": "{{company.bsAdjective}}"
+        "bs": "{{company.buzzAdjective}}"
       }
     },
-    count: 10
+    count: 250
+  },
+  posts: {
+    schema: {
+      "id": "$i",
+      "userId": "$random(type: connection, object: users)",
+      "title": "{{lorem.sentence}}",
+      "body": "{{lorem.paragraph}}"
+    },
+    count: 1000
   },
   comments: {
     schema: {
-      "postId": "$random(posts)",
+      "postId": "$random(type: connection, object: posts)",
       "id": "$i",
-      "name": "{{internet.userName}}",
+      "name": "{{internet.username}}",
       "email": "{{internet.email}}",
       "body": "{{lorem.paragraph}}"
     },
@@ -46,7 +46,7 @@ export const defaults = {
   },
   albums: {
     schema: {
-      "userId": "$random(users)",
+      "userId": "$random(type: connection, object: albums)",
       "id": "$i",
       "title": "{{lorem.sentence}}"
     },
@@ -54,12 +54,12 @@ export const defaults = {
   },
   photos: {
     schema: {
-      "albumId": "$random(albums)",
+      "albumId": "$random(type: connection, object: albums)",
       "id": "$i",
       "title": "{{lorem.sentence}}",
       "url": "https://via.placeholder.com/600/",
       "thumbnailUrl": "https://via.placeholder.com/150/"
     },
-    count: 5000
+    count: 100
   }
 }

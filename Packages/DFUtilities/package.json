@@ -1,32 +1,30 @@
 {
   "name": "@df/utilities",
-  "version": "0.0.1-beta",
-  "private": true,
+  "version": "0.1.0",
+  "description": "A thing",
   "main": "./lib",
+  "author": "Adam Sivins<adam.sivins@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "concurrently yarn:start-api yarn:start-dev",
-    "start-prod": "yarn build --prefix ./app && yarn start-api --env=PROD",
-    "start-dev": "yarn --prefix ./app/",
-    "build-db": "node ./local_modules/DBBuilder",
-    "start-api": "yarn build-db && nodemon server/bin/www"
+    "build": "tsc",
+    "build:prod": "yarn build --env=PROD",
+    "start:dev": "tsc --watch"
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "concurrently": "^4.1.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "faker": "^4.1.0",
-    "glob": "^7.1.4",
-    "https": "^1.0.0",
-    "inquirer": "^6.3.1",
-    "js-beautify": "^1.9.0",
-    "json-server": "^0.14.2",
-    "morgan": "~1.9.0",
-    "node-cmd": "^3.0.0",
-    "nodemon": "^1.18.11",
-    "pureimage": "^0.1.6",
-    "typescript": "^3.3.3333"
+    "concurrently": "^9.1.2",
+    "glob": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-notice": "^1.0.0",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.7.0"
 }
