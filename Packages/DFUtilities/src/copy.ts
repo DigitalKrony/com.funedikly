@@ -1,11 +1,11 @@
 import fs from 'fs';
 
-import { buildDirectory } from './';
+import { BuildDirectory } from './';
 
-export const copy = (source: string, target: string, cb: (err?: Error) => void) => {
+export const Copy = (source: string, target: string, cb: (err?: Error) => void) => {
     let cbCalled = false;
 
-    buildDirectory(target);
+    BuildDirectory(target);
 
     let rd = fs.createReadStream(source);
     rd.on('error', (err) => {

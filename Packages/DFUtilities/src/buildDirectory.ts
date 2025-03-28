@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export const buildDirectory = (targetDir: string, toFile?: boolean) => {
+export const BuildDirectory = (targetDir: string, toFile?: boolean) => {
     let pathParse = path.parse(path.resolve(targetDir)).dir.split(path.sep) as any;
     let destPath = pathParse!.dir;
     if (pathParse[0] == '.') {

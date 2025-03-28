@@ -6,13 +6,15 @@ import { faker } from '@faker-js/faker';
 import pPackage from './../../package.json';
 import type { BuildConfig, RandomProps } from './Builder.types';
 import { defaults } from './Builder.defaults';
-import { save } from '@df/utilities';
+import { Save, CreateHexKey, RandomInt } from '@df/utilities';
 
 const CWD = process.cwd();
 
 const configSrc: string = path.join(CWD, `database.config.json`);
 
-const config: BuildConfig = fs.existsSync(path.resolve(configSrc)) ? JSON.parse(fs.readFileSync(path.resolve(configSrc), 'utf-8')) : {};
+const config: BuildConfig = fs.existsSync(path.resolve(configSrc))
+  ? JSON.parse(fs.readFileSync(path.resolve(configSrc), 'utf-8'))
+  : {};
 const fileDest = config.destination ? config.destination : `./lib/data/db.json`;
 const BuiltDatabase: any = {};
 let DataToConvert: any = {};
@@ -33,8 +35,7 @@ const convertStringToObject = (str: string) => {
   });
 
   return obj;
-}
-
+};
 
 // TODO: Set initial values determined by the Config, initialize data sets and schemas
 
@@ -53,7 +54,8 @@ const getExtensionFiles = (files: string[]): any => {
 
 const buildSchemaObject = () => {
   config.includeDefaults && Object.assign(DataToConvert, defaults);
-  !!config.extends && Object.assign(DataToConvert, { ...DataToConvert, ...getExtensionFiles(config.extends) });
+  !!config.extends &&
+    Object.assign(DataToConvert, { ...DataToConvert, ...getExtensionFiles(config.extends) });
 };
 
 const fakeValue = (item: object | string | any, iteration?: number) => {
@@ -66,14 +68,14 @@ const fakeValue = (item: object | string | any, iteration?: number) => {
       fakedBlock[key] = fakeValue(value, iteration);
     } else if (typeof value === 'string') {
       const internalValue = value.indexOf('$') === 0;
-      const fakerValue = (/(?<={{)(.*?)(?=}})/g).exec(value);
+      const fakerValue = /(?<={{)(.*?)(?=}})/g.exec(value);
 
       if (!!internalValue) {
         if (value === '$i') {
           fakedBlock[key] = iteration;
         } else {
-          let internalFn = (/(?<=\$)(.*?)(?=\()/g).exec(value)![1];
-          let fnVar: any = convertStringToObject((/(?<=\()(.*?)(?=\))/g).exec(value)![1]);
+          let internalFn = /(?<=\$)(.*?)(?=\()/g.exec(value)![1];
+          let fnVar: any = convertStringToObject(/(?<=\()(.*?)(?=\))/g.exec(value)![1]);
 
           fakedBlock[key] = eval(`${internalFn}`)(fnVar);
         }
@@ -86,7 +88,7 @@ const fakeValue = (item: object | string | any, iteration?: number) => {
   }
 
   return fakedBlock;
-}
+};
 
 const fakeSchemas = () => {
   for (const schema in DataToConvert) {
@@ -94,7 +96,7 @@ const fakeSchemas = () => {
     BuiltDatabase[schema] = [];
 
     if (!!thisSchema.schema || !!thisSchema.count) {
-      for (let i = 0;i < thisSchema.count;i++) {
+      for (let i = 0; i < thisSchema.count; i++) {
         const thisVal = thisSchema.schema;
         const newFakeBlock = fakeValue(thisVal, i);
         BuiltDatabase[schema].push(newFakeBlock);
@@ -105,6 +107,8 @@ const fakeSchemas = () => {
 
 // @ts-ignore-next-line
 const random = (args: RandomProps): any => {
+  const id: string = CreateHexKey({ lengths: [5, 4, 5, 8] });
+  console.log(RandomInt({ length: 10 }));
   switch (args.type) {
     case 'connection':
       const thisObj = DataToConvert[args.object!];
@@ -113,7 +117,7 @@ const random = (args: RandomProps): any => {
     case 'hex-key':
       return '';
   }
-}
+};
 
 (() => {
   buildSchemaObject();
@@ -122,6 +126,12 @@ const random = (args: RandomProps): any => {
 
   // console.log(BuiltDatabase);
 
-  save(fileDest, js_beautify(JSON.stringify(BuiltDatabase), { end_with_newline: true, brace_style: "expand", indent_size: 2 }));
+  Save(
+    fileDest,
+    js_beautify(JSON.stringify(BuiltDatabase), {
+      end_with_newline: true,
+      brace_style: 'expand',
+      indent_size: 2,
+    })
+  );
 })();
-

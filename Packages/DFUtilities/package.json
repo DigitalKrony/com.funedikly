@@ -1,10 +1,11 @@
 {
   "name": "@df/utilities",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A thing",
   "main": "./lib",
   "author": "Adam Sivins<adam.sivins@gmail.com>",
   "license": "MIT",
+  "type": "commonjs",
   "private": true,
   "scripts": {
     "build": "tsc",
@@ -24,6 +25,7 @@
     "eslint-plugin-notice": "^1.0.0",
     "prettier": "^3.5.3",
     "prettier-eslint": "^16.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.7.0"

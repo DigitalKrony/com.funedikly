@@ -1,7 +1,7 @@
 import fs from 'fs';
-import { buildDirectory } from './buildDirectory';
+import { BuildDirectory } from './buildDirectory';
 
-export const save = (src: string, data: any, cb?: (err?: any) => void) => {
-    buildDirectory(src, true);
+export const Save = (src: string, data: any, cb?: (err?: any) => void) => {
+    BuildDirectory(src, true);
     fs.writeFile(src.trim(), data, (err: any) => { if (cb) { cb(err) } });
 }

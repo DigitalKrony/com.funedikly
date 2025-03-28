@@ -4,6 +4,8 @@
     "outDir": "lib",
     "rootDir": "src",
     "baseUrl": "./src/",
+    "useUnknownInCatchVariables": false,
+    "downlevelIteration": true,
     "paths": {
       "@/*": ["./*"]
     }
