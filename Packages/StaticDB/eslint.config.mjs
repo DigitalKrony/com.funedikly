@@ -10,6 +10,7 @@ export default defineConfig([globalIgnores(["_tpl/*"]), {
     plugins: {
         notice,
     },
+    files: ["**/*.ts", "**/*.js"],
     languageOptions: {
         globals: {},
         parser: tsParser,
@@ -23,8 +24,8 @@ export default defineConfig([globalIgnores(["_tpl/*"]), {
     },
     rules: {
         "notice/notice": ["error", {
-            misMatch: "Copyright [(]C[)] Design[:]Funedikly. All rights reserved.",
-            template: "/*!\n * Copyright (C) Design:Funedikly. All rights reserved.\n */\n\n",
+            templateFile: "./../../common/config/eslint/copyright.js"
         }],
+        'no-unused-vars': 'warn',
     },
 }]);

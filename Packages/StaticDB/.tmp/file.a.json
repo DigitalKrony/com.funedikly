@@ -1,7 +1,7 @@
 {
   "users": {
     "schema": {
-      "uuid": "$i",
+      "uuid": "$random( type: hex-key, lengths: [8, 4, 4, 4, 12])",
       "username": "{{internet.username}}",
       "firstName": "{{person.fullName}}",
       "lastName": "{{person.lastName}}",
@@ -12,7 +12,7 @@
   },
   "tasks": {
     "schema": {
-      "guid": "$i",
+      "guid": "$random( type: hex-key, lengths: [8, 4, 4, 4, 12] )",
       "title": "TASK TYPE",
       "friendly_name": "TASK TYPE AS A USER STRING",
       "address": {
@@ -31,7 +31,7 @@
   },
   "clients": {
     "schema": {
-      "guid": "$i",
+      "guid": "$random( type: hex-key, lengths: [8, 4, 4, 4, 12] )",
       "name": "{{company.name}}",
       "phone": "{{phone.number}}",
       "address": {
@@ -49,27 +49,27 @@
   },
   "projects": {
     "schema": {
-      "guid": "$i",
+      "guid": "$random( type: hex-key, lengths: [8, 4, 4, 4, 12] )",
       "title": "{{word.words({ count: 3 })}}",
-      "parentID": "$random(clients)",
+      "parentID": "$random(type: connection, object: clients, key: guid )",
       "startDate": "{{date.anytime}}",
       "endDate": "{{date.anytime}}",
       "completeDate": "{{date.anytime}}",
       "archive": "{{datatype.boolean({probability: 0.1})}}",
-      "em": "$random(users)",
-      "pm": "$random(users)",
-      "design": "$random(users)",
-      "engineer": "$random(users)"
+      "em": "$random( type: connection, object: users, key: uuid )",
+      "pm": "$random( type: connection, object: users, key: uuid )",
+      "design": "$random( type: connection, object: users, key: uuid )",
+      "engineer": "$random( type: connection, object: users, key: uuid )"
     },
     "count": 200
   },
   "entries": {
     "schema": {
-      "guid": "$i",
-      "task": "$random(tasks)",
-      "length": "{{helpers.rangeToNumber({ min: 1, max: 10 })}}",
-      "projectId": "$random(projects)",
-      "userId": "$random(users)"
+      "guid": "$random( type: hex-key, lengths: [8, 4, 4, 4, 12] )",
+      "task": "$random( type: connection, object: tasks, key: guid )",
+      "length": "{{helpers.rangeToNumber({ min: 16, max: 80 })}}",
+      "projectId": "$random( type: connection, object: projects, key: guid )",
+      "userId": "$random( type: connection, object: users, key: uuid )"
     },
     "count": 1000
   }

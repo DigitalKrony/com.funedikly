@@ -15,5 +15,7 @@
   "workspaces": [
     "Packages/StaticDB/*"
   ],
+  "dependencies": {
+  },
   "packageManager": "yarn@4.7.0"
 }

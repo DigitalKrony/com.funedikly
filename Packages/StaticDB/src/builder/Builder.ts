@@ -1,53 +1,40 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 import fs from 'fs';
 import path from 'path';
 import js_beautify from 'js-beautify';
 import { faker } from '@faker-js/faker';
 
-import pPackage from './../../package.json';
+import { CreateHexKey, SanitizeJSON, Save } from '@df/utilities';
+
 import type { BuildConfig, RandomProps } from './Builder.types';
+import { helpText } from './Builder.help';
 import { defaults } from './Builder.defaults';
-import { Save, CreateHexKey, RandomInt } from '@df/utilities';
 
 const CWD = process.cwd();
-
 const configSrc: string = path.join(CWD, `database.config.json`);
-
 const config: BuildConfig = fs.existsSync(path.resolve(configSrc))
   ? JSON.parse(fs.readFileSync(path.resolve(configSrc), 'utf-8'))
   : {};
 const fileDest = config.destination ? config.destination : `./lib/data/db.json`;
 const BuiltDatabase: any = {};
 let DataToConvert: any = {};
-
-const helpText = `------ Static Database Server v${pPackage.version} ------`;
+let rerun: boolean = false;
+let secondRun: boolean = false;
 
 console.log(helpText);
-
-const convertStringToObject = (str: string) => {
-  var properties = str.split(', ');
-  var obj: Record<string, string> = {};
-  properties.forEach(function (property) {
-    var tup = property.split(':');
-
-    if (!!tup[0] && !!tup[1]) {
-      obj[tup[0].trim()] = tup[1].trim();
-    }
-  });
-
-  return obj;
-};
-
-// TODO: Set initial values determined by the Config, initialize data sets and schemas
 
 const getExtensionFiles = (files: string[]): any => {
   const ExtensionObject = {};
 
-  for (const file of files) {
+  files.forEach((file) => {
     const filePath = path.resolve(path.join(CWD, file));
     const extensionFile = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf-8')) : {};
 
     Object.assign(ExtensionObject, { ...ExtensionObject, ...extensionFile });
-  }
+  });
 
   return ExtensionObject;
 };
@@ -56,75 +43,115 @@ const buildSchemaObject = () => {
   config.includeDefaults && Object.assign(DataToConvert, defaults);
   !!config.extends &&
     Object.assign(DataToConvert, { ...DataToConvert, ...getExtensionFiles(config.extends) });
+    
+  fakeSchemas();
 };
 
-const fakeValue = (item: object | string | any, iteration?: number) => {
-  const fakedBlock: any = {};
+const fakeSchemas = () => {
+  Object.keys(DataToConvert).forEach(async (value: string) => {
+    const { count, schema } = DataToConvert[value];
 
-  for (const key in item) {
-    const value = item[key];
+    BuiltDatabase[value] = [];
 
-    if (typeof value === 'object') {
-      fakedBlock[key] = fakeValue(value, iteration);
-    } else if (typeof value === 'string') {
-      const internalValue = value.indexOf('$') === 0;
-      const fakerValue = /(?<={{)(.*?)(?=}})/g.exec(value);
-
-      if (!!internalValue) {
-        if (value === '$i') {
-          fakedBlock[key] = iteration;
-        } else {
-          let internalFn = /(?<=\$)(.*?)(?=\()/g.exec(value)![1];
-          let fnVar: any = convertStringToObject(/(?<=\()(.*?)(?=\))/g.exec(value)![1]);
-
-          fakedBlock[key] = eval(`${internalFn}`)(fnVar);
-        }
-      } else if (!!fakerValue) {
-        fakedBlock[key] = faker.helpers.fake(value);
-      } else {
-        fakedBlock[key] = value;
+    if (!!schema || !!count) {
+      for (let i = 0; i < count; i++) {
+        const thisVal = schema;
+        const newFakeBlock = processSchema({ item: thisVal, iteration: i});
+        BuiltDatabase[value].push(newFakeBlock);
       }
     }
+  });
+
+  if (rerun) {
+    secondRun = true;
+    reprocess();
   }
+};
+
+const processSchema = ( args: { item: object | string | any, iteration?: number } ) => {
+  const { item, iteration } = args;
+  const fakedBlock: any = {};
+  
+  Object.keys(item).forEach((key: string) => {
+    const value = item[key];
+    
+    if (typeof value === 'object') {
+      fakedBlock[key] = processSchema({item: value, iteration});
+    } else if (typeof value === 'string') {
+      fakedBlock[key] = fakeValue({value, iteration});
+    }
+  });
 
   return fakedBlock;
 };
 
-const fakeSchemas = () => {
-  for (const schema in DataToConvert) {
-    const thisSchema = DataToConvert[schema];
-    BuiltDatabase[schema] = [];
+const fakeValue = (args: {value: string | any, iteration?: number}) => {
+  const { value, iteration } = args;
 
-    if (!!thisSchema.schema || !!thisSchema.count) {
-      for (let i = 0; i < thisSchema.count; i++) {
-        const thisVal = thisSchema.schema;
-        const newFakeBlock = fakeValue(thisVal, i);
-        BuiltDatabase[schema].push(newFakeBlock);
-      }
+  const internalValue = `${value}`.indexOf(`$`) === 0;
+  const fakerValue = /(?<={{)(.*?)(?=}})/g.exec(value);
+  let fakedValue: any = '';
+
+  if (!!internalValue) {
+    if (value === '$i') {
+      fakedValue = iteration;
+    } else {
+      const internalFn = /(?<=\$)(.*?)(?=\()/g.exec(value)![1];
+      const fnProps = /(?<=\()(.*?)(?=\))/g.exec(value)![1];
+      const fnVar: any = SanitizeJSON(fnProps);
+
+      fakedValue = eval(`${internalFn}`)(fnVar);
     }
+  } else if (!!fakerValue) {
+    fakedValue = faker.helpers.fake(value);705959
+  } else {
+    fakedValue = value;
   }
+
+  return fakedValue;
 };
 
-// @ts-ignore-next-line
+const reprocess = () => {
+  Object.keys(BuiltDatabase).forEach( async (key: string) => {
+    for (const i in BuiltDatabase[key]) {
+      const block = BuiltDatabase[key][i];
+
+      Object.keys(block).forEach((reKey: string) => {
+        block[reKey] = fakeValue({ value: block[reKey] });
+      });
+    }
+  });
+};
+
+// @ts-ignore
+// eslint-disable-next-line no-unused-vars
 const random = (args: RandomProps): any => {
-  const id: string = CreateHexKey({ lengths: [5, 4, 5, 8] });
-  console.log(RandomInt({ length: 10 }));
-  switch (args.type) {
+  const { type } = args;
+
+  switch (type) {
     case 'connection':
+      const { key, object } = args;
       const thisObj = DataToConvert[args.object!];
-      const connectId = Math.floor(Math.random() * thisObj.count);
+      const connectionIteration = Math.floor(Math.random() * thisObj.count);
+      let connectId: string | number = '';
+
+      if (!!key) {
+        rerun = true;
+        connectId = secondRun ? BuiltDatabase[object][connectionIteration][key] : `$random(${ JSON.stringify(args) })`;
+      } else {
+        connectId = connectionIteration;
+      }
+
       return connectId;
     case 'hex-key':
-      return '';
+      const { lengths } = args;
+      const id: string = CreateHexKey({ lengths });
+      return id;
   }
 };
 
 (() => {
   buildSchemaObject();
-
-  fakeSchemas();
-
-  // console.log(BuiltDatabase);
 
   Save(
     fileDest,

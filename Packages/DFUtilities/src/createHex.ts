@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 export const RandomInt = (args: { length: number; type?: 'number' | 'hex' | 'alphaNum' }): string => {
   const { length = 3, type = 'number' } = args;
 
@@ -5,14 +9,14 @@ export const RandomInt = (args: { length: number; type?: 'number' | 'hex' | 'alp
     case 'hex':
       const hexChars = '0123456789abcdef';
       let hexResult = '';
-      for (let i = 0; i < length; i++) {
+      for (let i = 0;i < length;i++) {
         hexResult += hexChars[Math.floor(Math.random() * hexChars.length)];
       }
       return hexResult;
     case 'alphaNum':
       const aNChars = '0123456789abcdefghijklmnopqrstuvwxyz';
       let aNResult = '';
-      for (let i = 0; i < length; i++) {
+      for (let i = 0;i < length;i++) {
         aNResult += aNChars[Math.floor(Math.random() * aNChars.length)];
       }
       return aNResult;
