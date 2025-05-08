@@ -123,8 +123,7 @@ const reprocess = () => {
   });
 };
 
-// @ts-ignore
-// eslint-disable-next-line no-unused-vars
+// @ts-ignore-nex-line no-unused-vars
 const random = (args: RandomProps): any => {
   const { type } = args;
 
