@@ -1,0 +1,868 @@
+{
+  "program": {
+    "fileInfos": {
+      "./wiki-to-json/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "signature": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "signature": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.d.ts": {
+        "version": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "signature": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "signature": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "signature": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "signature": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "signature": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "signature": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "signature": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "7207e317a2cb07a177e7d963ab7b8c0e85dde7f9ddb50351f830239bf597569e",
+        "signature": "7207e317a2cb07a177e7d963ab7b8c0e85dde7f9ddb50351f830239bf597569e",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "signature": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "signature": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "signature": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2019.object.d.ts": {
+        "version": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "signature": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "signature": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "signature": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.promise.d.ts": {
+        "version": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "signature": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts": {
+        "version": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "signature": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.string.d.ts": {
+        "version": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "signature": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
+        "version": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "signature": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.es2020.intl.d.ts": {
+        "version": "31e8df2398e328077079c17ea4f1664bad0a34adf8b0608837e504e310e329a1",
+        "signature": "31e8df2398e328077079c17ea4f1664bad0a34adf8b0608837e504e310e329a1",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.esnext.string.d.ts": {
+        "version": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "signature": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.esnext.promise.d.ts": {
+        "version": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/typescript/lib/lib.esnext.weakref.d.ts": {
+        "version": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/v2/src/utilities/optimizearticletitle/index.ts": {
+        "version": "033a4050f31d582f9e6635a1054ccd505eace206418aa86cc45bd945d8d58b8b",
+        "signature": "04a51328cd4952433cec9b36594363d95e22a724b67e97d3dc02bd5c2dc590d9",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/v2/src/utilities/index.ts": {
+        "version": "f4519e8e669cbf7bf25b52ba04b248497dd0e8edf1f221948475a0cf7a530b64",
+        "signature": "f4519e8e669cbf7bf25b52ba04b248497dd0e8edf1f221948475a0cf7a530b64",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/v2/src/index.ts": {
+        "version": "f3f1fca9ec6ec9e4bdd91eadfeae33215025e024a5f7c4b772b66fe6713cc312",
+        "signature": "f3f1fca9ec6ec9e4bdd91eadfeae33215025e024a5f7c4b772b66fe6713cc312",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/v1/src/wikipediautils.js": {
+        "version": "086092cd2752cc5555f8a1b0075d87a3e50dbe936b52d75be808c2b4294b08dd",
+        "signature": "be6943b459a920cb69e36b28b1ef2c628ec86e08b57b11973ef4bb4e3e1aa662",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/v1/src/wikipediaparser.js": {
+        "version": "0a9ab9ed32df22c68dcde57fa38063aa5c72c92ab9b223895b8b0bb95c426471",
+        "signature": "2d7b93d2af4d8d06a631671e8303fbdf8407891a7805b0716dcd48fc6a4b5986",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/estree/index.d.ts": {
+        "version": "e2b48abff5a8adc6bb1cd13a702b9ef05e6045a98e7cfa95a8779b53b6d0e69d",
+        "signature": "e2b48abff5a8adc6bb1cd13a702b9ef05e6045a98e7cfa95a8779b53b6d0e69d",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/globals.d.ts": {
+        "version": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
+        "signature": "25b4a0c4fab47c373ee49df4c239826ee3430019fc0c1b5e59edc3e398b7468d",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/async_hooks.d.ts": {
+        "version": "e23424b97418eca3226fd24de079f1203eb70360622e4e093af2aff14d4be6ec",
+        "signature": "e23424b97418eca3226fd24de079f1203eb70360622e4e093af2aff14d4be6ec",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/buffer.d.ts": {
+        "version": "a473cf45c3d9809518f8af913312139d9f4db6887dc554e0d06d0f4e52722e6b",
+        "signature": "a473cf45c3d9809518f8af913312139d9f4db6887dc554e0d06d0f4e52722e6b",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/child_process.d.ts": {
+        "version": "a668dfae917097b30fc29bbebeeb869cee22529f2aa9976cea03c7e834a1b841",
+        "signature": "a668dfae917097b30fc29bbebeeb869cee22529f2aa9976cea03c7e834a1b841",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/cluster.d.ts": {
+        "version": "04eaa93bd75f937f9184dcb95a7983800c5770cf8ddd8ac0f3734dc02f5b20ef",
+        "signature": "04eaa93bd75f937f9184dcb95a7983800c5770cf8ddd8ac0f3734dc02f5b20ef",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/console.d.ts": {
+        "version": "c8155caf28fc7b0a564156a5df28ad8a844a3bd32d331d148d8f3ce88025c870",
+        "signature": "c8155caf28fc7b0a564156a5df28ad8a844a3bd32d331d148d8f3ce88025c870",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/constants.d.ts": {
+        "version": "45ac321f2e15d268fd74a90ddaa6467dcaaff2c5b13f95b4b85831520fb7a491",
+        "signature": "45ac321f2e15d268fd74a90ddaa6467dcaaff2c5b13f95b4b85831520fb7a491",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/crypto.d.ts": {
+        "version": "0084b54e281a37c75079f92ca20603d5731de063e7a425852b2907de4dd19932",
+        "signature": "0084b54e281a37c75079f92ca20603d5731de063e7a425852b2907de4dd19932",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/dgram.d.ts": {
+        "version": "797a9d37eb1f76143311c3f0a186ce5c0d8735e94c0ca08ff8712a876c9b4f9e",
+        "signature": "797a9d37eb1f76143311c3f0a186ce5c0d8735e94c0ca08ff8712a876c9b4f9e",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/dns.d.ts": {
+        "version": "bc31e01146eec89eb870b9ad8c55d759bcbc8989a894e6f0f81f832e0d10eb04",
+        "signature": "bc31e01146eec89eb870b9ad8c55d759bcbc8989a894e6f0f81f832e0d10eb04",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/domain.d.ts": {
+        "version": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
+        "signature": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/events.d.ts": {
+        "version": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
+        "signature": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/fs.d.ts": {
+        "version": "a44c87a409b60f211a240341905d818f5f173420dcf7f989ee6c8a1a3d812ae9",
+        "signature": "a44c87a409b60f211a240341905d818f5f173420dcf7f989ee6c8a1a3d812ae9",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts": {
+        "version": "bdaf554ae2d9d09e2a42f58a29ef7f80e5b5c1d7b96bfb717243dc91a477216e",
+        "signature": "bdaf554ae2d9d09e2a42f58a29ef7f80e5b5c1d7b96bfb717243dc91a477216e",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/http.d.ts": {
+        "version": "dce8672a79c7221c10a355b905940ab57505bc480a72a5da33ba24cbf82bb75c",
+        "signature": "dce8672a79c7221c10a355b905940ab57505bc480a72a5da33ba24cbf82bb75c",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/http2.d.ts": {
+        "version": "321ea733ae7f611077a2d7b4bc378ac4a6b7e365e1a51c71a7e5b2818e1e310a",
+        "signature": "321ea733ae7f611077a2d7b4bc378ac4a6b7e365e1a51c71a7e5b2818e1e310a",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/https.d.ts": {
+        "version": "13257840c0850d4ebd7c2b17604a9e006f752de76c2400ebc752bc465c330452",
+        "signature": "13257840c0850d4ebd7c2b17604a9e006f752de76c2400ebc752bc465c330452",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/inspector.d.ts": {
+        "version": "42176966283d3835c34278b9b5c0f470d484c0c0c6a55c20a2c916a1ce69b6e8",
+        "signature": "42176966283d3835c34278b9b5c0f470d484c0c0c6a55c20a2c916a1ce69b6e8",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/module.d.ts": {
+        "version": "0cff7901aedfe78e314f7d44088f07e2afa1b6e4f0473a4169b8456ca2fb245d",
+        "signature": "0cff7901aedfe78e314f7d44088f07e2afa1b6e4f0473a4169b8456ca2fb245d",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/net.d.ts": {
+        "version": "ae7b9d7ab1652cc1866ba6e269d0eeaf1708d07327714124ed2cbd059f5e4766",
+        "signature": "ae7b9d7ab1652cc1866ba6e269d0eeaf1708d07327714124ed2cbd059f5e4766",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/os.d.ts": {
+        "version": "69640cc2e76dad52daeb9914e6b70c5c9a5591a3a65190a2d3ea432cf0015e16",
+        "signature": "69640cc2e76dad52daeb9914e6b70c5c9a5591a3a65190a2d3ea432cf0015e16",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/path.d.ts": {
+        "version": "21e64a125f65dff99cc3ed366c96e922b90daed343eb52ecdace5f220401dcda",
+        "signature": "21e64a125f65dff99cc3ed366c96e922b90daed343eb52ecdace5f220401dcda",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "4982d94cb6427263c8839d8d6324a8bbe129e931deb61a7380f8fad17ba2cfc0",
+        "signature": "4982d94cb6427263c8839d8d6324a8bbe129e931deb61a7380f8fad17ba2cfc0",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/process.d.ts": {
+        "version": "b0b00cf2e8107ab671243a73d2fbd6296a853bebe3fcfaaca293f65aaa245eaf",
+        "signature": "b0b00cf2e8107ab671243a73d2fbd6296a853bebe3fcfaaca293f65aaa245eaf",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/punycode.d.ts": {
+        "version": "7f77304372efe3c9967e5f9ea2061f1b4bf41dc3cda3c83cdd676f2e5af6b7e6",
+        "signature": "7f77304372efe3c9967e5f9ea2061f1b4bf41dc3cda3c83cdd676f2e5af6b7e6",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/querystring.d.ts": {
+        "version": "992c6f6be16c0a1d2eec13ece33adeea2c747ba27fcd078353a8f4bb5b4fea58",
+        "signature": "992c6f6be16c0a1d2eec13ece33adeea2c747ba27fcd078353a8f4bb5b4fea58",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/readline.d.ts": {
+        "version": "3b790d08129aca55fd5ae1672d1d26594147ac0d5f2eedc30c7575eb18daef7e",
+        "signature": "3b790d08129aca55fd5ae1672d1d26594147ac0d5f2eedc30c7575eb18daef7e",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/repl.d.ts": {
+        "version": "a6b0abdb67d63ebe964ba5fee31bc3daf10c12eecd46b24d778426010c04c67e",
+        "signature": "a6b0abdb67d63ebe964ba5fee31bc3daf10c12eecd46b24d778426010c04c67e",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/stream.d.ts": {
+        "version": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
+        "signature": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/string_decoder.d.ts": {
+        "version": "4fd3c4debadce3e9ab9dec3eb45f7f5e2e3d4ad65cf975a6d938d883cfb25a50",
+        "signature": "4fd3c4debadce3e9ab9dec3eb45f7f5e2e3d4ad65cf975a6d938d883cfb25a50",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/timers.d.ts": {
+        "version": "0953427f9c2498f71dd912fdd8a81b19cf6925de3e1ad67ab9a77b9a0f79bf0b",
+        "signature": "0953427f9c2498f71dd912fdd8a81b19cf6925de3e1ad67ab9a77b9a0f79bf0b",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/tls.d.ts": {
+        "version": "f89a6d56f0267f6e73c707f8a89d2f38e9928e10bfa505f39a4f4bf954093aee",
+        "signature": "f89a6d56f0267f6e73c707f8a89d2f38e9928e10bfa505f39a4f4bf954093aee",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/trace_events.d.ts": {
+        "version": "7df562288f949945cf69c21cd912100c2afedeeb7cdb219085f7f4b46cb7dde4",
+        "signature": "7df562288f949945cf69c21cd912100c2afedeeb7cdb219085f7f4b46cb7dde4",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/tty.d.ts": {
+        "version": "9d16690485ff1eb4f6fc57aebe237728fd8e03130c460919da3a35f4d9bd97f5",
+        "signature": "9d16690485ff1eb4f6fc57aebe237728fd8e03130c460919da3a35f4d9bd97f5",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/url.d.ts": {
+        "version": "dcc6910d95a3625fd2b0487fda055988e46ab46c357a1b3618c27b4a8dd739c9",
+        "signature": "dcc6910d95a3625fd2b0487fda055988e46ab46c357a1b3618c27b4a8dd739c9",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/util.d.ts": {
+        "version": "e649840284bab8c4d09cadc125cd7fbde7529690cc1a0881872b6a9cd202819b",
+        "signature": "e649840284bab8c4d09cadc125cd7fbde7529690cc1a0881872b6a9cd202819b",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/v8.d.ts": {
+        "version": "a364b4a8a015ae377052fa4fac94204d79a69d879567f444c7ceff1b7a18482d",
+        "signature": "a364b4a8a015ae377052fa4fac94204d79a69d879567f444c7ceff1b7a18482d",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/vm.d.ts": {
+        "version": "60c9e27816ec8ac8df7240598bb086e95b47edfb454c5cbf4003c812e0ed6e39",
+        "signature": "60c9e27816ec8ac8df7240598bb086e95b47edfb454c5cbf4003c812e0ed6e39",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/worker_threads.d.ts": {
+        "version": "6c63cb179eda2be5ab45dc146fa4151bec8ce4781986935fe40adfc69cbbf214",
+        "signature": "6c63cb179eda2be5ab45dc146fa4151bec8ce4781986935fe40adfc69cbbf214",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/zlib.d.ts": {
+        "version": "4926467de88a92a4fc9971d8c6f21b91eca1c0e7fc2a46cc4638ab9440c73875",
+        "signature": "4926467de88a92a4fc9971d8c6f21b91eca1c0e7fc2a46cc4638ab9440c73875",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/globals.global.d.ts": {
+        "version": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "signature": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "affectsGlobalScope": true
+      },
+      "./wiki-to-json/node_modules/@types/node/wasi.d.ts": {
+        "version": "4e0a4d84b15692ea8669fe4f3d05a4f204567906b1347da7a58b75f45bae48d3",
+        "signature": "4e0a4d84b15692ea8669fe4f3d05a4f204567906b1347da7a58b75f45bae48d3",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/ts3.6/base.d.ts": {
+        "version": "ae68a04912ee5a0f589276f9ec60b095f8c40d48128a4575b3fdd7d93806931c",
+        "signature": "ae68a04912ee5a0f589276f9ec60b095f8c40d48128a4575b3fdd7d93806931c",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/assert.d.ts": {
+        "version": "b3593bd345ebea5e4d0a894c03251a3774b34df3d6db57075c18e089a599ba76",
+        "signature": "b3593bd345ebea5e4d0a894c03251a3774b34df3d6db57075c18e089a599ba76",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/base.d.ts": {
+        "version": "e61a21e9418f279bc480394a94d1581b2dee73747adcbdef999b6737e34d721b",
+        "signature": "e61a21e9418f279bc480394a94d1581b2dee73747adcbdef999b6737e34d721b",
+        "affectsGlobalScope": false
+      },
+      "./wiki-to-json/node_modules/@types/node/index.d.ts": {
+        "version": "6c137dee82a61e14a1eb6a0ba56925b66fd83abf15acf72fe59a10b15e80e319",
+        "signature": "6c137dee82a61e14a1eb6a0ba56925b66fd83abf15acf72fe59a10b15e80e319",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "module": 1,
+      "target": 1,
+      "lib": [
+        "lib.dom.d.ts",
+        "lib.dom.iterable.d.ts",
+        "lib.esnext.d.ts"
+      ],
+      "moduleResolution": 2,
+      "useDefineForClassFields": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "importHelpers": true,
+      "declaration": true,
+      "composite": true,
+      "sourceMap": true,
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "strict": true,
+      "outDir": "./wiki-to-json/lib",
+      "rootDir": "./wiki-to-json/v2/src",
+      "baseUrl": "./wiki-to-json/v2/src",
+      "paths": {
+        "@/*": [
+          "./*"
+        ]
+      },
+      "pathsBasePath": "D:/Projects/com.funedikly/Packages/wiki-to-json",
+      "configFilePath": "./wiki-to-json/tsconfig.json"
+    },
+    "referencedMap": {
+      "./wiki-to-json/node_modules/@types/node/base.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/assert.d.ts",
+        "./wiki-to-json/node_modules/@types/node/ts3.6/base.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/child_process.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/cluster.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/child_process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/console.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/util.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/constants.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/crypto.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/os.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/crypto.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/dgram.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/domain.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/events.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/fs.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/http.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/http2.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/https.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/index.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/base.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/inspector.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/module.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/net.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/perf_hooks.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/process.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/tty.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/readline.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/repl.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/readline.d.ts",
+        "./wiki-to-json/node_modules/@types/node/util.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/stream.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/tls.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/ts3.6/base.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/async_hooks.d.ts",
+        "./wiki-to-json/node_modules/@types/node/buffer.d.ts",
+        "./wiki-to-json/node_modules/@types/node/child_process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/cluster.d.ts",
+        "./wiki-to-json/node_modules/@types/node/console.d.ts",
+        "./wiki-to-json/node_modules/@types/node/constants.d.ts",
+        "./wiki-to-json/node_modules/@types/node/crypto.d.ts",
+        "./wiki-to-json/node_modules/@types/node/dgram.d.ts",
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/domain.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/globals.d.ts",
+        "./wiki-to-json/node_modules/@types/node/globals.global.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http2.d.ts",
+        "./wiki-to-json/node_modules/@types/node/https.d.ts",
+        "./wiki-to-json/node_modules/@types/node/inspector.d.ts",
+        "./wiki-to-json/node_modules/@types/node/module.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/os.d.ts",
+        "./wiki-to-json/node_modules/@types/node/path.d.ts",
+        "./wiki-to-json/node_modules/@types/node/perf_hooks.d.ts",
+        "./wiki-to-json/node_modules/@types/node/process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/punycode.d.ts",
+        "./wiki-to-json/node_modules/@types/node/querystring.d.ts",
+        "./wiki-to-json/node_modules/@types/node/readline.d.ts",
+        "./wiki-to-json/node_modules/@types/node/repl.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/string_decoder.d.ts",
+        "./wiki-to-json/node_modules/@types/node/timers.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/trace_events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tty.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts",
+        "./wiki-to-json/node_modules/@types/node/util.d.ts",
+        "./wiki-to-json/node_modules/@types/node/v8.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts",
+        "./wiki-to-json/node_modules/@types/node/wasi.d.ts",
+        "./wiki-to-json/node_modules/@types/node/worker_threads.d.ts",
+        "./wiki-to-json/node_modules/@types/node/zlib.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/tty.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/url.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/querystring.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/v8.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/worker_threads.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/zlib.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/v1/src/wikipediaparser.js": [
+        "./wiki-to-json/v1/src/wikipediautils.js"
+      ],
+      "./wiki-to-json/v2/src/index.ts": [
+        "./wiki-to-json/v2/src/utilities/index.ts"
+      ],
+      "./wiki-to-json/v2/src/utilities/index.ts": [
+        "./wiki-to-json/v2/src/utilities/optimizearticletitle/index.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "./wiki-to-json/node_modules/@types/node/base.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/assert.d.ts",
+        "./wiki-to-json/node_modules/@types/node/ts3.6/base.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/child_process.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/cluster.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/child_process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/console.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/util.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/constants.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/crypto.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/os.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/crypto.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/dgram.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/domain.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/events.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/fs.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/http.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/http2.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/https.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/index.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/base.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/inspector.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/module.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/url.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/net.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/perf_hooks.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/process.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/tty.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/readline.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/repl.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/readline.d.ts",
+        "./wiki-to-json/node_modules/@types/node/util.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/stream.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/tls.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/ts3.6/base.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/async_hooks.d.ts",
+        "./wiki-to-json/node_modules/@types/node/buffer.d.ts",
+        "./wiki-to-json/node_modules/@types/node/child_process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/cluster.d.ts",
+        "./wiki-to-json/node_modules/@types/node/console.d.ts",
+        "./wiki-to-json/node_modules/@types/node/constants.d.ts",
+        "./wiki-to-json/node_modules/@types/node/crypto.d.ts",
+        "./wiki-to-json/node_modules/@types/node/dgram.d.ts",
+        "./wiki-to-json/node_modules/@types/node/dns.d.ts",
+        "./wiki-to-json/node_modules/@types/node/domain.d.ts",
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/globals.d.ts",
+        "./wiki-to-json/node_modules/@types/node/globals.global.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http.d.ts",
+        "./wiki-to-json/node_modules/@types/node/http2.d.ts",
+        "./wiki-to-json/node_modules/@types/node/https.d.ts",
+        "./wiki-to-json/node_modules/@types/node/inspector.d.ts",
+        "./wiki-to-json/node_modules/@types/node/module.d.ts",
+        "./wiki-to-json/node_modules/@types/node/net.d.ts",
+        "./wiki-to-json/node_modules/@types/node/os.d.ts",
+        "./wiki-to-json/node_modules/@types/node/path.d.ts",
+        "./wiki-to-json/node_modules/@types/node/perf_hooks.d.ts",
+        "./wiki-to-json/node_modules/@types/node/process.d.ts",
+        "./wiki-to-json/node_modules/@types/node/punycode.d.ts",
+        "./wiki-to-json/node_modules/@types/node/querystring.d.ts",
+        "./wiki-to-json/node_modules/@types/node/readline.d.ts",
+        "./wiki-to-json/node_modules/@types/node/repl.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/string_decoder.d.ts",
+        "./wiki-to-json/node_modules/@types/node/timers.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tls.d.ts",
+        "./wiki-to-json/node_modules/@types/node/trace_events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/tty.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts",
+        "./wiki-to-json/node_modules/@types/node/util.d.ts",
+        "./wiki-to-json/node_modules/@types/node/v8.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts",
+        "./wiki-to-json/node_modules/@types/node/wasi.d.ts",
+        "./wiki-to-json/node_modules/@types/node/worker_threads.d.ts",
+        "./wiki-to-json/node_modules/@types/node/zlib.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/tty.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/net.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/url.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/querystring.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/v8.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/worker_threads.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/events.d.ts",
+        "./wiki-to-json/node_modules/@types/node/fs/promises.d.ts",
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts",
+        "./wiki-to-json/node_modules/@types/node/url.d.ts",
+        "./wiki-to-json/node_modules/@types/node/vm.d.ts"
+      ],
+      "./wiki-to-json/node_modules/@types/node/zlib.d.ts": [
+        "./wiki-to-json/node_modules/@types/node/stream.d.ts"
+      ],
+      "./wiki-to-json/v2/src/index.ts": [
+        "./wiki-to-json/v2/src/utilities/index.ts"
+      ],
+      "./wiki-to-json/v2/src/utilities/index.ts": [
+        "./wiki-to-json/v2/src/utilities/optimizearticletitle/index.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": []
+  },
+  "version": "4.1.6"
+}

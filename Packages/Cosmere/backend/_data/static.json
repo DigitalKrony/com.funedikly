@@ -1,0 +1,1488 @@
+{
+  "books": [
+    {
+      "title": "Elantris",
+      "series_name": "Elantris",
+      "book_order": 1,
+      "synopsis": "The city of Elantris, once a place of magic and radiance, has fallen under a curse. When Prince Raoden is stricken by the Reod, he is exiled to the dead city, where he must uncover the secrets of Elantris to save his people and himself.",
+      "release_date": "2005-04-21",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Elantris_(book)"
+    },
+    {
+      "title": "The Hope of Elantris",
+      "series_name": "Elantris",
+      "book_order": 1.5,
+      "synopsis": "A short story set during the events of Elantris, focusing on a side character's efforts to maintain order and hope amongst the children within the city.",
+      "release_date": "2006",
+      "publisher": "Self-published (online), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "coppermind_link": "https://coppermind.net/wiki/The_Hope_of_Elantris"
+    },
+    {
+      "title": "The Emperor's Soul",
+      "series_name": "Elantris",
+      "book_order": "N/A (Standalone novella set in the same world)",
+      "synopsis": "Shai, a skilled Forger, is condemned to death but offered a chance at freedom if she can Forge a new soul for the comatose Emperor. She must delve into the nature of identity and art to succeed.",
+      "release_date": "2012-11-01",
+      "publisher": "Tachyon Publications (novella), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "coppermind_link": "https://coppermind.net/wiki/The_Emperor%27s_Soul"
+    },
+    {
+      "title": "Mistborn: The Final Empire",
+      "series_name": "Mistborn Era 1 (The Mistborn Trilogy)",
+      "book_order": 1,
+      "synopsis": "In a world of ash and mist, ruled by the tyrannical Lord Ruler, a young skaa thief named Vin discovers she is Mistborn and joins Kelsier's crew in a daring plan to overthrow the empire.",
+      "release_date": "2006-07-17",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Mistborn:_The_Final_Empire"
+    },
+    {
+      "title": "Mistborn: The Well of Ascension",
+      "series_name": "Mistborn Era 1 (The Mistborn Trilogy)",
+      "book_order": 2,
+      "synopsis": "Following the Lord Ruler's defeat, Elend Venture struggles to lead the new kingdom while Vin grapples with ancient prophecies, a mysterious Deepness, and attacking armies.",
+      "release_date": "2007-08-21",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Mistborn:_The_Well_of_Ascension"
+    },
+    {
+      "title": "Mistborn: The Hero of Ages",
+      "series_name": "Mistborn Era 1 (The Mistborn Trilogy)",
+      "book_order": 3,
+      "synopsis": "The world is ending. Vin and Elend must decipher the truth behind the Deepness, the Well of Ascension, and the nature of the entity known as Ruin to save Scadrial from utter destruction.",
+      "release_date": "2008-10-14",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Mistborn:_The_Hero_of_Ages"
+    },
+    {
+      "title": "Mistborn: Secret History",
+      "series_name": "Mistborn",
+      "book_order": "N/A (Novella, companion to Era 1)",
+      "synopsis": "A parallel story to the original Mistborn trilogy, revealing Kelsier's journey and actions in the Cognitive Realm after his death, significantly impacting Cosmere-wide events.",
+      "release_date": "2016-01-26 (ebook), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "publisher": "Dragonsteel Entertainment",
+      "coppermind_link": "https://coppermind.net/wiki/Mistborn:_Secret_History"
+    },
+    {
+      "title": "Mistborn: The Alloy of Law",
+      "series_name": "Mistborn Era 2 (Wax and Wayne)",
+      "book_order": 1,
+      "synopsis": "Centuries after the original trilogy, Scadrial is in an industrial era. Waxillium Ladrian, a lawman from the Roughs, is called back to the city of Elendel and, with his partner Wayne, investigates kidnappings and conspiracies.",
+      "release_date": "2011-11-08",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/The_Alloy_of_Law"
+    },
+    {
+      "title": "Mistborn: Shadows of Self",
+      "series_name": "Mistborn Era 2 (Wax and Wayne)",
+      "book_order": 2,
+      "synopsis": "Waxillium, Wayne, and Marasi continue to protect Elendel. Unrest brews as they face a new threat with deep connections to Scadrial's past and the kandra, forcing Wax to confront his own history.",
+      "release_date": "2015-10-06",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Shadows_of_Self"
+    },
+    {
+      "title": "Mistborn: The Bands of Mourning",
+      "series_name": "Mistborn Era 2 (Wax and Wayne)",
+      "book_order": 3,
+      "synopsis": "The pursuit of the mythical Bands of Mourning, said to be the bracers of the Lord Ruler, takes Wax, Wayne, and Marasi on an expedition outside Elendel, uncovering secrets about southern Scadrians and advanced technology.",
+      "release_date": "2016-01-26",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/The_Bands_of_Mourning"
+    },
+    {
+      "title": "Mistborn: The Lost Metal",
+      "series_name": "Mistborn Era 2 (Wax and Wayne)",
+      "book_order": 4,
+      "synopsis": "Waxillium and his allies must confront the shadowy organization known as the Set and contend with the influence of another Shard, Autonomy, as Scadrial stands on the brink of a new technological and societal era, or potential disaster.",
+      "release_date": "2022-11-15",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/The_Lost_Metal"
+    },
+    {
+      "title": "Warbreaker",
+      "series_name": "Warbreaker",
+      "book_order": 1,
+      "synopsis": "Two Idrian princesses, Vivenna and Siri, are sent to the vibrant, god-filled kingdom of Hallandren. They become entangled in political intrigue, the mysteries of BioChromatic Breath, and the plans of Vasher, a mysterious swordsman with a sentient blade.",
+      "release_date": "2009-06-09",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Warbreaker_(book)"
+    },
+    {
+      "title": "The Way of Kings",
+      "series_name": "The Stormlight Archive",
+      "book_order": 1,
+      "synopsis": "On the storm-swept world of Roshar, various characters—a tormented surgeon turned spearman, a young noblewoman scholar, and an assassin in white—begin journeys that will intertwine as ancient Knights Radiant are sought and the Voidbringers threaten return.",
+      "release_date": "2010-08-31",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/The_Way_of_Kings"
+    },
+    {
+      "title": "Words of Radiance",
+      "series_name": "The Stormlight Archive",
+      "book_order": 2,
+      "synopsis": "As the True Desolation looms, Kaladin struggles with his new powers and responsibilities, Shallan delves deeper into the secrets of the Ghostbloods and her own past, and Dalinar Kholin fights to unite the Highprinces of Alethkar.",
+      "release_date": "2014-03-04",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Words_of_Radiance"
+    },
+    {
+      "title": "Edgedancer",
+      "series_name": "The Stormlight Archive",
+      "book_order": 2.5,
+      "synopsis": "A novella focusing on Lift, a young Radiant with unique abilities, as she travels through Yeddaw, trying to understand her powers and responsibilities while evading capture by an old enemy.",
+      "release_date": "2016-11-22 (in Arcanum Unbounded)",
+      "publisher": "Dragonsteel Entertainment (in Arcanum Unbounded), Tor Books (standalone novella)",
+      "coppermind_link": "https://coppermind.net/wiki/Edgedancer_(novella)"
+    },
+    {
+      "title": "Oathbringer",
+      "series_name": "The Stormlight Archive",
+      "book_order": 3,
+      "synopsis": "Dalinar Kholin confronts his past as he seeks to unite Roshar against Odium's forces. The Knights Radiant are re-established, but internal conflicts and ancient enemies threaten to shatter the fragile alliance.",
+      "release_date": "2017-11-14",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Oathbringer"
+    },
+    {
+      "title": "Dawnshard",
+      "series_name": "The Stormlight Archive",
+      "book_order": 3.5,
+      "synopsis": "A novella following Rysn Ftori and Lopen as they embark on a dangerous expedition to the island of Akinah, seeking a legendary Dawnshard to aid in the war against Odium.",
+      "release_date": "2020-11-05 (ebook), 2021 (print)",
+      "publisher": "Dragonsteel Entertainment",
+      "coppermind_link": "https://coppermind.net/wiki/Dawnshard_(novella)"
+    },
+    {
+      "title": "Rhythm of War",
+      "series_name": "The Stormlight Archive",
+      "book_order": 4,
+      "synopsis": "The war against Odium intensifies. Coalition forces struggle against the Fused, Navani Kholin works to understand fabrials and the nature of Light, and Kaladin faces his deepest internal battles.",
+      "release_date": "2020-11-17",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Rhythm_of_War"
+    },
+    {
+      "title": "White Sand (Volume 1, 2, 3 - Prose version also exists)",
+      "series_name": "White Sand",
+      "book_order": "1, 2, 3 (Graphic Novels)",
+      "synopsis": "On the planet Taldain, Kenton is one of the last Sand Masters, who can control Invested sand. He must navigate political intrigue and betrayal to save his order and uncover the secrets of his world's magic.",
+      "release_date": "Vol 1: 2016-06-28, Vol 2: 2018-02-20, Vol 3: 2019-09-10 (Prose originally 1999, unpublished until 2015 newsletter)",
+      "publisher": "Dynamite Entertainment (Graphic Novels), Dragonsteel Entertainment (Prose excerpts/Arcanum Unbounded)",
+      "coppermind_link": "https://coppermind.net/wiki/White_Sand_(graphic_novel)"
+    },
+    {
+      "title": "Arcanum Unbounded: The Cosmere Collection",
+      "series_name": "N/A (Collection)",
+      "book_order": "N/A",
+      "synopsis": "A collection of Cosmere novellas and short stories, including 'The Emperor's Soul,' 'The Hope of Elantris,' 'The Eleventh Metal,' 'Allomancer Jak and the Pits of Eltania,' 'Mistborn: Secret History,' 'White Sand' (excerpt & prose), 'Shadows for Silence in the Forests of Hell,' 'Sixth of the Dusk,' and 'Edgedancer,' along with essays on the planetary systems.",
+      "release_date": "2016-11-22",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Arcanum_Unbounded:_The_Cosmere_Collection"
+    },
+    {
+      "title": "Shadows for Silence in the Forests of Hell",
+      "series_name": "Threnody",
+      "book_order": "N/A (Standalone novella)",
+      "synopsis": "On the dangerous planet Threnody, Silence Montane, a bounty hunter and innkeeper, navigates a deadly forest haunted by shades, protecting her family and business in a land where survival is paramount.",
+      "release_date": "2013 (in 'Dangerous Women' anthology), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "publisher": "Tor Books (in Dangerous Women), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "coppermind_link": "https://coppermind.net/wiki/Shadows_for_Silence_in_the_Forests_of_Hell"
+    },
+    {
+      "title": "Sixth of the Dusk",
+      "series_name": "First of the Sun",
+      "book_order": "N/A (Standalone novella)",
+      "synopsis": "Dusk, a trapper on the island world of First of the Sun, where magic comes from Aviar (birds granting cognitive abilities), encounters explorers from a technologically advanced offworld society, forcing him to confront the future of his people.",
+      "release_date": "2014 (in 'Shadows Beneath' anthology), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "publisher": "Dragon Moon Press (in Shadows Beneath), Dragonsteel Entertainment (in Arcanum Unbounded)",
+      "coppermind_link": "https://coppermind.net/wiki/Sixth_of_the_Dusk"
+    },
+    {
+      "title": "Tress of the Emerald Sea",
+      "series_name": "Secret Projects",
+      "book_order": 1,
+      "synopsis": "Tress lives on a rock in an emerald-green spore sea. When her beloved is captured by the Sorceress of the Midnight Sea, Tress stows away on a ship and embarks on an adventure with a colorful pirate crew to save him.",
+      "release_date": "2023-01-01 (ebook/audio Kickstarter), 2023-04-04 (general release)",
+      "publisher": "Dragonsteel Entertainment (Kickstarter), Tor Books (general release)",
+      "coppermind_link": "https://coppermind.net/wiki/Tress_of_the_Emerald_Sea"
+    },
+    {
+      "title": "Yumi and the Nightmare Painter",
+      "series_name": "Secret Projects",
+      "book_order": 3,
+      "synopsis": "Yumi, a Yoki-hijo chosen to stack sacred stones, and Painter, a nightmare painter on a world of darkness, find their lives inexplicably intertwined, forcing them to understand each other's worlds and powers to prevent disaster.",
+      "release_date": "2023-07-01 (ebook/audio Kickstarter), 2023-10-03 (general release)",
+      "publisher": "Dragonsteel Entertainment (Kickstarter), Tor Books (general release)",
+      "coppermind_link": "https://coppermind.net/wiki/Yumi_and_the_Nightmare_Painter"
+    },
+    {
+      "title": "The Sunlit Man",
+      "series_name": "Secret Projects",
+      "book_order": 4,
+      "synopsis": "Nomad, a man fleeing across the Cosmere with a dark past and strange abilities, crash-lands on a planet where the sun is deadly. He must aid a local rebellion against oppressive forces while evading his pursuers.",
+      "release_date": "2023-10-01 (ebook/audio Kickstarter), 2024-01-02 (general release)",
+      "publisher": "Dragonsteel Entertainment (Kickstarter), Tor Books (general release)",
+      "coppermind_link": "https://coppermind.net/wiki/The_Sunlit_Man"
+    },
+    {
+      "title": "Wind and Truth",
+      "series_name": "The Stormlight Archive",
+      "book_order": 5,
+      "synopsis": "The concluding volume of the first arc of The Stormlight Archive. Dalinar Kholin's contest of champions with Odium looms, and the fate of Roshar and the wider Cosmere hangs in the balance as all forces converge.",
+      "release_date": "2024-12-06",
+      "publisher": "Tor Books",
+      "coppermind_link": "https://coppermind.net/wiki/Wind_and_Truth"
+    }
+  ],
+  "planets": [
+    {
+      "name": "Roshar",
+      "governing_shard": "Honor (Splintered), Cultivation, Odium (trapped)",
+      "book_it_appears_in": "The Stormlight Archive",
+      "coppermind_link": "https://coppermind.net/wiki/Roshar"
+    },
+    {
+      "name": "Scadrial",
+      "governing_shard": "Preservation and Ruin (now Harmony)",
+      "book_it_appears_in": "Mistborn series",
+      "coppermind_link": "https://coppermind.net/wiki/Scadrial"
+    },
+    {
+      "name": "Sel",
+      "governing_shard": "Devotion and Dominion (both Splintered)",
+      "book_it_appears_in": "Elantris",
+      "coppermind_link": "https://coppermind.net/wiki/Sel"
+    },
+    {
+      "name": "Nalthis",
+      "governing_shard": "Endowment",
+      "book_it_appears_in": "Warbreaker",
+      "coppermind_link": "https://coppermind.net/wiki/Nalthis"
+    },
+    {
+      "name": "Taldain",
+      "governing_shard": "Autonomy",
+      "book_it_appears_in": "White Sand",
+      "coppermind_link": "https://coppermind.net/wiki/Taldain"
+    },
+    {
+      "name": "Threnody",
+      "governing_shard": "Ambition (Splintered, no longer present)",
+      "book_it_appears_in": "Shadows for Silence in the Forests of Hell",
+      "coppermind_link": "https://coppermind.net/wiki/Threnody"
+    },
+    {
+      "name": "First of the Sun",
+      "governing_shard": "Autonomy (via avatar Patji)",
+      "book_it_appears_in": "Sixth of the Dusk",
+      "coppermind_link": "https://coppermind.net/wiki/First_of_the_Sun"
+    },
+    {
+      "name": "Komashi",
+      "governing_shard": "Virtuosity (Splintered)",
+      "book_it_appears_in": "Yumi and the Nightmare Painter",
+      "coppermind_link": "https://coppermind.net/wiki/Komashi"
+    },
+    {
+      "name": "Ashyn",
+      "governing_shard": "Honor and Cultivation (system-wide influence)",
+      "book_it_appears_in": "Stormlight Archive (flashbacks, novellas)",
+      "coppermind_link": "https://coppermind.net/wiki/Ashyn"
+    },
+    {
+      "name": "Braize",
+      "governing_shard": "Odium (trapped)",
+      "book_it_appears_in": "The Stormlight Archive",
+      "coppermind_link": "https://coppermind.net/wiki/Braize"
+    },
+    {
+      "name": "Lumar",
+      "governing_shard": "Unknown (Aether spores present)",
+      "book_it_appears_in": "Tress of the Emerald Sea",
+      "coppermind_link": "https://coppermind.net/wiki/Lumar"
+    },
+    {
+      "name": "Canticle",
+      "governing_shard": "Unknown (Investiture present, but no known Shard)",
+      "book_it_appears_in": "The Sunlit Man",
+      "coppermind_link": "https://coppermind.net/wiki/Canticle"
+    },
+    {
+      "name": "Yolen",
+      "governing_shard": "None (original planet, pre-Shattering)",
+      "book_it_appears_in": "Dragonsteel (unpublished), mentioned in Cosmere works",
+      "coppermind_link": "https://coppermind.net/wiki/Yolen"
+    },
+    {
+      "name": "Obrodai",
+      "governing_shard": "Autonomy (avatar)",
+      "book_it_appears_in": "Mentioned in Oathbringer",
+      "coppermind_link": "https://coppermind.net/wiki/Obrodai"
+    },
+    {
+      "name": "Dhatri",
+      "governing_shard": "Unknown (home of the aethers)",
+      "book_it_appears_in": "Tress of the Emerald Sea (referenced)",
+      "coppermind_link": "https://coppermind.net/wiki/Dhatri"
+    },
+    {
+      "name": "UTol",
+      "governing_shard": "Virtuosity (Splintered, system influence)",
+      "book_it_appears_in": "Yumi and the Nightmare Painter (referenced)",
+      "coppermind_link": "https://coppermind.net/wiki/UTol"
+    },
+    {
+      "name": "Bjendal",
+      "governing_shard": "Unknown",
+      "book_it_appears_in": "None (mentioned in Cosmere lore)",
+      "coppermind_link": "https://coppermind.net/wiki/Bjendal"
+    },
+    {
+      "name": "Mythos",
+      "governing_shard": "Unknown",
+      "book_it_appears_in": "None (mentioned in Cosmere lore)",
+      "coppermind_link": "https://coppermind.net/wiki/Mythos"
+    },
+    {
+      "name": "Vax",
+      "governing_shard": "Unknown",
+      "book_it_appears_in": "Mentioned in Mistborn: Secret History",
+      "coppermind_link": "https://coppermind.net/wiki/Vax"
+    }
+  ],
+  "shards": [
+    {
+      "name": "Ambition",
+      "planet": "Threnody (primarily, before Splintering), also active in the system where Mercy and Odium clashed.",
+      "status": "Splintered by Odium, with some of its power co-opted by Autonomy.",
+      "book_appearances": [
+        "Mistborn: Secret History (mentioned)",
+        "The Stormlight Archive (mentioned in context of Odium's past actions)",
+        "Shadows for Silence in the Forests of Hell (implications of its lingering influence on Threnody)"
+      ],
+      "description": "The drive to gain more, to strive, to achieve greater things, and to be more than one currently is. This Intent can be ruthless and uncaring in its pursuit of power and growth.",
+      "coppermind_link": "https://coppermind.net/wiki/Ambition",
+      "investiture_description": "The specific manifestations of Ambition's Investiture are not well-documented due to its early Splintering. On Threnody, its lingering power contributes to the dangerous nature of the Cognitive Realm (the Evil) and the shades."
+    },
+    {
+      "name": "Autonomy",
+      "planet": "Taldain (primary known world), also has Avatars or influence on Patji (First of the Sun), Obrodai, and potentially others.",
+      "status": "Intact. Vessel is Bavadin.",
+      "book_appearances": [
+        "White Sand (Taldain)",
+        "Arcanum Unbounded: 'Sixth of the Dusk' (Patji as an Avatar's world)",
+        "The Lost Metal (mentions of Avatar on Obrodai, influence)",
+        "The Sunlit Man (mentions, influence)"
+      ],
+      "description": "The desire for independence, self-sufficiency, and freedom from external control. It can also manifest as isolationism and a desire for others to also be separate and self-governing.",
+      "coppermind_link": "https://coppermind.net/wiki/Autonomy",
+      "investiture_description": "On Taldain, Autonomy's Investiture manifests as Sand Mastery (control over Invested white sand) and the 'darkside' magic. Its Avatars on other worlds likely utilize or create unique forms of Investiture tied to Autonomy's Intent, such as the Aviar on First of the Sun."
+    },
+    {
+      "name": "Cultivation",
+      "planet": "Roshar",
+      "status": "Intact. Vessel is Koravellium Avast (a dragon). Has recently left Roshar after Odium's defeat.",
+      "book_appearances": [
+        "The Stormlight Archive (series, direct appearances and major influence)"
+      ],
+      "description": "The drive to grow, change, adapt, and foster development. This can be nurturing but also entails pruning or making hard choices for long-term growth, not always benevolent in the short term.",
+      "coppermind_link": "https://coppermind.net/wiki/Cultivation",
+      "investiture_description": "Co-source of Surgebinding on Roshar with Honor. Associated with Lifelight. The Old Magic (boons and curses via the Nightwatcher) is a direct manifestation. Spren on Roshar are often a mix of Cultivation's and Honor's Investiture."
+    },
+    {
+      "name": "Devotion",
+      "planet": "Sel",
+      "status": "Splintered by Odium. Its power, combined with Dominion's, forms the Dor.",
+      "book_appearances": [
+        "Elantris (implications, history)",
+        "Mistborn: Secret History (mentioned)"
+      ],
+      "description": "The drive to love, to be dedicated to, and to worship or be adored. It is an outward-focused Intent.",
+      "coppermind_link": "https://coppermind.net/wiki/Devotion",
+      "investiture_description": "Its power, mixed with Dominion's, forms the Dor, which is the source for Selish magics like AonDor (Elantris), Forgery (The Emperor's Soul), ChayShan, and Dakhor. These magics are heavily influenced by location and cultural forms."
+    },
+    {
+      "name": "Dominion",
+      "planet": "Sel",
+      "status": "Splintered by Odium. Its power, combined with Devotion's, forms the Dor.",
+      "book_appearances": [
+        "Elantris (implications, history)",
+        "Mistborn: Secret History (mentioned)"
+      ],
+      "description": "The drive to control, to rule, to establish order and hierarchy, and to have power over a domain.",
+      "coppermind_link": "https://coppermind.net/wiki/Dominion",
+      "investiture_description": "Its power, mixed with Devotion's, forms the Dor, which is the source for Selish magics like AonDor (Elantris), Forgery (The Emperor's Soul), ChayShan, and Dakhor. These magics are heavily influenced by location and cultural forms."
+    },
+    {
+      "name": "Endowment",
+      "planet": "Nalthis",
+      "status": "Intact. Vessel is Edgli.",
+      "book_appearances": [
+        "Warbreaker (major influence and magic system origin)"
+      ],
+      "description": "The drive to give, to bestow gifts, often without expectation of return. This is central to the concept of BioChromatic Breath.",
+      "coppermind_link": "https://coppermind.net/wiki/Endowment",
+      "investiture_description": "Manifests as BioChromatic Breath, an innate Investiture humans on Nalthis are born with and can transfer. Awakening is the magic system based on using Breaths to animate objects and grant them Commands. The Returned are also a direct result of Endowment's power."
+    },
+    {
+      "name": "Honor",
+      "planet": "Roshar",
+      "status": "Splintered by Odium. Vessel was Tanavast. His cognitive shadow persists to some degree, influencing the Stormfather.",
+      "book_appearances": [
+        "The Stormlight Archive (series, major influence, flashbacks, and through the Stormfather)"
+      ],
+      "description": "The drive to keep oaths, adhere to bonds and codes, and act with integrity and righteousness. It is about promises and the binding nature of agreements.",
+      "coppermind_link": "https://coppermind.net/wiki/Honor",
+      "investiture_description": "Co-source of Surgebinding on Roshar with Cultivation. Associated with Stormlight. The Nahel bond between humans/singers and spren, and the Oaths of the Knights Radiant are central to his Investiture. Honorblades are powerful artifacts of Honor."
+    },
+    {
+      "name": "Invention",
+      "planet": "Unknown (Implied to be mobile or not heavily Invested in a single, easily accessible world).",
+      "status": "Intact. Vessel is Chan Ko Sar.",
+      "book_appearances": [
+        "The Lost Metal (mentioned by Harmony as difficult to contact)",
+        "The Sunlit Man (mentioned as having a perpendicularity and interactions with its denizens)"
+      ],
+      "description": "The drive to create, innovate, discover, and build new things. Likely focused on technological or systemic creation.",
+      "coppermind_link": "https://coppermind.net/wiki/Invention",
+      "investiture_description": "Largely unknown. Given its Intent, its Investiture likely fuels or enables the creation of advanced or unique technologies or systems. The 'great marvels' mentioned by Harmony suggest this. The inhabitants of the planet visited in *The Sunlit Man* utilize technology powered by its Investiture to 'shoot for the stars'."
+    },
+    {
+      "name": "Mercy",
+      "planet": "Unknown (Active in the cosmere, location of primary investment not confirmed).",
+      "status": "Intact. Vessel unknown.",
+      "book_appearances": [
+        "The Lost Metal (mentioned by Harmony as having been contacted, with a troubling response)",
+        "The Sunlit Man (mentioned in the context of past Shardic conflicts)"
+      ],
+      "description": "The drive for compassion, forgiveness, and alleviating suffering. The exact nature of this Intent as a Shardic drive is still largely mysterious.",
+      "coppermind_link": "https://coppermind.net/wiki/Mercy",
+      "investiture_description": "Unknown. Its manifestations have not been depicted."
+    },
+    {
+      "name": "Odium",
+      "planet": "Braize (prison within the Rosharan system), though his influence extends significantly to Roshar. Originally mobile throughout the cosmere.",
+      "status": "Intact. Original Vessel Rayse was killed. New Vessel is Taravangian, who reinterpreted the Intent, calling it Passion. However, the underlying Shard is still Odium.",
+      "book_appearances": [
+        "The Stormlight Archive (series, primary antagonist)",
+        "Mistborn: Secret History (mentioned as having Splintered other Shards)"
+      ],
+      "description": "The drive of divine hatred, rage, and intense, often destructive, emotion. Taravangian is attempting to guide it as 'Passion' more broadly, but its core nature remains a potent, dangerous force.",
+      "coppermind_link": "https://coppermind.net/wiki/Odium",
+      "investiture_description": "Source of Voidbinding and the power of the Fused and Unmade on Roshar. Associated with Voidlight. His Investiture often corrupts or twists other forms of Investiture and beings."
+    },
+    {
+      "name": "Preservation",
+      "planet": "Scadrial",
+      "status": "Effectively Splintered/Diffused after original Vessel Leras died. Its power later merged with Ruin's to form Harmony. A small remnant of Leras's mind persisted in the kandra an ETM.",
+      "book_appearances": [
+        "Mistborn Era 1 (major influence, direct interaction)",
+        "Mistborn: Secret History (major role)"
+      ],
+      "description": "The drive to maintain things as they are, to prevent change, and to protect and sustain. It is a force of stasis and endurance.",
+      "coppermind_link": "https://coppermind.net/wiki/Preservation",
+      "investiture_description": "The source of Allomancy on Scadrial. Its power manifested as the mists (before Harmony) and the Well of Ascension. Lerasium is its God Metal, capable of creating Mistborn."
+    },
+    {
+      "name": "Ruin",
+      "planet": "Scadrial",
+      "status": "Effectively Splintered/Diffused after original Vessel Ati died. Its power later merged with Preservation's to form Harmony.",
+      "book_appearances": [
+        "Mistborn Era 1 (primary antagonist)",
+        "Mistborn: Secret History (major role)"
+      ],
+      "description": "The drive for decay, destruction, entropy, and the inevitable end of all things. It seeks to break down and return everything to a base state.",
+      "coppermind_link": "https://coppermind.net/wiki/Ruin",
+      "investiture_description": "The source of Hemalurgy (though Hemalurgy can be used with any Investiture, Ruin particularly understood and promoted it) and influenced Feruchemy's destructive aspects. Atium was its God Metal, allowing sight into the future. Its power was often subtle, influencing minds and events towards destructive ends."
+    },
+    {
+      "name": "Valor",
+      "planet": "Unknown (Location of primary investment not confirmed, though some theories point to a possible connection with the Rosharan system or its periphery).",
+      "status": "Intact. Original Vessel was Medelantorius (a dragon). Current Vessel unknown if different.",
+      "book_appearances": [
+        "The Lost Metal (mentioned by Harmony as having been contacted and potentially reasonable)",
+        "The Sunlit Man (mentioned, interactions with Hoid in the past)"
+      ],
+      "description": "The drive for bravery, courage, and standing strong against adversity. The exact nature of this Intent as a Shardic drive is still largely mysterious.",
+      "coppermind_link": "https://coppermind.net/wiki/Valor",
+      "investiture_description": "Unknown. Its manifestations have not been depicted."
+    },
+    {
+      "name": "Virtuosity",
+      "planet": "Komashi (UTol system).",
+      "status": "Splintered. Vessel unknown. Its Investiture forms the Nightmare Painting creatures.",
+      "book_appearances": [
+        "Yumi and the Nightmare Painter (major influence and source of the conflict/magic)"
+      ],
+      "description": "The drive for artistic skill, excellence in craft, and perhaps beauty and aesthetic perfection. Its Splintering on Komashi led to Investiture that reacts to creativity and manifests as both helpful and harmful spirits (hijo and nightmares).",
+      "coppermind_link": "https://coppermind.net/wiki/Virtuosity",
+      "investiture_description": "On Komashi, its Investiture is tied to the 'hijo' (spirits that aid in crafts) and the 'nightmares' (Invested creatures that attack, seemingly born from or influenced by artistic endeavor and perception). The magic involves interacting with these Invested spirits, often through artistic or skilled acts."
+    },
+    {
+      "name": "Whimsy",
+      "planet": "Unknown (Location of primary investment not confirmed).",
+      "status": "Intact. Vessel unknown.",
+      "book_appearances": [
+        "The Lost Metal (mentioned by Harmony as not being particularly useful regarding Odium)"
+      ],
+      "description": "The drive for fancifulness, caprice, unpredictability, and perhaps playfulness or erratic behavior. The exact nature of this Intent as a Shardic drive is still largely mysterious.",
+      "coppermind_link": "https://coppermind.net/wiki/Whimsy",
+      "investiture_description": "Unknown. Its manifestations have not been depicted."
+    },
+    {
+      "name": "Harmony (Successor Shard)",
+      "planet": "Scadrial",
+      "status": "Intact (though struggling with the dual Intents). Vessel is Sazed. Formed from the merging of Ruin and Preservation.",
+      "book_appearances": [
+        "Mistborn Era 2 (major influence, direct interaction)",
+        "The Lost Metal (major role)"
+      ],
+      "description": "The combined Intent of Ruin and Preservation, leading to a desire for balance between progress/change and stability/stasis. This creates an internal conflict for the Vessel, as the two Intents are often opposed.",
+      "coppermind_link": "https://coppermind.net/wiki/Harmony",
+      "investiture_description": "Oversees and is the source of the combined Scadrian magics (Allomancy, Feruchemy, Hemalurgy). Can create both Preservation-aspected (lerasium) and Ruin-aspected (atium, now harmonium/ettmetal which has its own unique properties) God Metals. His Investiture is a blend of the two previous Shards."
+    }
+  ],
+  "investiture": [
+    {
+      "name": "Surgebinding",
+      "shard_connection": "Honor and Cultivation",
+      "description": "A system of magic that grants the ability to manipulate fundamental forces known as Surges, often through bonds with spren.",
+      "planet": "Roshar",
+      "coppermind_link": "https://coppermind.net/wiki/Surgebinding"
+    },
+    {
+      "name": "Voidbinding",
+      "shard_connection": "Odium",
+      "description": "A mysterious and dangerous magic system that manipulates Surges via the power of Odium, often associated with the Unmade and Voidlight.",
+      "planet": "Roshar",
+      "coppermind_link": "https://coppermind.net/wiki/Voidbinding"
+    },
+    {
+      "name": "Old Magic",
+      "shard_connection": "Cultivation",
+      "description": "A unique magic system involving boons and curses granted by the Nightwatcher, a powerful spren.",
+      "planet": "Roshar",
+      "coppermind_link": "https://coppermind.net/wiki/Old_Magic"
+    },
+    {
+      "name": "Allomancy",
+      "shard_connection": "Preservation",
+      "description": "A metal-based magic system that allows users to ingest and 'burn' metals to grant various physical and mental abilities.",
+      "planet": "Scadrial",
+      "coppermind_link": "https://coppermind.net/wiki/Allomancy"
+    },
+    {
+      "name": "Feruchemy",
+      "shard_connection": "Preservation and Ruin (Harmony)",
+      "description": "A metal-based magic system that allows users to store attributes in metals for later use.",
+      "planet": "Scadrial",
+      "coppermind_link": "https://coppermind.net/wiki/Feruchemy"
+    },
+    {
+      "name": "Hemalurgy",
+      "shard_connection": "Ruin",
+      "description": "A destructive magic system that steals powers from others by driving metal spikes through their bodies.",
+      "planet": "Scadrial",
+      "coppermind_link": "https://coppermind.net/wiki/Hemalurgy"
+    },
+    {
+      "name": "AonDor",
+      "shard_connection": "Devotion",
+      "description": "A form of magic that uses drawn symbols called Aons to produce various effects, powered by the Dor.",
+      "planet": "Sel",
+      "coppermind_link": "https://coppermind.net/wiki/AonDor"
+    },
+    {
+      "name": "ChayShan",
+      "shard_connection": "Dominion",
+      "description": "A magic system that uses specific movements and martial arts to channel the Dor for various effects.",
+      "planet": "Sel",
+      "coppermind_link": "https://coppermind.net/wiki/ChayShan"
+    },
+    {
+      "name": "Forgery",
+      "shard_connection": "Devotion and Dominion",
+      "description": "A magic system that rewrites the history of objects using soulstamps, temporarily changing their nature.",
+      "planet": "Sel",
+      "coppermind_link": "https://coppermind.net/wiki/Forgery"
+    },
+    {
+      "name": "Bloodsealing",
+      "shard_connection": "Devotion and Dominion",
+      "description": "A magic system that uses blood and stamps to create seals for tracking or animation.",
+      "planet": "Sel",
+      "coppermind_link": "https://coppermind.net/wiki/Bloodsealing"
+    },
+    {
+      "name": "Awakening",
+      "shard_connection": "Endowment",
+      "description": "A magic system that uses BioChromatic Breath to animate objects or grant various powers.",
+      "planet": "Nalthis",
+      "coppermind_link": "https://coppermind.net/wiki/Awakening"
+    },
+    {
+      "name": "Sand Mastery",
+      "shard_connection": "Autonomy",
+      "description": "A magic system that allows users to manipulate white sand, typically by dehydrating themselves.",
+      "planet": "Taldain",
+      "coppermind_link": "https://coppermind.net/wiki/Sand_Mastery"
+    },
+    {
+      "name": "Aviar Abilities",
+      "shard_connection": "Autonomy (via avatar Patji)",
+      "description": "A system where birds called Aviar grant magical abilities to their bonded humans, such as hiding from detection.",
+      "planet": "First of the Sun",
+      "coppermind_link": "https://coppermind.net/wiki/Aviar"
+    },
+    {
+      "name": "Shade Survival",
+      "shard_connection": "Ambition (Splintered)",
+      "description": "A system involving rituals and rules to survive the predatory shades on Threnody.",
+      "planet": "Threnody",
+      "coppermind_link": "https://coppermind.net/wiki/Threnody#Magic"
+    },
+    {
+      "name": "Aetherbinding",
+      "shard_connection": "Unknown (Aethers)",
+      "description": "A system involving symbiotic bonds with aethers, granting control over various substances.",
+      "planet": "Lumar (and Dhatri)",
+      "coppermind_link": "https://coppermind.net/wiki/Aether"
+    },
+    {
+      "name": "Hion Lines",
+      "shard_connection": "Virtuosity (Splintered)",
+      "description": "A magic system using colored energy lines for transportation and other effects.",
+      "planet": "Komashi",
+      "coppermind_link": "https://coppermind.net/wiki/Hion"
+    },
+    {
+      "name": "Sunheart",
+      "shard_connection": "Unknown (Investiture present, no known Shard)",
+      "description": "A system where individuals absorb and use energy from the sun, granting superhuman abilities.",
+      "planet": "Canticle",
+      "coppermind_link": "https://coppermind.net/wiki/Sunheart"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Kaladin Stormblessed",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Windrunner", "Bridge Four Leader"],
+      "investiture": ["Surgebinding (Windrunning)"],
+      "coppermind": "https://coppermind.net/wiki/Kaladin_Stormblessed"
+    },
+    {
+      "name": "Shallan Davar",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Veil", "Radiant", "Lightweaver"],
+      "investiture": ["Surgebinding (Lightweaving)"],
+      "coppermind": "https://coppermind.net/wiki/Shallan_Davar"
+    },
+    {
+      "name": "Dalinar Kholin",
+      "books": ["The Stormlight Archive"],
+      "alias": ["The Blackthorn", "Unifier of Alethkar"],
+      "investiture": ["Surgebinding (Bondsmith)"],
+      "coppermind": "https://coppermind.net/wiki/Dalinar_Kholin"
+    },
+    {
+      "name": "Szeth-son-son-Vallano",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Truthless of Shinovar", "Assassin in White"],
+      "investiture": ["Surgebinding (Skybreaking)"],
+      "coppermind": "https://coppermind.net/wiki/Szeth-son-son-Vallano"
+    },
+    {
+      "name": "Adolin Kholin",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Adolin Kholin"],
+      "investiture": ["Shardblade (Honorblade)"],
+      "coppermind": "https://coppermind.net/wiki/Adolin_Kholin"
+    },
+    {
+      "name": "Renarin Kholin",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Renarin Kholin"],
+      "investiture": ["Surgebinding (Truthwatching)"],
+      "coppermind": "https://coppermind.net/wiki/Renarin_Kholin"
+    },
+    {
+      "name": "Navani Kholin",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Navani Kholin"],
+      "investiture": ["Fabrial Engineering"],
+      "coppermind": "https://coppermind.net/wiki/Navani_Kholin"
+    },
+    {
+      "name": "Eshonai",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Eshonai"],
+      "investiture": ["Surgebinding (Dustbringer)"],
+      "coppermind": "https://coppermind.net/wiki/Eshonai"
+    },
+    {
+      "name": "Venli",
+      "books": ["The Stormlight Archive"],
+      "alias": ["Venli"],
+      "investiture": ["Surgebinding (Willshaper)"],
+      "coppermind": "https://coppermind.net/wiki/Venli"
+    },
+    {
+      "name": "Vasher",
+      "books": ["Warbreaker", "The Stormlight Archive"],
+      "alias": ["Zahel", "Highmarshal Azure"],
+      "investiture": ["Awakening", "Shardblade (Nightblood)"],
+      "coppermind": "https://coppermind.net/wiki/Vasher"
+    },
+    {
+      "name": "Vin",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Mistborn", "The Survivor of Hathsin"],
+      "investiture": ["Allomancy", "Feruchemy (via hemalurgic spike)"],
+      "coppermind": "https://coppermind.net/wiki/Vin"
+    },
+    {
+      "name": "Kelsier",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: Secret History"],
+      "alias": ["The Survivor", "Mistborn"],
+      "investiture": ["Allomancy"],
+      "coppermind": "https://coppermind.net/wiki/Kelsier"
+    },
+    {
+      "name": "Elend Venture",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Lord Venture", "Nobleman of Luthadel"],
+      "investiture": ["Allomancy (via hemalurgic spike)"],
+      "coppermind": "https://coppermind.net/wiki/Elend_Venture"
+    },
+    {
+      "name": "Sazed",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Terris Keeper", "Terris Steward"],
+      "investiture": ["Feruchemy", "Allomancy (via hemalurgic spike)"],
+      "coppermind": "https://coppermind.net/wiki/Sazed"
+    },
+    {
+      "name": "Marsh",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Inquisitor", "Steel Inquisitor"],
+      "investiture": ["Allomancy (via hemalurgic spike)"],
+      "coppermind": "https://coppermind.net/wiki/Marsh"
+    },
+    {
+      "name": "Spook",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages", "Mistborn: Secret History"],
+      "alias": ["Lestibournes"],
+      "investiture": ["Tin Allomancy"],
+      "coppermind": "https://coppermind.net/wiki/Spook"
+    },
+    {
+      "name": "Breeze",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Zane", "Nobleman of Luthadel"],
+      "investiture": ["Zinc Allomancy"],
+      "coppermind": "https://coppermind.net/wiki/Breeze"
+    },
+    {
+      "name": "Ham",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Hammond", "Nobleman of Luthadel"],
+      "investiture": ["Brass Allomancy"],
+      "coppermind": "https://coppermind.net/wiki/Ham"
+    },
+    {
+      "name": "Clubs",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Cladent", "Nobleman of Luthadel"],
+      "investiture": ["Copper Allomancy"],
+      "coppermind": "https://coppermind.net/wiki/Clubs"
+    },
+    {
+      "name": "Dockson",
+      "books": ["Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero of Ages"],
+      "alias": ["Dox", "Nobleman of Luthadel"],
+      "investiture": ["None"],
+      "coppermind": "https://coppermind.net/wiki/Dockson"
+    },
+    {
+      "name": "Raoden",
+      "books": ["Elantris"],
+      "alias": ["Prince of Arelon"],
+      "investiture": ["AonDor"],
+      "coppermind": "https://coppermind.net/wiki/Raoden"
+    },
+    {
+      "name": "Sarene",
+      "books": ["Elantris"],
+      "alias": ["Princess of Teod"],
+      "investiture": ["None"],
+      "coppermind": "https://coppermind.net/wiki/Sarene"
+    },
+    {
+      "name": "Hrathen",
+      "books": ["Elantris"],
+      "alias": ["High Priest of Fjorden"],
+      "investiture": ["Dakhor"],
+      "coppermind": "https://coppermind.net/wiki/Hrathen"
+    },
+    {
+      "name": "Dilaf",
+      "books": ["Elantris"],
+      "alias": ["Dakhor Monk"],
+      "investiture": ["Dakhor"],
+      "coppermind": "https://coppermind.net/wiki/Dilaf"
+    },
+    {
+      "name": "Shuden",
+      "books": ["Elantris"],
+      "alias": ["JinDo Monk"],
+      "investiture": ["ChayShan"],
+      "coppermind": "https://coppermind.net/wiki/Shuden"
+    },
+    {
+      "name": "Wan ShaiLu",
+      "books": ["The Emperor's Soul"],
+      "alias": ["Forged Artist"],
+      "investiture": ["Forgery"],
+      "coppermind": "https://coppermind.net/wiki/Wan_ShaiLu"
+    },
+    {
+      "name": "Bloodsealer",
+      "books": ["The Emperor's Soul"],
+      "alias": ["Dzhamar Sealer"],
+      "investiture": ["Bloodsealing"],
+      "coppermind": "https://coppermind.net/wiki/Bloodsealer"
+    },
+    {
+      "name": "Lightsong",
+      "book": "Warbreaker",
+      "alias": "God of Bravery, Returned",
+      "investiture_ability": "Returned with Divine Breath; limited use of BioChromatic Breath",
+      "coppermind_link": "https://coppermind.net/wiki/Lightsong"
+    },
+    {
+      "name": "Vasher",
+      "book": "Warbreaker",
+      "alias": "Kalad the Usurper, Peacegiver the Blessed",
+      "investiture_ability": "Awakener of the Fifth Heightening; skilled with BioChromatic Breath and Nightblood",
+      "coppermind_link": "https://coppermind.net/wiki/Vasher"
+    },
+    {
+      "name": "Vivenna",
+      "book": "Warbreaker",
+      "alias": "Denth's assistant (disguised), later High Awakener",
+      "investiture_ability": "Skilled Awakener; holds many Breaths",
+      "coppermind_link": "https://coppermind.net/wiki/Vivenna"
+    },
+    {
+      "name": "Siri",
+      "book": "Warbreaker",
+      "alias": "God King's wife",
+      "investiture_ability": "None inherently; interacts with Investiture due to proximity to God King",
+      "coppermind_link": "https://coppermind.net/wiki/Siri"
+    },
+    {
+      "name": "Susebron",
+      "book": "Warbreaker",
+      "alias": "God King",
+      "investiture_ability": "Returned; possesses massive quantities of Breath, capable of advanced Awakening",
+      "coppermind_link": "https://coppermind.net/wiki/Susebron"
+    },
+    {
+      "name": "Nightblood",
+      "book": "Warbreaker",
+      "alias": "Sentient Sword",
+      "investiture_ability": "Consumes Investiture and destroys evil; sentient object Awakened with a massive amount of Breath",
+      "coppermind_link": "https://coppermind.net/wiki/Nightblood"
+    },
+    {
+      "name": "Denth",
+      "book": "Warbreaker",
+      "alias": "Varot’Kahn, Kalad's Phantoms (commander)",
+      "investiture_ability": "Returned; skilled with BioChromatic Breath and manipulation",
+      "coppermind_link": "https://coppermind.net/wiki/Denth"
+    },
+    {
+      "name": "Tonks (Tonk Fah)",
+      "book": "Warbreaker",
+      "alias": "Tonk Fah",
+      "investiture_ability": "None known; accomplice to Denth",
+      "coppermind_link": "https://coppermind.net/wiki/Tonk_Fah"
+    },
+    {
+      "name": "Blushweaver",
+      "book": "Warbreaker",
+      "alias": "Goddess of Honesty, Returned",
+      "investiture_ability": "Returned with Divine Breath",
+      "coppermind_link": "https://coppermind.net/wiki/Blushweaver"
+    },
+    {
+      "name": "Llarimar",
+      "book": "Warbreaker",
+      "alias": "Scoot",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Llarimar"
+    },
+    {
+      "name": "Kenton",
+      "book": "White Sand",
+      "alias": "Lord Mastrell",
+      "investiture_ability": "Sand Mastery – can manipulate sand using Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Kenton"
+    },
+    {
+      "name": "Khrissalla",
+      "book": "White Sand",
+      "alias": "Khriss",
+      "investiture_ability": "None directly; Cosmere scholar with deep knowledge of Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Khrissalla"
+    },
+    {
+      "name": "Aarik",
+      "book": "White Sand",
+      "alias": "Duke's son",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Aarik"
+    },
+    {
+      "name": "Drile",
+      "book": "White Sand",
+      "alias": "Sand Master rival",
+      "investiture_ability": "Sand Mastery",
+      "coppermind_link": "https://coppermind.net/wiki/Drile"
+    },
+    {
+      "name": "Baon",
+      "book": "White Sand",
+      "alias": "Khriss's bodyguard",
+      "investiture_ability": "None known in White Sand; later appears in cosmere-aware context",
+      "coppermind_link": "https://coppermind.net/wiki/Baon"
+    },
+    {
+      "name": "Elorin",
+      "book": "White Sand",
+      "alias": "Mastrell council member",
+      "investiture_ability": "Sand Mastery",
+      "coppermind_link": "https://coppermind.net/wiki/Elorin"
+    },
+    {
+      "name": "Raagent",
+      "book": "White Sand",
+      "alias": "Lord Admiral of the Diem",
+      "investiture_ability": "Sand Mastery (retired)",
+      "coppermind_link": "https://coppermind.net/wiki/Raagent"
+    },
+    {
+      "name": "Dirin",
+      "book": "White Sand",
+      "alias": "Kenton’s friend",
+      "investiture_ability": "Sand Mastery",
+      "coppermind_link": "https://coppermind.net/wiki/Dirin"
+    },
+    {
+      "name": "Heelis",
+      "book": "White Sand",
+      "alias": "High Lady of the Sand Lord's priesthood",
+      "investiture_ability": "None (political/religious power)",
+      "coppermind_link": "https://coppermind.net/wiki/Heelis"
+    },
+    {
+      "name": "Nilto",
+      "book": "White Sand",
+      "alias": "Beggar philosopher",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Nilto"
+    },
+    {
+      "name": "Silence Montane",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "White Fox",
+      "investiture_ability": "None explicitly; highly knowledgeable in Threnodite cognitive/spiritual phenomena",
+      "coppermind_link": "https://coppermind.net/wiki/Silence_Montane"
+    },
+    {
+      "name": "William Ann Montane",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "None",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/William_Ann_Montane"
+    },
+    {
+      "name": "Sebrin Montane",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "Silence's grandfather",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Sebrin_Montane"
+    },
+    {
+      "name": "Theopolis",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "Patron of Silence’s bounty hunting",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Theopolis"
+    },
+    {
+      "name": "Chesterton Divide",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "Leader of the gang Silence hunts",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Chesterton_Divide"
+    },
+    {
+      "name": "Davien",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "Shade (post-death)",
+      "investiture_ability": "Posthumous manifestation as a Shade (spiritual Investiture-related phenomena)",
+      "coppermind_link": "https://coppermind.net/wiki/Davien"
+    },
+    {
+      "name": "Shade",
+      "book": "Shadows for Silence in the Forests of Hell",
+      "alias": "Ghosts of Threnody",
+      "investiture_ability": "Corrupted Cognitive Shadows—dangerous spiritual remnants",
+      "coppermind_link": "https://coppermind.net/wiki/Shade"
+    },
+    {
+      "name": "Sixth of the Dusk",
+      "book": "Sixth of the Dusk",
+      "alias": "Dusk",
+      "investiture_ability": "Bond with an Aviar that grants danger sense (Firrelight); limited cognitive/spiritual awareness",
+      "coppermind_link": "https://coppermind.net/wiki/Sixth_of_the_Dusk"
+    },
+    {
+      "name": "Vathi",
+      "book": "Sixth of the Dusk",
+      "alias": "None",
+      "investiture_ability": "None directly; technologically advanced outsider",
+      "coppermind_link": "https://coppermind.net/wiki/Vathi"
+    },
+    {
+      "name": "Kokerlii",
+      "book": "Sixth of the Dusk",
+      "alias": "Sixth's Aviar",
+      "investiture_ability": "Grants camouflage by hiding Sixth’s location cognitively",
+      "coppermind_link": "https://coppermind.net/wiki/Kokerlii"
+    },
+    {
+      "name": "Firrelight",
+      "book": "Sixth of the Dusk",
+      "alias": "Second Aviar bonded to Sixth",
+      "investiture_ability": "Grants premonitions or danger sense (visions of possible deaths)",
+      "coppermind_link": "https://coppermind.net/wiki/Firrelight"
+    },
+    {
+      "name": "Sak",
+      "book": "Sixth of the Dusk",
+      "alias": "Aviar previously bonded to another trapper",
+      "investiture_ability": "Implied to grant some cognitive or perceptive abilities (less documented)",
+      "coppermind_link": "https://coppermind.net/wiki/Sak"
+    },
+    {
+      "name": "Eetu",
+      "book": "Sixth of the Dusk",
+      "alias": "Sixth's mentor",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Eetu"
+    },
+    {
+      "name": "The Ones Above",
+      "book": "Sixth of the Dusk",
+      "alias": "Spacefaring civilization",
+      "investiture_ability": "Unknown; likely possess advanced technology and/or Investiture knowledge",
+      "coppermind_link": "https://coppermind.net/wiki/Ones_Above"
+    },
+    {
+      "name": "Yumi",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Yokina",
+      "investiture_ability": "Yoki-hijo; can summon and bind spirits to create physical structures",
+      "coppermind_link": "https://coppermind.net/wiki/Yumi"
+    },
+    {
+      "name": "Nikaro",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Painter",
+      "investiture_ability": "Nightmare painter; can alter Nightmares through artistic perception",
+      "coppermind_link": "https://coppermind.net/wiki/Nikaro"
+    },
+    {
+      "name": "Sukishi",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Foreman of the Nightmare Division",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Sukishi"
+    },
+    {
+      "name": "Samjae",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "None",
+      "investiture_ability": "Yoki-hijo; posthumously exists as a Cognitive Shadow",
+      "coppermind_link": "https://coppermind.net/wiki/Samjae"
+    },
+    {
+      "name": "Akane",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Painter's colleague",
+      "investiture_ability": "Trained nightmare painter",
+      "coppermind_link": "https://coppermind.net/wiki/Akane"
+    },
+    {
+      "name": "Tojin",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Painter's colleague",
+      "investiture_ability": "Trained nightmare painter",
+      "coppermind_link": "https://coppermind.net/wiki/Tojin"
+    },
+    {
+      "name": "Hoid",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Narrator",
+      "investiture_ability": "Worldhopper with various abilities; temporarily incapacitated on Komashi",
+      "coppermind_link": "https://coppermind.net/wiki/Hoid"
+    },
+    {
+      "name": "Design",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Hoid's spren",
+      "investiture_ability": "Inkspren; bonded to Hoid",
+      "coppermind_link": "https://coppermind.net/wiki/Design"
+    },
+    {
+      "name": "Nightmares",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": "Cognitive Shadows",
+      "investiture_ability": "Manifestations of corrupted souls; can harm humans physically and psychically",
+      "coppermind_link": "https://coppermind.net/wiki/Nightmare"
+    },
+    {
+      "name": "Ashynite Citizen (Unnamed Protagonist)",
+      "book": "The Silence Divine",
+      "alias": "Healer",
+      "investiture_ability": "Disease-based Investiture: gains powers while infected (e.g., flight, healing)",
+      "coppermind_link": "https://coppermind.net/wiki/The_Silence_Divine"
+    },
+    {
+      "name": "Ashynite Government Agent (Unnamed)",
+      "book": "The Silence Divine",
+      "alias": "Peacekeeper",
+      "investiture_ability": "Unclear, possibly related to controlling or suppressing magical disease powers",
+      "coppermind_link": "https://coppermind.net/wiki/The_Silence_Divine"
+    },
+    {
+      "name": "Ashyn Refugees",
+      "book": "The Stormlight Archive (Lore)",
+      "alias": "Ancient Humans of Roshar",
+      "investiture_ability": "Previously used disease-based powers before fleeing to Roshar",
+      "coppermind_link": "https://coppermind.net/wiki/Ashyn"
+    },
+    {
+      "name": "Odium",
+      "book": "The Stormlight Archive",
+      "alias": "Rayse (original vessel)",
+      "investiture_ability": "Shard of Hatred; influenced destruction of Ashyn",
+      "coppermind_link": "https://coppermind.net/wiki/Odium"
+    },
+    {
+      "name": "Ashyn Healers",
+      "book": "The Silence Divine",
+      "alias": "Medical practitioners of Ashyn",
+      "investiture_ability": "Use magical diseases to heal or manipulate physiology",
+      "coppermind_link": "https://coppermind.net/wiki/The_Silence_Divine"
+    },
+    {
+      "name": "Odium",
+      "book": "The Stormlight Archive",
+      "alias": "Rayse (original vessel), Passion (deceptively)",
+      "investiture_ability": "Shard of Hatred; commands vast destructive and manipulative powers",
+      "coppermind_link": "https://coppermind.net/wiki/Odium"
+    },
+    {
+      "name": "Ba-Ado-Mishram",
+      "book": "The Stormlight Archive",
+      "alias": "None known",
+      "investiture_ability": "Unmade; can provide Voidlight and forms of power to singers",
+      "coppermind_link": "https://coppermind.net/wiki/Ba-Ado-Mishram"
+    },
+    {
+      "name": "Mraize",
+      "book": "The Stormlight Archive",
+      "alias": "Ghostblood operative",
+      "investiture_ability": "Unknown, possibly none; associated with Braize through study of cosmere and spren",
+      "coppermind_link": "https://coppermind.net/wiki/Mraize"
+    },
+    {
+      "name": "Nergaoul",
+      "book": "The Stormlight Archive",
+      "alias": "The Thrill",
+      "investiture_ability": "Unmade; incites bloodlust and violence",
+      "coppermind_link": "https://coppermind.net/wiki/Nergaoul"
+    },
+    {
+      "name": "Moelach",
+      "book": "The Stormlight Archive",
+      "alias": "None",
+      "investiture_ability": "Unmade; grants Death Rattles (visions of the future near death)",
+      "coppermind_link": "https://coppermind.net/wiki/Moelach"
+    },
+    {
+      "name": "Yelig-nar",
+      "book": "The Stormlight Archive",
+      "alias": "Blightwind",
+      "investiture_ability": "Unmade; grants use of all Surges to those who consume his gemstone",
+      "coppermind_link": "https://coppermind.net/wiki/Yelig-nar"
+    },
+    {
+      "name": "The Fused",
+      "book": "The Stormlight Archive",
+      "alias": "Ancient Singer spirits",
+      "investiture_ability": "Voidbinding; each type controls a specific Surge granted by Odium",
+      "coppermind_link": "https://coppermind.net/wiki/Fused"
+    },
+    {
+      "name": "The Heralds",
+      "book": "The Stormlight Archive",
+      "alias": "Ancient protectors of humanity",
+      "investiture_ability": "Each bonded to an Honorblade; immortality through Braize-return cycle",
+      "coppermind_link": "https://coppermind.net/wiki/Herald"
+    },
+    {
+      "name": "Ishar",
+      "book": "The Stormlight Archive",
+      "alias": "Tezim, Herald of Luck, Binder of Gods",
+      "investiture_ability": "Surge of Bondsmithing (via Honorblade), cognitive/spiritual manipulation",
+      "coppermind_link": "https://coppermind.net/wiki/Ishar"
+    },
+    {
+      "name": "Jezrien",
+      "book": "The Stormlight Archive",
+      "alias": "King of Heralds",
+      "investiture_ability": "Surge of Windrunners (via Honorblade); formerly immortal via Braize prison cycle",
+      "coppermind_link": "https://coppermind.net/wiki/Jezrien"
+    },
+    {
+      "name": "Tress",
+      "book": "Tress of the Emerald Sea",
+      "alias": "Glorf",
+      "investiture_ability": "None directly; skilled in manipulating aether spores for various effects",
+      "coppermind_link": "https://coppermind.net/wiki/Tress"
+    },
+    {
+      "name": "Charlie",
+      "book": "Tress of the Emerald Sea",
+      "alias": "Huck",
+      "investiture_ability": "Cursed by the Sorceress into the form of a talking rat",
+      "coppermind_link": "https://coppermind.net/wiki/Charlie"
+    },
+    {
+      "name": "Captain Crow",
+      "book": "Tress of the Emerald Sea",
+      "alias": "Crow",
+      "investiture_ability": "Spore eater; symbiotic relationship with Verdant spores granting regenerative abilities",
+      "coppermind_link": "https://coppermind.net/wiki/Crow"
+    },
+    {
+      "name": "Riina",
+      "book": "Tress of the Emerald Sea",
+      "alias": "The Sorceress",
+      "investiture_ability": "Powerful magic user; capable of casting transformative curses",
+      "coppermind_link": "https://coppermind.net/wiki/Riina"
+    },
+    {
+      "name": "Ann",
+      "book": "Tress of the Emerald Sea",
+      "alias": "None",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Ann"
+    },
+    {
+      "name": "Salay",
+      "book": "Tress of the Emerald Sea",
+      "alias": "None",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Salay"
+    },
+    {
+      "name": "Fort",
+      "book": "Tress of the Emerald Sea",
+      "alias": "None",
+      "investiture_ability": "None; communicates using a Nalthian board for translation",
+      "coppermind_link": "https://coppermind.net/wiki/Fort"
+    },
+    {
+      "name": "Ulaam",
+      "book": "Tress of the Emerald Sea",
+      "alias": "None",
+      "investiture_ability": "Kandra; can alter physical form dramatically",
+      "coppermind_link": "https://coppermind.net/wiki/Ulaam"
+    },
+    {
+      "name": "Hoid",
+      "book": "Tress of the Emerald Sea",
+      "alias": "Narrator",
+      "investiture_ability": "Worldhopper with various abilities; temporarily incapacitated on Lumar",
+      "coppermind_link": "https://coppermind.net/wiki/Hoid"
+    },
+    {
+      "name": "Xisis",
+      "book": "Tress of the Emerald Sea",
+      "alias": "None",
+      "investiture_ability": "Dragon; possesses vast knowledge and magical abilities",
+      "coppermind_link": "https://coppermind.net/wiki/Xisis"
+    },
+    {
+      "name": "Sigzil",
+      "book": "The Sunlit Man",
+      "alias": "Nomad, Zellion",
+      "investiture_ability": "Former Windrunner; uses Investiture to power devices and share energy",
+      "coppermind_link": "https://coppermind.net/wiki/Sigzil"
+    },
+    {
+      "name": "Auxiliary",
+      "book": "The Sunlit Man",
+      "alias": "Aux",
+      "investiture_ability": "Spren companion; assists Sigzil in accessing Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Auxiliary"
+    },
+    {
+      "name": "Rebeke Salvage",
+      "book": "The Sunlit Man",
+      "alias": "Rebeke",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Rebeke_Salvage"
+    },
+    {
+      "name": "Elegy",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Charred; partially regains humanity",
+      "coppermind_link": "https://coppermind.net/wiki/Elegy"
+    },
+    {
+      "name": "Cinder King",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Controls Charred via cinderhearts",
+      "coppermind_link": "https://coppermind.net/wiki/Cinder_King"
+    },
+    {
+      "name": "Compassion",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Leader of Beacon; no known Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Compassion"
+    },
+    {
+      "name": "Confidence",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Beaconite; no known Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Confidence"
+    },
+    {
+      "name": "Contemplation",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Beaconite; no known Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Contemplation"
+    },
+    {
+      "name": "Zeal",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "Beaconite; no known Investiture",
+      "coppermind_link": "https://coppermind.net/wiki/Zeal"
+    },
+    {
+      "name": "Deborah-James",
+      "book": "The Sunlit Man",
+      "alias": "None",
+      "investiture_ability": "None",
+      "coppermind_link": "https://coppermind.net/wiki/Deborah-James"
+    },
+    {
+      "name": "Hoid",
+      "book": "Various Cosmere works",
+      "alias": "Wit, Cephandrius, Topaz, Dust, The Traveler",
+      "investiture_ability": "Lightweaving, Worldhopping, various others; holds a Dawnshard",
+      "coppermind_link": "https://coppermind.net/wiki/Hoid"
+    },
+    {
+      "name": "Frost",
+      "book": "The Traveler (unpublished), Letters in The Stormlight Archive",
+      "alias": "None",
+      "investiture_ability": "Dragon; possesses immortality and vast knowledge",
+      "coppermind_link": "https://coppermind.net/wiki/Frost"
+    },
+    {
+      "name": "Tanavast",
+      "book": "The Stormlight Archive",
+      "alias": "Honor",
+      "investiture_ability": "Original Vessel of the Shard Honor",
+      "coppermind_link": "https://coppermind.net/wiki/Tanavast"
+    },
+    {
+      "name": "Uli Da",
+      "book": "Referenced in The Stormlight Archive",
+      "alias": "None",
+      "investiture_ability": "Original Vessel of the Shard Ambition",
+      "coppermind_link": "https://coppermind.net/wiki/Uli_Da"
+    },
+    {
+      "name": "Sho Del",
+      "book": "Unpublished works (e.g., Dragonsteel Prime)",
+      "alias": "None",
+      "investiture_ability": "Unknown; one of the three native races of Yolen",
+      "coppermind_link": "https://coppermind.net/wiki/Sho_Del"
+    },
+    {
+      "name": "Dragons of Yolen",
+      "book": "Unpublished works",
+      "alias": "None",
+      "investiture_ability": "Dragons; possess innate magical abilities and immortality",
+      "coppermind_link": "https://coppermind.net/wiki/Dragon"
+    },
+    {
+      "name": "Autonomy (Avatar of Obrodai)",
+      "book": "Mentioned in Oathbringer, The Lost Metal",
+      "alias": ["Avatar of Autonomy", "Bavadin (as Avatar)"],
+      "investiture_ability": "Unknown; likely unique Investiture tied to Autonomy's Intent",
+      "coppermind_link": "https://coppermind.net/wiki/Obrodai"
+    },
+    {
+      "name": "Aethers (Primordial Entities)",
+      "book": "Tress of the Emerald Sea (referenced), Aether of Night (unpublished)",
+      "alias": ["Aethers", "Primal Aethers"],
+      "investiture_ability": "Aetherbinding – symbiotic bond grants control over specific substances (e.g., Verdant, Roseite, etc.)",
+      "coppermind_link": "https://coppermind.net/wiki/Aether"
+    },
+    {
+      "name": "Yumi",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": ["Yokina", "Yoki-hijo"],
+      "investiture_ability": "Can summon and bind hijo (spirits) to create physical structures; spiritual artistry",
+      "coppermind_link": "https://coppermind.net/wiki/Yumi"
+    },
+    {
+      "name": "Nikaro",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": ["Painter"],
+      "investiture_ability": "Can interact with and alter Nightmares through artistic perception",
+      "coppermind_link": "https://coppermind.net/wiki/Nikaro"
+    },
+    {
+      "name": "Samjae",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": [],
+      "investiture_ability": "Yoki-hijo; posthumously exists as a Cognitive Shadow",
+      "coppermind_link": "https://coppermind.net/wiki/Samjae"
+    },
+    {
+      "name": "Nightmares",
+      "book": "Yumi and the Nightmare Painter",
+      "alias": ["Cognitive Shadows"],
+      "investiture_ability": "Manifestations of corrupted souls; can harm humans physically and psychically",
+      "coppermind_link": "https://coppermind.net/wiki/Nightmare"
+    }
+  ]
+}

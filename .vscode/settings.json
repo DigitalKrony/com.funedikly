@@ -9,6 +9,7 @@
     "cadetblue",
     "cornflowerblue",
     "cornsilk",
+    "Cosmere",
     "darkcyan",
     "darkgoldenrod",
     "darkgray",
@@ -116,5 +117,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "eslint.workingDirectories": [{ "mode": "auto" }]
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
 }
