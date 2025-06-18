@@ -114,7 +114,7 @@
      "json"
 ],
  "[typescript]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "eslint.workingDirectories": [
@@ -124,5 +124,8 @@
   ],
   "[json]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  },
+  "editor.formatOnPaste": true,
+  "eslint.lintTask.options": ". --ignore-pattern '_tpl/*'",
+  "notebook.formatOnSave.enabled": true
 }

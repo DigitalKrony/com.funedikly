@@ -1,25 +1,26 @@
-const livereload = require('gulp-livereload');
+// import livereload from 'gulp-livereload';
 
-module.exports = (gulp) => {
-  gulp.task('watch', (cb) => {
-    const { copy, dest } = gulp.config;
+const _default = (gulp) => {
+  gulp.task('watch', (callback) => {
+    const { watch } = gulp.config;
     gulp.config.isDev = true;
 
     gulp.series('build')();
 
-    gulp.watch([...copy.images.src, ...copy.txt.src, ...copy.statics.src], gulp.series('copy'));
-    gulp.watch('./src/**/*[.php,.html]', gulp.series('copy_php'));
-    gulp.watch(dest.ts.src, gulp.series('ts'));
-    // gulp.watch(dest.wp.src, gulp.series('webpack'));
-    // gulp.watch(dest.scss.src, gulp.series('scss'));
+    gulp.watch([...watch.frontend.images.src, ...watch.frontend.txt.src, ...watch.frontend.statics.src], gulp.series('copy:statics'));
+    gulp.watch([...watch.be.dom.src], gulp.series('copy:dom'));
+    gulp.watch(watch.typescript.src, gulp.series('typescript'));
+    gulp.watch(watch.scss.src, gulp.series('scss'));
 
-    livereload.listen(35729);
+    // livereload.listen(35729);
 
-    cb();
+    callback();
   });
 
   gulp.task(
     'default',
-    gulp.series('watch', (cb) => cb())
+    gulp.series('watch', callback => callback())
   );
 };
+
+export default _default;

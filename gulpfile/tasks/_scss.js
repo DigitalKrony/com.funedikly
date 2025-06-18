@@ -1,24 +1,22 @@
-/* jshint esversion: 6 */
-/* jshint node: true */
+import livereload from 'gulp-livereload';
+import dotenv from 'dotenv';
+import gmq from 'gulp-css-mqpacker';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import sourcemaps from 'gulp-sourcemaps';
 
-'use strict';
-
-const livereload = require('gulp-livereload');
-const dotenv = require('dotenv');
-const gmq = require('gulp-group-css-media-queries');
-const sass = require('gulp-sass')(require('sass'));
-const sourcemaps = require('gulp-sourcemaps');
-
+const sass = gulpSass(dartSass);
 const env = dotenv.config().parsed;
 
 let built = false;
 
 const scss = (gulp) => {
-  gulp.task('scss', (cb) => {
+  gulp.task('scss', (callback) => {
     const { scss } = gulp.config.dest;
+    const buildDirectory = env.BUILD_DIR || 'dest';
 
     if (built) {
-      scss.src.push('!./**/mwf.scss');
+      scss.src.push('!./**/snorkel.scss');
     }
 
     gulp
@@ -35,12 +33,12 @@ const scss = (gulp) => {
       )
       .pipe(gmq())
       .pipe(sourcemaps.write('./maps'))
-      .pipe(gulp.dest(`${env.SITE_DEST}${scss.dest}`))
+      .pipe(gulp.dest(`${buildDirectory}${scss.dest}`))
       .pipe(livereload());
     built = true;
 
-    cb();
+    callback();
   });
 };
 
-module.exports = scss;
+export default scss;

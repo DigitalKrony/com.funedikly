@@ -1,40 +1,41 @@
-/* jshint esversion: 6 */
-/* jshint node: true */
-
-'use strict';
-
-const path = require('path');
-const fs = require('fs');
-const glob = require('glob');
-const webpack = require('webpack-stream');
-const dotenv = require('dotenv');
-const wp_config = require('./../../webpack.config');
+import path from 'node:path';
+import fs from 'node:fs';
+import { glob } from 'glob';
+import * as wp_s from 'webpack-stream';
+import dotenv from 'dotenv';
+import * as wp_config from './../../webpack.config.js';
 
 const env = dotenv.config().parsed;
 const config = wp_config;
 
-const pack = (gulp) => {
-  gulp.task('webpack', (cb) => {
-    const { wp } = gulp.config.dest;
+const _webpack = (gulp) => {
+  gulp.task('webpack', (callback) => {
+    const { webpack } = gulp.config;
+    const buildDirectory = env.BUILD_DIR || 'dest';
+    const siteDestination = env.SITE_DEST || '_site';
 
-    const blocks = glob.sync(`${process.cwd()}/src/wp-content/plugins/Moray-Blocks/blocks/*`);
-    for (const block of blocks) {
-      const possibleFiles = glob.sync(`${block}/index.*`)[0];
+    if (!!webpack) {
+      console.log('Running Webpack...');
 
-      if (fs.existsSync(possibleFiles)) {
-        config.entry[path.basename(block)] = possibleFiles;
-      }
+      Object.keys(webpack).forEach((key) => {
+        const lookDirectoryGlob = path.join(__dirname, `${buildDirectory}/${webpack[key].src}`);
+        console.log(lookDirectoryGlob);
+
+        const entries = glob.sync([...lookDirectoryGlob]);
+        console.log(entries);
+
+        entries.forEach((entry) => {
+          const thisFile = path.join(buildDirectory, entry);
+          // console.log(thisFile)
+        });
+      });
+    } else {
+      console.error('No webpack configuration found.');
+      callback(new Error('Webpack configuration is missing.'));
     }
 
-    config.output.path = `${env.SITE_DEST}${wp.dest}`;
-
-    gulp
-      .src(wp.src)
-      .pipe(webpack({ ...config }))
-      .pipe(gulp.dest(`${env.SITE_DEST}${wp.dest}`));
-
-    cb();
+    callback();
   });
 };
 
-module.exports = pack;
+export default _webpack;
