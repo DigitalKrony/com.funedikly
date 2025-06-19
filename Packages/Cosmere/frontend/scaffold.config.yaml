@@ -29,7 +29,7 @@
           suffix: .test
           extension: tsx
           content:
-            src: ./_tpl/Component.tst.tsx
+            src: ./_tpl/Component.test.tsx
     - type: folder
       name: stories
       content:
@@ -80,7 +80,7 @@
           suffix: .test
           extension: tsx
           content:
-            src: ./_tpl/Component.tst.tsx
+            src: ./_tpl/Component.test.tsx
     - type: folder
       name: stories
       content:
@@ -131,7 +131,7 @@
           suffix: .test
           extension: tsx
           content:
-            src: ./_tpl/Component.tst.tsx
+            src: ./_tpl/Component.test.tsx
     - type: folder
       name: stories
       content:
