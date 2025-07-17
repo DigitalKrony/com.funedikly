@@ -1,0 +1,40 @@
+{
+  "name": "@df/builder",
+  "description": "Internal Gulp Builder.",
+  "main": "./gulpfile.js",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "author": {
+    "name": "Adam Sivins",
+    "email": "adam.sivins@gmail.com",
+    "url": "https://funedikly.com"
+  },
+  "_npmUser": {
+    "name": "DesignFunedikly",
+    "email": "adam.sivins@gmail.com"
+  },
+  "scripts": {
+    "start": "echo none",
+    "build": "echo none",
+    "test": "echo none"
+  },
+  "dependencies": {
+    "del": "^8.0.0",
+    "dotenv": "^17.0.0",
+    "gulp": "~5.0.1",
+    "gulp-css-mqpacker": "^1.0.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "module": "^1.2.5",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3",
+    "webpack-stream": "^7.0.0"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": {
+    "dfbuild": "./bin/cli.js"
+  }
+}

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import { glob } from 'glob';
 import * as wp_s from 'webpack-stream';
 import dotenv from 'dotenv';
-import * as wp_config from './../../webpack.config.js';
+// import * as wp_config from './../../webpack.config.js';
 
 const env = dotenv.config().parsed;
 const config = wp_config;
@@ -14,7 +14,7 @@ const _webpack = (gulp) => {
     const buildDirectory = env.BUILD_DIR || 'dest';
     const siteDestination = env.SITE_DEST || '_site';
 
-    if (!!webpack) {
+    if (webpack !== undefined) {
       console.log('Running Webpack...');
 
       Object.keys(webpack).forEach((key) => {
