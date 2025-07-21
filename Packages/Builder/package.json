@@ -1,6 +1,7 @@
 {
   "name": "@df/builder",
   "description": "Internal Gulp Builder.",
+  "type": "module",
   "main": "./gulpfile.js",
   "license": "MIT",
   "readmeFilename": "readme.md",
@@ -14,7 +15,7 @@
     "email": "adam.sivins@gmail.com"
   },
   "scripts": {
-    "start": "echo none",
+    "start": "node gulpfile.js --input-type=module",
     "build": "echo none",
     "test": "echo none"
   },
@@ -35,6 +36,6 @@
     "bin": "./bin"
   },
   "bin": {
-    "dfbuild": "./bin/cli.js"
+    "dfb": "./bin/cli.js"
   }
 }

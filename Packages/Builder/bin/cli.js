@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const dfbuild = require('./../gulpfile.js');
+import dfb from './../gulpfile.js';
 
 const [, , ...args] = process.argv;
 
-new dfbuild.default(args);
+new dfb(args);
