@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "del": "^8.0.0",
-    "dotenv": "^17.0.0",
+    "dotenv": "^17.2.1",
     "gulp": "~5.0.1",
     "gulp-css-mqpacker": "^1.0.1",
     "gulp-livereload": "^4.0.2",

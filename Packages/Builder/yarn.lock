@@ -673,10 +673,10 @@ detect-newline@2.X, detect-newline@^2.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha512-CwffZFvlJffUg9zZA0uqrjQayUTC8ob94pnr5sFwaVv3IOmkfUHcWH+jXaQK3askE51Cqe8/9Ql/0uXNwqZ8Zg==
 
-dotenv@^17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-17.0.0.tgz#0b0336dc1a4237bcfa772e01d5587e98ebb7e3c2"
-  integrity sha512-A0BJ5lrpJVSfnMMXjmeO0xUnoxqsBHWCoqqTnGwGYVdnctqXXUEhJOO7LxmgxJon9tEZFGpe0xPRX0h2v3AANQ==
+dotenv@^17.2.1:
+  version "17.2.2"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-17.2.2.tgz#4010cfe1c2be4fc0f46fd3d951afb424bc067ac6"
+  integrity sha512-Sf2LSQP+bOlhKWWyhFsn0UsfdK/kCWRv1iuA2gXAwt3dyNabr6QSj00I2V10pidqz69soatm9ZwZvpQMTIOd5Q==
 
 dunder-proto@^1.0.1:
   version "1.0.1"
