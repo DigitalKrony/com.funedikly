@@ -1,0 +1,44 @@
+[class*=image-gradient] {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.image-gradient {
+    @each $color, $value in $theme-colors {
+        &--#{$color} {
+            &-up {
+                &:before {
+                    background: linear-gradient(to top, rgba($value, .75) 0%,rgba($value, 0) 100%);
+                }
+            }
+    
+            &-down {
+                &:before {
+                    background: linear-gradient(to bottom, rgba($value, .75) 0%,rgba($value, 0) 100%);
+                }
+            }
+
+            &-left {
+                &:before {
+                    background: linear-gradient(to $start, rgba($value, .75) 0%,rgba($value, 0) 100%);
+                }
+            }
+
+            &-right {
+                &:before {
+                    background: linear-gradient(to $end, rgba($value, .75) 0%,rgba($value, 0) 100%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+.sh1 {
+    font-size: 1.75rem;
+}
+
+.sh2 {
+    font-size: 1.55rem;
+}
+
+.sh3 {
+    font-size: 1.35rem;
+}
+
+.sh4 {
+    font-size: 1.15rem;
+}
+
+.sh5,
+.sh6 {
+    font-size: 1rem;
+}
+
+.p1 {
+    font-size: 1.4em;
+}
+
+.p2 {
+    font-size: 1.2rem;
+}
+
+.p3,
+.p4,
+.p5,
+.p6 {
+    font-size: 1rem;
+} // Blockquote
+.blockquote {
+    padding: $blockquote-padding-y $blockquote-padding-x;
+    border-left: .25rem solid #eceeef;
+    &.text-right {
+        border-left: none;
+        border-right: .25rem solid #eceeef;
+    }
+}
+
+.bd-highlight {
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .15);
+}

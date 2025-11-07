@@ -1,49 +1,33 @@
-import path from 'node:path';
 import dotenv from 'dotenv';
+import { globSync } from 'glob';
 import { deleteSync } from 'del';
 
 const env = dotenv.config().parsed;
 
 const clean = (gulp) => {
-  const buildDirectory = env.BUILD_DIR || 'dest';
+  const { clean } = gulp.config;
 
-  const parseAndClean = (src) => {
-    if (typeof src === 'string') {
-      const buildDir = path.resolve(buildDirectory, src);
-      deleteSync([buildDir], { force: true });
-    } else if (Array.isArray(src)) {
-      src.forEach((item) => {
-        parseAndClean(item);
-      });
-    } else {
-      Object.keys(src).forEach((key) => {
-        parseAndClean(src[key].src);
-      });
-    }
+  const parseAndClean = (src, done) => {
+    src.forEach((pattern) => {
+      const toDelete = globSync(pattern, { dot: true, onlyFiles: true, unique: false, absolute: true });
+      console.log(`Deleting: ${toDelete.length} file(s)...`);
+      deleteSync(toDelete, { force: true });
+      done();
+    });
   }
 
-  gulp.task('clean:build', (callback) => {
-    const { build } = gulp.config.clean;
+  Object.keys(clean).forEach((key) => {
+    gulp.task(`clean:${key}`, (done) => {
+      const { src } = clean[key];
 
-    if (!!build) {
-      parseAndClean(build);
-    } else {
-      console.log('Clean config not found.');
-    }
+      console.log(`Cleaning ${key}...`);
 
-    callback();
-  });
-
-  gulp.task('clean:local', (callback) => {
-    const { local } = gulp.config.clean;
-
-    if (!!local) {
-      parseAndClean(local);
-    } else {
-      console.log('Clean:Build config not found.');
-    }
-
-    callback();
+      if (src !== undefined) {
+        parseAndClean(src instanceof Array ? src : [src], done);
+      } else {
+        console.log('Clean config not found.');
+      }
+    });
   });
 };
 

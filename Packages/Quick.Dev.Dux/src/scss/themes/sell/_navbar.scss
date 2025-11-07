@@ -1,0 +1,352 @@
+/*
+* ===================================================
+*     Navbar
+* ===================================================
+*/
+
+// Absolutely position header, used on the homepage 
+// w/ the image background behind it
+.header-absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: $zindex-fixed;
+}
+
+// Used for navbar w/ transparent background
+.bg-hover-white {
+    @include simpleTransition;
+    &:hover {
+        background: $white !important;
+    }
+}
+
+// Used for navbar w/ transparent background, when it gets
+// fixed, it gets also a white background
+.navbar.fixed-top.bg-fixed-white {
+    background: $white !important;
+}
+
+.navbar.fixed-top {
+    box-shadow: 2px 2px 2px rgba($black, 0.1);
+}
+
+.navbar {
+    .nav-item {
+        position: relative;
+    }
+    .nav-link {
+        color: $gray-700;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+        font-size: .9rem;
+        i,
+        svg {
+            margin-left: 5px;
+        }
+    }
+    /* align with the navbar bottom */
+    .dropdown-menu {
+        margin-top: $navbar-padding-y;
+    }
+    /* align with the navbar bottom */
+    .megamenu {
+        margin-top: 0px;
+    }
+}
+
+// Increase nav links' paddings a bit on xl screens
+.navbar-expand-lg {
+    @include media-breakpoint-up(lg) {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 1.2rem;
+                padding-left: 1.2rem;
+            }
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        .navbar-nav {
+            .nav-link {
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+}
+
+// Dark links against a light background
+.navbar-light,
+.navbar-hover-light:hover,
+.navbar-fixed-light.fixed-top {
+    .navbar-brand {
+        color: $navbar-light-active-color;
+        @include hover-focus {
+            color: $navbar-light-active-color;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: $navbar-light-color;
+            @include hover-focus {
+                color: $navbar-light-hover-color;
+            }
+            &.disabled {
+                color: $navbar-light-disabled-color;
+            }
+        }
+        .show>.nav-link,
+        .active>.nav-link,
+        .nav-link.show,
+        .nav-link.active {
+            color: $navbar-light-active-color;
+        }
+    }
+    .navbar-toggler {
+        color: $navbar-light-color;
+        border-color: $navbar-light-toggler-border-color;
+    }
+    .navbar-toggler-icon {
+        background-image: $navbar-light-toggler-icon-bg;
+    }
+    .navbar-text {
+        color: $navbar-light-color;
+    }
+}
+
+/*
+* ===================================================
+*     Megamenu
+* ===================================================
+*/
+
+.megamenu {
+    width: 100%;
+    z-index: 9999;
+    border: none !important;
+    overflow: hidden;
+    .megamenu-list {
+        padding: 0;
+        margin-bottom: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .megamenu-list-item {
+        margin-bottom: 5px;
+    }
+    .megamenu-list-link {
+        padding: 5px 0;
+        text-decoration: none;
+        color: $gray-600;
+        &:hover {
+            background: none;
+            color: $gray-900;
+        }
+    }
+    .megamenu-services {
+        padding: 1rem 3rem;
+        background: $gray-100;
+        .megamenu-services-item {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .megamenu-services-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    }
+}
+
+// similar to nav-link but this is used for the icon links 
+// on the right
+.navbar-icon-link {
+    display: flex;
+    align-items: center;
+    padding: .4rem 0;
+    margin: 0 .5rem;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    &::after {
+        display: none;
+    }
+    .svg-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+// shopping cart badge with no. of items
+.navbar-icon-link-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: theme-color('dark');
+    color: $white;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+// link colours for Light navbar, adding here also the fixed-light
+// and hover-light navbar variants
+.navbar-light,
+.navbar-fixed-light.fixed-top,
+.navbar-hover-light:hover {
+    .navbar-icon-link {
+        color: $navbar-light-active-color;
+    }
+    .navbar-icon-link-badge {
+        background: theme-color('dark');
+        color: $white;
+    }
+}
+
+// Link colours for Dark navbar
+.navbar-dark {
+    .navbar-icon-link {
+        color: $navbar-dark-active-color;
+    }
+    .navbar-icon-link-badge {
+        background: $white;
+        color: $gray-800;
+    }
+}
+
+// Dropdown menus in navbar offset from the top
+// and also setting the max-height for the sticky navbar's menu
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+        &#{$infix} {
+            @include media-breakpoint-down($breakpoint) {
+                padding: $navbar-padding-y-collapsed $navbar-padding-x;
+                .dropdown-menu {
+                    margin-top: 0;
+                    box-shadow: none;
+                    border: none;
+                }
+                &.navbar-sticky {
+                    .navbar-collapse {
+                        max-height: 80vh;
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+* ===================================================
+*     Cart overview dropdown
+* ===================================================
+*/
+
+.navbar-cart-product {
+    min-width: 320px;
+    margin-bottom: 10px;
+    .navbar-cart-product-image {
+        max-width: 70px;
+    }
+    .navbar-cart-product-link {
+        font-weight: bold;
+        text-decoration: none;
+        color: theme-color('dark');
+        padding: 0;
+        &:hover {
+            background: none;
+            text-decoration: none;
+        }
+    }
+}
+
+.navbar-cart-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    font-size: $font-size-sm;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: .5rem;
+}
+
+/*
+* ===================================================
+*     Multi-level dropdown
+* ===================================================
+*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -2px !important;
+}
+
+/*
+* ===================================================
+*     Search area
+* ===================================================
+*/
+
+.search-area-wrapper {
+    display: none;
+}
+
+.search-area {
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    .search-area-form {
+        width: 100%;
+        max-width: 700px;
+        margin: 20px;
+    }
+    .search-area-input {
+        width: 100%;
+        padding: 1rem 0;
+        outline: none;
+        font-size: 1.2em;
+        font-weight: 300;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #aaa;
+    }
+    .search-area-button {
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        cursor: pointer;
+        color: #555;
+    }
+}

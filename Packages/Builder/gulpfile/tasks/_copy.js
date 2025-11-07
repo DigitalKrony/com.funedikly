@@ -2,41 +2,36 @@ import dotenv from 'dotenv';
 const env = dotenv.config().parsed;
 
 const copy = (gulp) => {
-  const buildDirectory = env.BUILD_DIR || 'dest';
+  const { copy } = gulp.config;
 
-  const parseAndCopy = (blobs) => {
-    Object.keys(blobs).forEach((key) => {
-      const toCopy = blobs[key];
-      console.log(`Copying ${toCopy.src} to ${buildDirectory}${toCopy.dest}`);
-      gulp.src(toCopy.src)
-        .pipe(gulp.dest(`${buildDirectory}${toCopy.dest}`));
+  const parseAndCopy = (blob, done) => {
+    const { base, dest, src } = blob;
+
+    src.forEach((pattern) => {
+      gulp.src(pattern, { base: base || './' })
+        .on('error', (err) => {
+          console.error(`Error in copy task`);
+        })
+        .pipe(gulp.dest(dest))
+        .on('end', () => {
+          done();
+        });
     });
   };
 
-  gulp.task('copy:statics', (callback) => {
-    const { statics } = gulp.config.copy;
+  Object.keys(copy).forEach((key) => {
+    const { src } = copy[key];
 
-    if (!!statics) {
-      console.log('Copying frontend assets...');
-      parseAndCopy(statics);
-    } else {
-      console.log('No frontend assets to copy.');
-    }
+    console.log(`Copying ${key}...`);
 
-    callback();
-  });
+    gulp.task(`copy:${key}`, (done) => {
+      if (src !== undefined) {
+        parseAndCopy(copy[key], done);
+      } else {
+        console.log(`Copy config not found.`);
+      }
 
-  gulp.task('copy:dom', (callback) => {
-    const { dom } = gulp.config.copy;
-
-    if (!!dom) {
-      console.log('Copying php assets...');
-      parseAndCopy(dom);
-    } else {
-      console.log('No php assets to copy.');
-    }
-
-    callback();
+    });
   });
 };
 

@@ -1,0 +1,22 @@
+[class*='ratio-'] {
+    overflow: hidden;
+    position: relative;
+}
+
+.ratio {
+    &-19-9 {
+        &,
+        & img {
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &:before {
+                content: '';
+                padding-bottom: 44%;
+            }
+        }
+    }
+}

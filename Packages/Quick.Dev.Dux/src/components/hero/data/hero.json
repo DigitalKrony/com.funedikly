@@ -1,0 +1,222 @@
+{
+    "center-middle" : {
+        "config": {
+            "imageGradient": "light-up"
+        }, "content": {
+            "title": "Center Middle (default alignment)",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "left-middle" : {
+        "config": {
+            "imageGradient": "light-up",
+            "mobileOverlay": true,
+            "content-horizontal-align": "left"
+        }, "content": {
+            "title": "Left Middle",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "right-middle" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-horizontal-align": "right"
+        }, "content": {
+            "title": "Right Middle",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "danger"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "center-top" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-vertical-align": "top"
+        }, "content": {
+            "title": "Center Top",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "center-bottom" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-vertical-align": "bottom"
+        }, "content": {
+            "title": "Center Bottom",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "left-top" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-horizontal-align": "left",
+            "content-vertical-align": "top"
+        }, "content": {
+            "title": "Left Top",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "right-top" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-horizontal-align": "right",
+            "content-vertical-align": "top"
+        }, "content": {
+            "title": "Right Top",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "left-bottom" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-horizontal-align": "left",
+            "content-vertical-align": "bottom"
+        }, "content": {
+            "title": "Left Bottom",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "right-bottom" : {
+        "config": {
+            "imageGradient": "light-up",
+            "content-horizontal-align": "right",
+            "content-vertical-align": "bottom"
+        }, "content": {
+            "title": "Right Bottom",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }, "right-bottom-bg" : {
+        "config": {
+            "content-horizontal-align": "right",
+            "content-vertical-align": "bottom",
+            "contentFill": "info-60",
+            "imageGradient": "dark-up",
+            "contentSpacing": 4,
+            "contentColor": "light"
+        }, "content": {
+            "title": "Look to the Future of Sales!",
+            "description": "This HERO has a gradient-up. The content has a background and the text is left aligned to allow for easier reading a better design due to the background color. It's positioning is not interrupted because of these additional styles.",
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "light"
+                },
+                "content": {
+                    "string": "Find out more",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }
+}

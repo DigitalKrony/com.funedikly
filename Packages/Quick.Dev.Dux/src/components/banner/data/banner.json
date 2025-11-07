@@ -1,0 +1,265 @@
+{
+    "paragraph": {
+        "config": {},
+        "content": {
+            "subheading": {
+                "size": 1
+            }
+        }
+    },
+    "caption": {
+        "config": {},
+        "content": {
+            "heading": {
+                "size": 3
+            },
+            "subheading": {}
+        }
+    },
+    "logo": {
+        "config": {
+            "alignment": "left"
+        },
+        "content": {
+            "subheading": {
+                "size": 1
+            },
+            "logo": {
+                "src": "/_api/img/?w=150&h=50"
+            }
+        }
+    },
+    "logo-horizontal": {
+        "config": {
+            "spacing": "0",
+            "horizontal": true,
+            "alignment": "left"
+        },
+        "content": {
+            "heading": {
+                "string": "Horizontal Title"
+            },
+            "subheading": {
+                "size": 1
+            },
+            "logo": {
+                "src": "/_api/img/?w=150&h=50"
+            },
+            "action": {
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "action": {
+        "config": {},
+        "content": {
+            "action": {
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "logo-action": {
+        "config": {},
+        "content": {
+            "logo": {
+                "src": "/_api/img/?w=150&h=50"
+            },
+            "action": {
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "caption-logo": {
+        "config": {
+            "alignment": "right"
+        },
+        "content": {
+            "heading": {
+                "size": 3
+            },
+            "subheading": {},
+            "action": {
+                "config": {
+                    "type": "primary"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-color": {
+        "config": {
+            "backgroundColor": "info",
+            "textColor": "light"
+        },
+        "content": {
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-and-align-left": {
+        "config": {
+            "backgroundColor": "warning",
+            "alignment": "left"
+        },
+        "content": {
+            "subheading": {
+                "size": 1
+            },
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-and-align-right": {
+        "config": {
+            "textColor": "light",
+            "backgroundColor": "danger",
+            "alignment": "right"
+        },
+        "content": {
+            "subheading": {
+                "size": 1
+            },
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-image": {
+        "config": {
+            "textColor": "light",
+            "alignment": "left"
+        },
+        "content": {
+            "highlight": {
+                "type": "image",
+                "src": "/_api/img/?w=1920&h=540"
+            },
+            "subheading": {
+                "size": 1
+            },
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-image-horizontal": {
+        "config": {
+            "textColor": "light",
+            "horizontal": true,
+            "alignment": "right"
+        },
+        "content": {
+            "highlight": {
+                "type": "image",
+                "src": "/_api/img/?w=1920&h=540"
+            },
+            "subheading": {
+                "size": 1
+            },
+            "logo": {
+                "src": "/_api/img/?w=150&h=50&background=303030&foreground=E1E1E1"
+            },
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    },
+    "background-video": {
+        "config": {
+            "textColor": "light",
+            "alignment": "right"
+        },
+        "content": {
+            "highlight": {
+                "type": "video",
+                "src": ""
+            },
+            "subheading": {
+                "size": 1
+            },
+            "action": {
+                "config": {
+                    "type": "outline-light"
+                },
+                "content": {
+                    "string": "Check this out!",
+                    "glyph" :{
+                        "placement": "after",
+                        "type": "chevron-right"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<%
+    let qspString = '?';
+    let qspNum = 0;
+    let qspTotal = Object.keys(qsp.css).length;
+
+    try {
+        // Build CSS QSP string from config data.
+        for (let option in qsp.css) {
+            qspString += `${option}=${qsp.css[option]}`;
+
+            if (qspNum < qspTotal) {
+                qspString += '&';
+            }
+            qspNum++;
+        }
+
+        // Reset string to noghting if the PageView holds nothing.
+        if (qspString === '?') {
+            qspString = '';
+        }
+
+    } catch (err) { }
+%>
+
+<head>
+    <title><%= title %></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='stylesheet' href='/_api/css/latest/<%= region %>/<%= theme %>/main<%= qspString %>' />
+
+    <script src="/assets/scripts/jquery.min.js"></script>
+    <script src="/assets/scripts/popper.min.js"></script>
+    <script src="/assets/scripts/bootstrap.min.js"></script>
+</head>

@@ -1,0 +1,293 @@
+// GLOBALS
+@import "mixins";
+// Fonts
+$open-font-path: "/assets/font/OpenSans/";
+
+$enable-gradients: true;
+
+// Colors
+$warning-color : #FFB900;
+$crimson : #E74856;
+$blue : #005da6;
+$cyan : #0099BC;
+$dimgrey : #7A7574;
+$grey : #767676;
+$amber : #FF8C00;
+$red : #E81123;
+$dark-blue : #0063B1;
+$steel-blue : #2D7D9A;
+$dark-dimgrey : #5D5A58;
+$dark-grey : #4C4A48;
+$orange : #F7630C;
+$pink : #EA005E;
+$light-violet : #8E8CD8;
+$turquoise : #00B7C3;
+$bluegrey : #68768A;
+$steel : #69797E;
+$chocolate : #CA5010;
+$medium-violet : #C30052;
+$slate-blue : #6B69D6;
+$teal : #038387;
+$dark-bluegrey : #515C6B;
+$dark-steel : #4A5459;
+$deep-orange : #DA3B01;
+$megent : #E3008C;
+$light-purple : #8764B8;
+$light-sea : #00B294;
+$slate-grey : #567C73;
+$olive : #647C64;
+$salmon : #EF6950;
+$dark-pink : #BF0077;
+$dark-purple : #744DA9;
+$dark-cyan : #018574;
+$green-grey : #486860;
+$dark-olive : #525E54;
+$dark-coral : #D13438;
+$orchid : #C239B3;
+$medium-orchid : #B146C2;
+$green : #00CC6A;
+$grass-green : #498205;
+$sandy : #847545;
+$coral : #FF4343;
+$purple : #9A0089;
+$dark-orchid : #881798;
+$forest-green : #10893E;
+$dark-green : #107C10;
+$earth : #7E735F;
+$black-base : #000;
+$white-base : #fff;
+$link-color : #0069ba;
+
+$fluent-pallet: ();
+$fluent-pallet: map-merge(
+    (
+        "warning-color": $warning-color,
+        "crimson" : $crimson,
+        "blue" : $blue,
+        "cyan" : $cyan,
+        "dimgrey" : $dimgrey,
+        "grey" : $grey,
+        "amber" : $amber,
+        "red" : $red,
+        "dark-blue" : $dark-blue,
+        "steel-blue" : $steel-blue,
+        "dark-dimgrey" : $dark-dimgrey,
+        "dark-grey" : $dark-grey,
+        "orange" : $orange,
+        "pink" : $pink,
+        "light-violet" : $light-violet,
+        "turquoise" : $turquoise,
+        "bluegrey" : $bluegrey,
+        "steel" : $steel,
+        "chocolate" : $chocolate,
+        "medium-violet": $medium-violet,
+        "slate-blue" : $slate-blue,
+        "teal" : $teal,
+        "dark-bluegrey": $dark-bluegrey,
+        "dark-steel" : $dark-steel,
+        "deep-orange" : $deep-orange,
+        "megent" : $megent,
+        "light-purple" : $light-purple,
+        "light-sea" : $light-sea,
+        "slate-grey" : $slate-grey,
+        "olive" : $olive,
+        "salmon" : $salmon,
+        "dark-pink" : $dark-pink,
+        "dark-purple" : $dark-purple,
+        "dark-cyan" : $dark-cyan,
+        "green-grey" : $green-grey,
+        "dark-olive" : $dark-olive,
+        "dark-coral" : $dark-coral,
+        "orchid" : $orchid,
+        "medium-orchid": $medium-orchid,
+        "green" : $green,
+        "grass-green" : $grass-green,
+        "sandy" : $sandy,
+        "coral" : $coral,
+        "purple" : $purple,
+        "dark-orchid" : $dark-orchid,
+        "forest-green" : $forest-green,
+        "dark-green" : $dark-green,
+        "earth" : $earth
+    ), 
+    $fluent-pallet
+);
+
+$theme-colors: map-merge(
+    (
+        "primary" : $dark-blue,
+        "secondary": #c2c2c2, 
+        "default" : $dark-purple,
+        "warning" : $warning-color,
+        "danger" : $deep-orange,
+        "success" : $dark-green,
+        "info" : $turquoise
+    ), 
+    $theme-colors
+);
+
+// Transitions
+$transition-basic: all .2s linear;
+
+// Border radius
+$border-radius-circle: 50%;
+
+// COMPONENTS
+// Alert 
+$alert-border-radius: 0;
+$alert-bg-level: 0;
+$alert-border-width: 0;
+$alert-color-level: 10;
+$alert-link-font-weight: 600;
+
+// Badge
+$badge-padding-y: .5em;
+$badge-padding-x: .75em;
+$badge-border-radius: 0;
+$badge-font-weight: 400;
+
+// Breadcrumb
+$breadcrumb-bg: transparent;
+$breadcrumb-divider: "\\";
+$breadcrumb-divider-color: #c2c2c2;
+$breadcrumb-item-padding: .5rem;
+
+// Blockquote
+$blockquote-padding-y: .5rem;
+$blockquote-padding-x: 1rem;
+
+// Button
+$btn-padding-y: 8px;
+$btn-padding-x: 18px;
+$font-size-base: 1rem;
+$btn-border-radius: 2px;
+$btn-border-width: 2px;
+
+$btn-focus-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+$btn-active-box-shadow: $btn-focus-box-shadow;
+
+$btn-margin-basic : .375rem;
+$btn-padding-y-basic : .84rem;
+$btn-padding-x-basic : 2.14rem;
+$btn-font-size-basic : .81rem;
+
+$btn-padding-y-sm: 4px;
+$btn-padding-x-sm: 10px;
+$font-size-sm: 15px;
+
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 26px;
+$font-size-lg: 15px;
+
+// Cards
+$card-border-width: 0;
+$card-border-radius: 0;
+
+// Carousel
+$carousel-indicator-width : 0.625rem;
+$carousel-indicator-height : $carousel-indicator-width;
+$carousel-indicator-border-radius: $border-radius-circle;
+
+// Dropdown
+$dropdown-menu-padding: 1rem;
+$dropdown-border-width: 0;
+$dropdown-bg: rgb(242, 242, 242);
+$dropdown-border-radius: 0;
+$dropdown-padding-y: 0;
+$dropdown-item-padding-x: 1.5rem;
+$dropdown-item-padding-y: 1.1rem;
+$dropdown-link-hover-bg: rgb(218, 218, 218);
+$dropdown-link-hover-color: inherit;
+$dropdown-link-active-bg: rgb(145, 193, 231);
+$dropdown-link-disabled-color: #737373;
+
+// Form
+$input-padding-x: 0.75rem;
+$input-padding-y: 0.375rem;
+$input-border-width: 1px;
+$input-border-color: #a9a9a9;
+$input-border-radius: 0;
+$input-color: #616161;
+
+// Pagination
+$pagination-item-mr : .75rem;
+$pagination-link-disabled-color: #767676;
+$pagination-link-color : $dark-blue;
+$pagination-link-hover-color : $blue;
+$pagination-link-focus-color : #616161;
+$pagination-link-active-color : #212121;
+$pagination-link-icon-font-size: .8rem;
+
+// Progress
+$progress-cover-padding : 2rem 0;
+$progress-cover-fluent-position-top : 50%;
+$progress-cover-fluent-position-left : $progress-cover-fluent-position-top;
+$progress-cover-fluent-transform : translateX(-50%) translateY(-50%);
+$progress-cover-fluent-span-transform-rotate : rotate(220deg);
+$progress-cover-fluent-span-animation : progress-circle 6s;
+$progress-cover-fluent-span-animation-delay-1 : .28s;
+$progress-cover-fluent-span-animation-delay-2 : $progress-cover-fluent-span-animation-delay-1*2;
+$progress-cover-fluent-span-animation-delay-3 : $progress-cover-fluent-span-animation-delay-1*3;
+$progress-cover-fluent-span-animation-delay-4 : $progress-cover-fluent-span-animation-delay-1*4;
+$progress-cover-medium-height : 3.125rem;
+$progress-cover-medium-width : $progress-cover-medium-height;
+$progress-cover-medium-padding : .4375rem;
+$progress-cover-medium-span-width : 2.375rem;
+$progress-cover-medium-span-height : $progress-cover-medium-span-width;
+$progress-cover-medium-span-after-width : .375rem;
+$progress-cover-medium-span-after-height : $progress-cover-medium-span-after-width;
+$progress-cover-medium-span-after-br : $progress-cover-fluent-position-top;
+$progress-cover-small-height : 1.875rem;
+$progress-cover-small-width : $progress-cover-small-height;
+$progress-cover-small-padding : .1875rem;
+$progress-cover-small-span-width : 1.25rem;
+$progress-cover-small-span-height : $progress-cover-small-span-width;
+$progress-cover-small-span-after-width : .25rem;
+$progress-cover-small-span-after-height : $progress-cover-small-span-after-width;
+$progress-cover-small-span-after-br : $progress-cover-fluent-position-top;
+$progress-cover-large-height : 4.375rem;
+$progress-cover-large-width : $progress-cover-large-height;
+$progress-cover-large-padding : .625rem;
+$progress-cover-large-span-width : 3.125rem;
+$progress-cover-large-span-height : $progress-cover-large-span-width;
+$progress-cover-large-span-after-width : $progress-cover-medium-padding;
+$progress-cover-large-span-after-height : $progress-cover-large-span-after-width;
+$progress-cover-large-span-after-br : $progress-cover-fluent-position-top;
+$progress-cover-fluent-height : .25rem;
+$progress-cover-fluent-mt : 1.5rem;
+$progress-cover-fluent-line-animation-delay : 50ms;
+$progress-cover-fluent-line-animation : progress-line 3.5s;
+$progress-cover-fluent-line-animation-delay-first : $progress-cover-fluent-line-animation-delay;
+$progress-cover-fluent-line-animation-delay-first-after : -.75rem;
+$progress-cover-fluent-line-animation-delay-second : .1s;
+$progress-cover-fluent-line-animation-delay-second-after : -1.375rem;
+$progress-cover-fluent-line-animation-delay-third : .15s;
+$progress-cover-fluent-line-animation-delay-third-after : -2rem;
+$progress-cover-fluent-line-animation-delay-fourth : .2s;
+$progress-cover-fluent-line-animation-delay-fourth-after : -2.625rem;
+$progress-cover-fluent-line-animation-delay-fifth : .3s;
+$progress-cover-fluent-line-animation-delay-fifth-after : -3.25rem;
+$progress-cover-fluent-line-animation-delay-fifth-media-1: -2.8rem;
+$progress-cover-fluent-line-after-br : $progress-cover-fluent-position-top;
+$progress-cover-fluent-line-primary-span-after-bg : #c2c2c2;
+$progress-mobile-span-small-width : .3125rem;
+$progress-mobile-span-small-height : $progress-mobile-span-small-width;
+$progress-mobile-span-medium-width : $progress-cover-medium-padding;
+$progress-mobile-span-medium-height : $progress-cover-medium-padding;
+$progress-mobile-span-large-width : $progress-cover-large-padding;
+$progress-mobile-span-large-height : $progress-cover-large-padding;
+
+// Table
+$table-th-lg-min-width: 9rem;
+$table-th-sm-min-width: 6rem;
+
+// Tabs
+$fluent-tabs-nav-item-mx : .8rem;
+$fluent-tabs-nav-link-pb : .2rem;
+$fluent-tabs-font-size : 1.2rem;
+$fluent-tabs-nav-link-color : #616161;
+$fluent-tabs-nav-link-active-color : #212121;
+$fluent-tabs-nav-link-active-border-bottom-height: 2px;
+$fluent-tabs-nav-link-active-border-font-weight : 400;
+$fluent-tabs-nav-link-disabled-color : rgba(0, 0, 0, .3);
+$fluent-tabs-tab-content-my : 2.5rem;

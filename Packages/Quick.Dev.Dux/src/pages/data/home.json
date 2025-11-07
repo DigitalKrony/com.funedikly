@@ -1,0 +1,103 @@
+{
+    "hero":{
+        "config": {
+            "content-vertical-align": "bottom",
+            "contentColor": "light",
+            "headingSize": "h1",
+            "imageRatio": "16-9"
+        }, "content": {
+            "imageUrl": "/assets/images/citta-hero.jpg",
+            "title": "Arcadia: Spring 2018",
+            "description": false,
+            "callToAction": {
+                "config": {
+                    "tag": "a",
+                    "outline": true,
+                    "type": "light",
+                    "size": "lg"
+                },
+                "content": {
+                    "string": "SHOP NOW"
+                }
+            }
+        }
+    },
+    "banner": {
+        "config": {
+            "textColor": "light",
+            "alignment": "left"
+        },
+        "content": {
+            "highlight": {
+                "type": "image",
+                "src": "/assets/images/citta-banner.jpg"
+            },
+            "heading": {
+                "string": "shop bathroom",
+                "size": "h1"
+            },
+            "action": {
+                "config": {
+                    "tag": "a",
+                    "type": "light",
+                    "outline": true,
+                    "size": "lg"
+                },
+                "content": {
+                    "string": "SHOP NOW"
+                }
+            }
+        }
+    },
+    "mosaic1": {
+        "config": {
+            "variant": 1
+        }, "content": {
+            "slides": [
+                {
+                    "config": {
+                        "contentColor": "light",
+                        "headingSize": "h1",
+                        "imageRatio": "1-1",
+                        "nestAction": false
+                    }, "content": {
+                        "title": "shop bed linen",
+                        "imageUrl": "/assets/images/citta-mosaic0.jpg",
+                        "callToAction": {
+                            "config": {
+                                "tag": "a",
+                                "outline": true,
+                                "type": "light",
+                                "size": "lg"
+                            },
+                            "content": {
+                                "string": "SHOP NOW"
+                            }
+                        }
+                    }
+                }, {
+                    "config": {
+                        "contentColor": "light",
+                        "headingSize": "h1",
+                        "imageRatio": "1-1",
+                        "nestAction": false
+                    }, "content": {
+                        "title": "shop cushions",
+                        "imageUrl": "/assets/images/citta-mosaic1.jpg",
+                        "callToAction": {
+                            "config": {
+                                "tag": "a",
+                                "outline": true,
+                                "type": "light",
+                                "size": "lg"
+                            },
+                            "content": {
+                                "string": "SHOP NOW"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

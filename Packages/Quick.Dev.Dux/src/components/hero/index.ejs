@@ -1,0 +1,20 @@
+<% for (let i in viewModel) { %>
+    <%- include(components.hero, viewModel[i]); %>
+    <hr>
+<% } %>
+
+<style>
+@media (min-width: 768px) {
+    .hero__content[class*=bg-] {
+        min-height: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        -ms-flex: 0 1 auto;
+        justify-content: center;
+
+        text-align: left;
+    }
+}
+</style>

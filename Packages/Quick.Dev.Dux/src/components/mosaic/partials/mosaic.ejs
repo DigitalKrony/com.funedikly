@@ -1,0 +1,924 @@
+<%
+    let variant = config.variant || 1;
+%>
+
+
+<div class="mosaic clearfix">
+<% if (variant === 1 ) { %>
+    <% for (var hero of content.slides ) { %>
+    <div class="col-lg-6 col-12">
+        <%- include(components.hero, hero) %>
+    </div>
+    <% } %>
+
+<% } else if (variant === 2 ) { %>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=800" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=800" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 3 ) { %>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=800" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=800" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+        
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=200" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=200" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=200" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=200" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=150" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 4 ) { %>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 5 ) { %>
+    
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+        
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=200" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=200" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=200" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=200" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=150" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 6 ) { %>
+    
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+        
+        <div class="col-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--dark-up">
+                    <source srcset="/_api/img/?w=200&h=200" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=175&h=200" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=271&h=200" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=192&h=200" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=270&h=150" alt="Hero Image">
+                </picture>
+            </li>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=400&h=200" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=200" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=200" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=200" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=150" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 7 ) { %>
+
+    <div class="col-md-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 8 ) { %>
+    
+    <div class="col-lg-6">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 9 ) { %>
+
+    <div class="col-sm-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=425&h=425" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=384&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+    <div class="col-lg-6">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } else if (variant === 10 ) { %>
+
+    <div class="col-lg-6">
+        <div class="col-sm-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--light-up">
+                    <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+                </picture>
+
+                <div class="hero__content">
+                    <h2 class="h4 margin_b_2x">A Hero</h2>
+                    <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                    <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                        <span class="btn__text">Shop Now</span>
+                    </a>
+                </div>
+            </li>
+        </div>
+
+        <div class="col-sm-6">
+            <li class="hero">
+                <picture class="hero__media image-gradient--light-up">
+                    <source srcset="/_api/img/?w=400&h=400" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=350&h=400" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=542&h=400" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+                </picture>
+
+                <div class="hero__content">
+                    <h2 class="h4 margin_b_2x">A Hero</h2>
+                    <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                    <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                        <span class="btn__text">Shop Now</span>
+                    </a>
+                </div>
+            </li>
+        </div>
+
+        <div class="col-12">
+            <li class="hero">
+                <picture class="hero__media image-gradient--light-up">
+                    <source srcset="/_api/img/?w=800&h=400" media="(min-width: 1200px)" />
+                    <source srcset="/_api/img/?w=700&h=400" media="(min-width: 992px)" />
+                    <source srcset="/_api/img/?w=768&h=400" media="(min-width: 768px)" />
+                    <source srcset="/_api/img/?w=384&h=300" media="(min-width: 576px)" />
+                    <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+                </picture>
+
+                <div class="hero__content">
+                    <h2 class="h4 margin_b_2x">A Hero</h2>
+                    <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                    <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                        <span class="btn__text">Shop Now</span>
+                    </a>
+                </div>
+            </li>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-12">
+        <li class="hero">
+            <picture class="hero__media image-gradient--light-up">
+                <source srcset="/_api/img/?w=800&h=800" media="(min-width: 1200px)" />
+                <source srcset="/_api/img/?w=700&h=800" media="(min-width: 992px)" />
+                <source srcset="/_api/img/?w=1083&h=400" media="(min-width: 768px)" />
+                <source srcset="/_api/img/?w=768&h=400" media="(min-width: 576px)" />
+                <img class="hero__media" src="/_api/img/?w=540&h=300" alt="Hero Image">
+            </picture>
+
+            <div class="hero__content">
+                <h2 class="h4 margin_b_2x">A Hero</h2>
+                <p class="margin_b_4x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices venenatis imperdiet. Use ligula in lacus efficitur facilisis.</p>
+                <a class="btn btn-outline-primary btn--lightweight btn--call-to-action" href="#">
+                    <span class="btn__text">Shop Now</span>
+                </a>
+            </div>
+        </li>
+    </div>
+
+<% } %>
+</div>

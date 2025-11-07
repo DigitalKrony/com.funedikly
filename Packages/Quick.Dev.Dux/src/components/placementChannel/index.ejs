@@ -1,0 +1,42 @@
+<% for (let i in viewModel) { %>
+    <%- include(components.placementChannel, viewModel[i]) %>
+    <hr/>
+<% } %>
+
+<style>
+    * {
+        --product-image-height: 300px;
+    }
+
+    picture {
+        height: var(--product-image-height);
+    }
+
+    picture img {
+        max-height: 100%;
+    }
+</style>
+
+<div class="">
+    <ul>
+        <li class="card shadow-sm col-2 p-2">
+            <picture class="text-center mb-2">
+                <img src="/_api/img/?w=162&h=350" />
+            </picture>
+            <div>
+                <h3 class="h3 font-weight-light center-align">
+                    Card
+                </h3>
+
+                <p>
+                    this is a sting of stuff
+                </p>
+
+                <a href="#" class="btn btn-primary call-to-action call-to-action--animation">
+                    <span class="call-to-action__string mr-1">Words</span>
+                    <i class="fa fa-chevron-right call-to-action__glyph"></i>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>

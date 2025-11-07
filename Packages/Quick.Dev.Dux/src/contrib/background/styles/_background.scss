@@ -1,0 +1,18 @@
+$background-alphas: () !default;
+$background-alphas: map-merge(
+    (
+        "20": .2,
+        "40": .4,
+        "60": .6,
+        "80": .8
+    ),
+    $background-alphas
+);
+
+@each $alpha-id, $alpha in $background-alphas {
+    @each $color, $value in $theme-colors {
+        .bg-#{$color}-#{$alpha-id} {
+            background-color: rgba($value, $alpha);
+        }
+    }
+}
