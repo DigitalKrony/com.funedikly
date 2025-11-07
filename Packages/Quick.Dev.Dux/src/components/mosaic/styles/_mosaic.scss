@@ -1,0 +1,30 @@
+.mosaic {
+    padding: 0;
+    position: relative;
+
+    picture {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        padding: 0;
+        float: left;
+    }
+
+    .hero {
+        position: relative;
+
+        > .call-to-action {
+            position: absolute;
+            bottom: 75px;
+            #{$start}: 50%;
+            z-index: 1;
+
+            transform: translate(-50%, 0);
+        }
+    }
+}

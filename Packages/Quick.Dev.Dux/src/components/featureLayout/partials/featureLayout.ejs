@@ -1,0 +1,34 @@
+<%
+    let imagePriority = config.imagePriority || false;
+    let alignment = config.align || 'left';
+    let reverseReflow =  config.reverseReflow || false;
+%>
+<div class="feature-layout<% if (reverseReflow) { %> feature-layout--reverse<% } %> feature-layout--align-<%=alignment%><% if (imagePriority) {%> feature-layout--image-priority<% } %>">
+    <div class="feature-layout__half feature-layout__half--a feature-layout__half--content">
+        <span class="badge badge-primary margin_bottom_4x">BADGE</span>
+
+        <picture class="image margin_bottom_6x">
+            <source srcset="/_api/img?w=150&h=50" media="min-width: 320px">
+            <img src="/_api/img?w=150&h=50">
+        </picture>
+
+        <h3 class="h4 font_weight_light margin_bottom_4x">Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+
+        <p class="small margin_bottom_3x">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <button class="btn btn-primary"><span class="btn__text">LEARN MORE</span></button>
+    </div>
+
+    <div class="feature-layout__half feature-layout__half--b feature-layout__half--media">
+
+        <picture class="feature-layout--highlight">
+            <source srcset="/_api/img?w=800&h=450" media="(min-width: 1400px)">
+            <source srcset="/_api/img?w=630&h=472" media="(min-width: 1084px)">
+            <source srcset="/_api/img?w=542&h=406" media="(min-width: 768px)">
+            <source srcset="/_api/img?w=767&h=288" media="(min-width: 540px)">
+            <source srcset="/_api/img?w=539&h=201" media="(min-width: 0)">
+            <img src="/_api/img?w=630&h=472">
+        </picture>
+
+    </div>
+</div>

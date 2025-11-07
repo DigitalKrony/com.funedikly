@@ -1,0 +1,73 @@
+@mixin spacer($space: margin, $direction: vertical, $size: 0) {
+    @if $direction == vertical {
+        #{$space}-top: $size;
+        #{$space}-bottom: $size;
+    } @else if $direction == horizontal {
+        #{$space}-#{left}: $size;
+        #{$space}-#{right}: $size;
+    } @else if $direction == all {
+        #{$space}: $size;
+    } @else {
+        @if $direction == left {
+            #{$space}-#{$start}: $size;
+        } @else if $direction == right {
+            #{$space}-#{$end}: $size;
+        } @else {
+            #{$space}-#{$direction}: $size;
+        }
+    }
+}
+
+$base: 4px;
+
+// probably remove
+$breakpoints: (
+    (identifier: xs, value: $bp-xs),
+    (identifier: sm, value: $bp-sm),
+    (identifier: md, value: $bp-md),
+    (identifier: lg, value: $bp-lg),
+    (identifier: xl, value: $bp-xl)
+);
+
+$spacingTypes: (
+    margin,
+    padding
+);
+
+$directions: (
+    (identifier: v, property: vertical),
+    (identifier: h, property: horizontal),
+    (identifier: t, property: top),
+    (identifier: r, property: right),
+    (identifier: b, property: bottom),
+    (identifier: l, property: left),
+    (identifier: a, property: all)
+);
+
+// Spacers (margin & padding)
+@each $type in $spacingTypes {
+    @each $dir in $directions {
+        @for $size from 0 through 12 {
+            .#{$type} {
+                &_#{map-get($dir, property)} {
+                    &_#{$size}x {
+                        @include spacer($type, map-get($dir, property), $base * $size);
+
+                        @each $breakpoint in $breakpoints {
+                            @media screen and ( min-width: map-get($breakpoint, value) ) {
+                                &-#{map-get($breakpoint, identifier)} {
+                                    @include spacer($type, map-get($dir, property), $base * $size);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.margin_horizontal_auto {
+    margin-#{$start}: auto;
+    margin-#{$end}: auto;
+}

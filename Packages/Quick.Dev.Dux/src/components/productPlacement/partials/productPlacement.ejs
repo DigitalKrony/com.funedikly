@@ -1,0 +1,50 @@
+<%
+    let constrain = config.constrain || true;
+    let fullTarget = config.fullTarget || false;
+    let horizontal = config.horizontal || false;
+    let card = config.card || false;
+
+    let srcset = content.picture ? content.picture.srcset || `` : null;
+    let title = content.title || `FPO`;
+    let description = content.description || 'FPO';
+%>
+
+<% if (constrain) { %>
+<div class="col-6">
+<% } %>
+
+    <div class="product-placement<% if (horizontal) { %> product-placement--horizontal<% } %><% if (card) { %> product-placement--card<% } %>">
+
+        <% if (fullTarget) { %>
+        <a href="#">
+        <% } %>
+
+        <% if (srcset) { %>
+        <picture class="product-placement__media">
+            <% if (typeof srcset === 'object' ) { %>
+                <% for (let src of srcset) { %>
+                    <source srcset="<%= src.url %>" media="(min-width: <%= src.media %>)">
+                <% } %>
+                    <img class="product-placement__media" src="" alt="" />
+            <% } else if (srcset === `string` ) { %>
+                <img class="product-placement__media" src="<%= srcset %>" alt="" />
+            <% } %>
+        </picture>
+        <% } %>
+        <div class="product-placement__content<% if (card) { %> card px-3<% if (horizontal) { %> py-4<% } %><% } %>">
+            <h3 class="h5"><%= title %></h3>
+            <p class="p2"><%= description %></p>
+            <a href="#" class="btn btn-link" title="">
+                <span class="btn__text">Learn More</span>
+            </a>
+        </div>
+
+        <% if (fullTarget) { %>
+        </a>
+        <% } %>
+
+    </div>
+
+<% if (constrain) { %>
+</div>
+<% } %>

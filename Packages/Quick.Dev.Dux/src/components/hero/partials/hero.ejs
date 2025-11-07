@@ -1,0 +1,39 @@
+<%
+
+    let tag = config.tag || 'div';
+    let mobileSpacing = config.mobileSpacing || 5;
+    let contentSpacing = config.contentSpacing || 2;
+    let mobileOverlay = config.mobileOverlay || false;
+    let horizontalAlignment = config["content-horizontal-align"] || null;
+    let verticalAlignment = config["content-vertical-align"] || null;
+    let contentFill = config.contentFill || false;
+    let contentColor = config.contentColor || false;
+    let headingSize = config.headingSize || 'h4';
+    let imageGradient = config.imageGradient || false;
+    let imageRatio = config.imageRatio || false;
+    let nestAction = config.nestAction != null ? config.nestAction : true;
+
+    let imgUrl = content.imageUrl || `/_api/img/?w=1920&h=1080`;
+    let heading = content.title || `This is a hero!`;
+    let description = content.description || ``;
+    let ctaString = content.cta || `Shop Now`;
+
+%>
+
+<<%= tag %> class="hero<% if (config.mobileOverlay) {%> hero--mobile-overlay<% } %>">
+    <div class="hero__content<% if (horizontalAlignment) { %> hero__content--align-<%=horizontalAlignment%><% } %> <% if (verticalAlignment) { %> hero__content--align-<%=verticalAlignment%><% } %> py-<%= mobileSpacing %><% if (contentFill) { %> bg-<%= contentFill %><% } %><% if (contentColor) { %> text-<%= contentColor %> <% } %>">
+        <h2 class="<%= headingSize %> mb-<%= contentSpacing %>"><%= heading %></h2>
+        <% if (description) { %>
+        <p class="mb-<%= contentSpacing %>"><%= description %></p>
+        <% } %>
+        <% if (content.callToAction && nestAction) { %>
+            <%- include(components.callToAction, content.callToAction) %>
+        <% } %>
+    </div>
+    <% if (content.callToAction && !nestAction) { %>
+        <%- include(components.callToAction, content.callToAction) %>
+    <% } %>
+    <picture class="hero__media<% if (imageRatio) { %> ratio-<%=imageRatio%><% } %><% if (imageGradient) { %> image-gradient--<%= imageGradient %><% } %>">
+        <img class="" src="<%= imgUrl %>" alt="Hero Image" />
+    </picture>
+</<%= tag %>>

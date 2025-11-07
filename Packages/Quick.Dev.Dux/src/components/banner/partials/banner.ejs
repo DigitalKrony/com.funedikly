@@ -1,0 +1,40 @@
+<%
+    let headingString = content.heading && content.heading.string ? content.heading.string : 'Heading String';
+    let headingSize = content.heading && content.heading.size ? content.heading.size : "display-4";
+    let subheadingString = content.subheading && content.subheading.string ? content.subheading.string : 'Subheading String';
+    let subheadingSize = content.subheading && content.subheading.size ? content.subheading.size : 3;
+    let actionString = content.action && content.action.string ? content.action.string : 'Action String';
+    let backgroundColor = config.backgroundColor ? config.backgroundColor : null;
+    let textColor = config.textColor ? config.textColor : null ;
+    let spacing = config.spacing ? config.spacing : 3;
+%>
+
+<div class="banner px-3 py-5<% if (config.horizontal) { %> banner--horizontal<% } %><% if (config.alignment) { %> banner--align-<%= config.alignment %><% } %><% if (backgroundColor) { %> bg-<%= backgroundColor %><% } %><% if (textColor) { %> text-<%= textColor %><% } %>">
+    <% if (content.logo) { %>
+        <picture class="banner__thumb">
+            <img src="<%= content.logo.src %>" alt="Alt Text" />
+        </picture>
+    <% } %>
+    <div class="banner__content<% if (config.horizontal) { %> px-4<% } %>">
+        <h3 class="banner__heading <%= headingSize %> mb-<%= spacing %>"><%= headingString %></h3>
+        <% if (content.subheading) { %>
+        <p class="banner__subheading p<%= subheadingSize %> mb-<%= spacing %>"><%= subheadingString %></p>
+        <% } %>
+    </div>
+    <% if (content.action) { %>
+        <%- include(components.callToAction, content.action) %>
+    <% } %>
+    <% if (content.highlight) { %>
+        <% if (content.highlight.type == 'image') { %>
+            <picture class="banner__media">
+                <img src="<%= content.highlight.src%>" />
+            </picture>
+        <% } else if (content.highlight.type == 'video') {%>
+            <div class="banner__media">
+                <video autoplay loop>
+                    <source src="/assets/video/bgv-1.mp4" type="video/mp4" />
+                </video>
+            </div>
+        <% } %>
+    <% } %>
+</div>

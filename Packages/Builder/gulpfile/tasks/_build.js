@@ -1,14 +1,15 @@
 const build = (gulp) => {
-  gulp.task('build', (callback) => {
+  gulp.task('build', done => {
     gulp.series(
+      'clean:local',
       'clean:build',
+      'copy:community',
       'copy:statics',
-      'copy:dom',
-      'typescript',
-      'scss'
+      'typescript:modules',
+      'copy:distribution',
     )();
 
-    callback();
+    done();
   });
 };
 

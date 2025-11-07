@@ -1,0 +1,127 @@
+<%- include(components.nav, nav)%>
+
+<!-- <div class="container-fluid">
+    <h1 class="display-4">Welcome to Rushmore</h1>
+</div>-->
+
+<style type="text/css">body { font-family: Tahoma; padding: 3em; } </style>
+<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script>
+<p>
+    Azure DevOps Authentication - ADAL.JS Sample
+</p>
+<p>
+    <a href="#" onclick="loginButtonPress();">
+        <div id="loginButton" class="nav"> Log in</div>
+    </a>
+    <a href="#" onclick="logoutButtonPress();">
+        <div id="logoutButton" class="nav" style="display:none;"> Log out</div>
+    </a>
+</p>
+<p id="username"></p>
+<pre id="api_response"></pre>
+
+<script type="text/javascript"> 
+    // VSTS2 12/31/2299 sWIKll78wcVUJiIHnQWSYeymynTyrnChyjvrMjUdqGU=
+    //========= Input Vars ================================
+    var clientId = '45bd1485-49dd-4ef8-8722-862440087f30';                                      // Update with your app registration's Application ID (step 2.6)
+    var replyUri = 'http://localhost:3000';                                                     // Where you will receive the token. (step 2.5)
+    var logoutRedirectUri = 'http://localhost:3000';                                            // Where you return upon signout. Update if you are hosting your webpage somewhere else
+    var azureDevOpsApi = 'https://microsoft.visualstudio.com/_apis/projects?api-version=4.0';   // Update if want to access a different vsts API
+    var azureDevOpsResourceId = '499b84ac-1321-427f-aa17-267ca6975798';                         // Do not change. Needed to get a Azure DevOps ADAL access token.
+    //=====================================================
+    /*
+        tenant: "microsoft.onmicrosoft.com",
+        clientId: "45bd1485-49dd-4ef8-8722-862440087f30",
+        extraQueryParameter: 'nux=1',
+        redirectUri: window.location.origin + '/',
+        postLogoutRedirectUri: window.location.origin + '/',
+        objectId: '202d0ab0-2248-4e7c-883d-7092972409a1',
+        oid: 'e6a8bd4f-9b84-46eb-b6b1-e55dd88b6767',
+        tid: '72f988bf-86f1-41af-91ab-2d7cd011db47',
+        cacheLocation: 'localStorage'
+    */
+
+    // Set up ADAL
+    var authContext = new AuthenticationContext({
+        clientId: clientId,
+        redirectUri:replyUri,
+        postLogoutRedirectUri: logoutRedirectUri
+    });
+    
+    if (authContext.isCallback(window.location.hash)) {
+        // Handle redirect after token requests
+        authContext.handleWindowCallback();
+        var err = authContext.getLoginError();
+        if (err) {
+            // Handle error
+            document.getElementById('api_response').textContent =
+                'ERROR:\n\n' + err;
+        }
+    } else {
+        // If logged in, get access token and make an API request
+        var user = authContext.getCachedUser();
+        if (user) {
+            document.getElementById('username').textContent = 'Signed in as: ' + user.userName;
+            document.getElementById('api_response').textContent = 'Getting access token...';
+            
+            // Get an access token to VSTS
+            authContext.acquireToken(
+                azureDevOpsResourceId,
+                function (error, token) {
+                    if (error || !token) {
+                        document.getElementById('api_response').textContent =
+                            'ERROR:\n\n' + error;
+                        return;
+                    }
+                    // Use the access token
+                    getCurrentUserInfo(token);
+                }
+            );
+        } else {
+            document.getElementById('username').textContent = 'Not signed in.';
+        }
+    }
+
+    // Make an AJAX request to the Azure DevOps REST API and print the response as JSON.
+    var getCurrentUserInfo = function (access_token) {
+        document.getElementById('api_response').textContent = 'Calling API...';
+        var xhr = new XMLHttpRequest();
+        //API called with ADAL token
+        xhr.open('GET', vstsApi, true);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Parse Successful Response
+                document.getElementById('api_response').textContent =
+                    JSON.stringify(JSON.parse(xhr.responseText), null, '  ');
+            } else {
+                // Handle Error
+                document.getElementById('api_response').textContent =
+                    'ERROR:\n\n' + xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
+
+    var loginButtonPress = function() {
+        authContext.login();
+
+        //hide login button
+        var loginButton = document.getElementById('loginButton');
+        loginButton.style.display = 'none';
+        //show logout button
+        var logoutButton =document.getElementById('logoutButton');
+        logoutButton.style.display = 'block';
+    }
+
+    var logoutButtonPress = function() {
+        authContext.logout();
+
+        //show login button
+        var loginButton = document.getElementById('loginButton');
+        loginButton.style.display = 'block';
+        //hide logouot button
+        var logoutButton =document.getElementById('logoutButton');
+        logoutButton.style.display = 'none';
+    }
+</script>

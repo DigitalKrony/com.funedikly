@@ -1,0 +1,20 @@
+<%
+    let tag = config.tag || 'a';
+    let outline = config.outline || false;
+    let type = config.type || 'secondary';
+    let size = config.size || 'normal'
+
+    let string = content.string || 'Call to Action';
+%>
+
+<<%=tag%> class="call-to-action<% if (config.modifier) { for (let mod of config.modifier) { %> call-to-action--<%=mod%><% } } %> btn btn<% if (outline) {%>-outline<% } %>-<%=type%> btn-<%=size%>"<% if (tag === 'a') { %> href="#"<% } %>>
+    <% if (content.glyph && content.glyph.placement === 'before') { %>
+        <i class="call-to-action__glyph<% if (content.glyph.spacer) { %> <%= content.glyph.spacer %><% } %> fa fa-<%= content.glyph.type %>"></i>
+    <% } %>
+    <span class="call-to-action__string">
+        <%=string%>
+    </span>
+    <% if (content.glyph && content.glyph.placement === 'after') { %>
+        <i class="call-to-action__glyph<% if (content.glyph.spacer) { %> <%= content.glyph.spacer %><% } %> fa fa-<%= content.glyph.type %>"></i>
+    <% } %>
+</<%=tag%>>

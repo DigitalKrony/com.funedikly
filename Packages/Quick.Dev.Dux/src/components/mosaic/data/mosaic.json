@@ -1,0 +1,54 @@
+{
+    "one": {
+        "config": {
+            "variant": 1
+        }, "content": {
+            "slides": [{},{}]
+        }
+    },
+    "two": {
+        "config": {
+            "variant": 2
+        }
+    },
+    "three": {
+        "config": {
+            "variant": 3
+        }
+    },
+    "four": {
+        "config": {
+            "variant": 4
+        }
+    },
+    "five": {
+        "config": {
+            "variant": 5
+        }
+    },
+    "six": {
+        "config": {
+            "variant": 6
+        }
+    },
+    "seven": {
+        "config": {
+            "variant": 7
+        }
+    },
+    "eight": {
+        "config": {
+            "variant": 8
+        }
+    },
+    "nine": {
+        "config": {
+            "variant": 9
+        }
+    },
+    "ten": {
+        "config": {
+            "variant": 10
+        }
+    }
+}

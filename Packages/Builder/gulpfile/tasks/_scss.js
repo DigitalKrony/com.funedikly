@@ -11,16 +11,13 @@ const env = dotenv.config().parsed;
 let built = false;
 
 const scss = (gulp) => {
-  gulp.task('scss', (callback) => {
-    const { scss } = gulp.config.dest;
-    const buildDirectory = env.BUILD_DIR || 'dest';
+  const { scss } = gulp.config;
 
-    if (built) {
-      scss.src.push('!./**/snorkel.scss');
-    }
+  const compileAndSave = (blob, done) => {
+    const { dest, src } = blob;
 
     gulp
-      .src(scss.src)
+      .src(src)
       .pipe(sourcemaps.init())
       .pipe(
         sass({
@@ -33,11 +30,25 @@ const scss = (gulp) => {
       )
       .pipe(gmq())
       .pipe(sourcemaps.write('./maps'))
-      .pipe(gulp.dest(`${buildDirectory}${scss.dest}`))
+      .pipe(gulp.dest(`${dest}`))
       .pipe(livereload());
     built = true;
 
-    callback();
+    done();
+  };
+
+  Object.keys(scss).forEach((key) => {
+    const { src } = scss[key];
+
+    console.log(`S(A|C)SSing ${key}...`);
+
+    gulp.task(`scss:${key}`, (done) => {
+      if (src !== undefined) {
+        compileAndSave(scss[key], done);
+      } else {
+        console.log(`SCSS config not found.`);
+      }
+    });
   });
 };
 

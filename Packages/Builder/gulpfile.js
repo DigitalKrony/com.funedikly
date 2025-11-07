@@ -16,7 +16,7 @@ gulp.Gulp.prototype._runTask = task => {
   this.__runTask(task);
 };
 
-export default class register {
+class register {
   constructor(props) {
     try {
       fs.readdirSync(configDir).forEach(file => {
@@ -48,4 +48,6 @@ export default class register {
       console.error("Error loading modules:", error);
     }
   }
-}
+};
+
+export default new register();

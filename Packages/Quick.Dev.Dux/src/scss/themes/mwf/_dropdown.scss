@@ -1,0 +1,9 @@
+.dropdown-menu {
+    @media (min-width: 768px) {
+        border-bottom: 2px solid $black-base;
+    }
+}
+
+.dropdown-divider {
+    border-top: 1px solid $black-base;
+}

@@ -1,0 +1,12 @@
+// Colors
+@each $key, $val in $fluent-pallet {
+    .mw-bg-#{$key} {
+        background-color: $val !important;
+    }
+}
+
+@each $key, $val in $fluent-pallet {
+    .ms-text-#{$key} {
+        color: $val !important;
+    }
+}

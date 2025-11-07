@@ -1,0 +1,71 @@
+{
+    "default": {
+        "config": {
+            "tag": "a",
+            "outline": false
+        },
+        "content": {
+            "string": "Check this out!",
+            "glyph" :{
+                "placement": "after",
+                "type": "chevron-right"
+            }
+        }
+    },
+    "special": {
+        "config": {
+            "tag": "button",
+            "outline": false,
+            "type": "primary"
+        },
+        "content": {
+            "string": "Check this out!",
+            "glyph" :{
+                "placement": "before",
+                "type": "play"
+            }
+        }
+    },
+    "special-animation": {
+        "config": {
+            "tag": "a",
+            "outline": false,
+            "modifier": ["motion-revelio"]
+        },
+        "content": {
+            "string": "Check this out!",
+            "glyph" :{
+                "placement": "after",
+                "type": "chevron-right"
+            }
+        }
+    },
+    "default-animation": {
+        "config": {
+            "tag": "button",
+            "outline": false,
+            "type": "primary",
+            "modifier": ["motion"]
+        },
+        "content": {
+            "string": "Check this out!",
+            "glyph" :{
+                "placement": "before",
+                "type": "play",
+                "spacer": "mr-1"
+            }
+        }
+    },
+    "download": {
+        "config": {
+            "tag": "a",
+            "type": "link"
+        },
+        "content": {
+            "glyph" :{
+                "placement": "before",
+                "type": "download"
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.ratio {
+    &-1-1 {
+        &::before {
+            padding-bottom: 100%;
+        }
+    }
+
+    &-50-50 {
+        &::before {
+            padding-bottom: 50%;
+        }
+    }
+
+    &-16-9 {
+        &::before {
+            padding-bottom: percentage( 9 / 16 );
+        }
+    }
+
+    &-4-3 {
+        &::before {
+            padding-bottom: percentage( 3 / 4 );
+        }
+    }
+}
+
+[class*="ratio-"] {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        display: block;
+        content: '';
+    }
+
+    & > * {
+        position: absolute;
+        top: 50%;
+        #{$start}: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

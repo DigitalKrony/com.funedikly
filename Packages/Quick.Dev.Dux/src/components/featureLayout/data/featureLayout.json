@@ -1,0 +1,40 @@
+{
+    "left": {
+        "config": {
+        }, "content": {
+
+        }
+    }, "right": {
+        "config": {
+            "align": "right"
+        }, "content": {
+
+        }
+    }, "center": {
+        "config": {
+            "align": "center"
+        }, "content": {
+
+        }
+    }, "center-reversed": {
+        "config": {
+            "align": "center",
+            "reverseReflow": true
+        }, "content": {
+
+        }
+    }, "left-img": {
+        "config": {
+            "imagePriority": true
+        }, "content": {
+
+        }
+    }, "right-img": {
+        "config": {
+            "align": "right",
+            "imagePriority": true
+        }, "content": {
+
+        }
+    }
+}

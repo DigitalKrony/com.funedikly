@@ -1,0 +1,104 @@
+{
+    "default": {
+        "config": {
+
+        }, "content": {
+            "picture": {
+                "srcset": [
+                    {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "576px"
+                    }, {
+                        "url": "/_api/img/?w=348&h=195",
+                        "media": "768px"
+                    }, {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "992px"
+                    }, {
+                        "url": "/_api/img/?w=279&h=157",
+                        "media": "1200px"
+                    }
+                ]
+            },
+            "title": "Default Content Placement",
+            "description": "Aenean semper in neque quis laoreet. Nunc orci risus, aliquet in consectetur in, dictum vitae est. Donec eu purus pellentesque, finibus ligula id, pellentesque felis."
+        }
+    },
+    "card": {
+        "config": {
+            "card": true
+        }, "content": {
+            "picture": {
+                "srcset": [
+                    {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "576px"
+                    }, {
+                        "url": "/_api/img/?w=348&h=195",
+                        "media": "768px"
+                    }, {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "992px"
+                    }, {
+                        "url": "/_api/img/?w=279&h=157",
+                        "media": "1200px"
+                    }
+                ]
+            },
+            "title": "Carded Content Placement",
+            "description": "Aenean semper in neque quis laoreet. Nunc orci risus, aliquet in consectetur in, dictum vitae est. Donec eu purus pellentesque, finibus ligula id, pellentesque felis."
+        }
+    },
+    "horizontal": {
+        "config": {
+            "horizontal": true
+        }, "content": {
+            "picture": {
+                "srcset": [
+                    {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "576px"
+                    }, {
+                        "url": "/_api/img/?w=348&h=195",
+                        "media": "768px"
+                    }, {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "992px"
+                    }, {
+                        "url": "/_api/img/?w=279&h=157",
+                        "media": "1200px"
+                    }
+                ]
+            },
+            "title": "Horizontal Content Placement",
+            "description": "Aenean semper in neque quis laoreet. Nunc orci risus, aliquet in consectetur in, dictum vitae est. Donec eu purus pellentesque, finibus ligula id, pellentesque felis."
+        }
+    },
+    "card-horizontal": {
+        "config": {
+            "horizontal": true,
+            "card": true,
+            "constrain": false
+        }, "content": {
+            "picture": {
+                "srcset": [
+                    {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "576px"
+                    }, {
+                        "url": "/_api/img/?w=348&h=195",
+                        "media": "768px"
+                    }, {
+                        "url": "/_api/img/?w=494&h=276",
+                        "media": "992px"
+                    }, {
+                        "url": "/_api/img/?w=279&h=157",
+                        "media": "1200px"
+                    }
+                ]
+            },
+            "title": "Horizontal Content Placement",
+            "description": ""
+        }
+    }
+}

@@ -1,17 +1,15 @@
 import path from 'node:path';
-import fs from 'node:fs';
 import { glob } from 'glob';
-import * as wp_s from 'webpack-stream';
 import dotenv from 'dotenv';
-// import * as wp_config from './../../webpack.config.js';
+import * as wp_config from './../../webpack.config.cjs';
 
 const env = dotenv.config().parsed;
 const config = wp_config;
 
 const _webpack = (gulp) => {
-  gulp.task('webpack', (callback) => {
+  gulp.task('webpack', (done) => {
     const { webpack } = gulp.config;
-    const buildDirectory = env.BUILD_DIR || 'dest';
+    const buildDirectory = env.BUILD_DIR || 'dist';
     const siteDestination = env.SITE_DEST || '_site';
 
     if (webpack !== undefined) {
@@ -31,10 +29,10 @@ const _webpack = (gulp) => {
       });
     } else {
       console.error('No webpack configuration found.');
-      callback(new Error('Webpack configuration is missing.'));
+      done(new Error('Webpack configuration is missing.'));
     }
 
-    callback();
+    done();
   });
 };
 

@@ -1,0 +1,125 @@
+$spacing-hero-context-x: 100px !default;
+$spacing-hero-context-y: 50px !default;
+
+$sizing-hero-content-max-width: 50% !default;
+
+$reflow-hero-content: $bp-md !default;
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    -ms-flex: 0 1 auto;
+    position: relative;
+    flex-direction: column;
+
+    @media (min-width: $reflow-hero-content, '#{&}--mobile-overlay') {
+        display: block;
+    }
+
+    &--mobile-overlay &__content {
+        padding: 8px 20px;
+        position: absolute;
+
+        &--align-left {
+            #{$start}: $spacing-hero-context-x / 2;
+            text-align: $start;
+        }
+
+        &--align-right {
+            #{$end}: $spacing-hero-context-x / 2;
+            text-align: $end;
+        }
+
+        
+        &--align-left,
+        &--align-right {
+            @media (max-width: $reflow-hero-content) {
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+
+    }
+
+    &__media {
+        order: -1;
+
+        &:not([class*='ratio-']) {
+            & img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__content {
+        text-align: center;
+        z-index: 2;
+        order: 1;
+
+        @media (min-width: $reflow-hero-content) {
+            width: $sizing-hero-content-max-width;
+            padding: 8px 20px;
+            position: absolute;
+
+            &--align-top {
+                top: $spacing-hero-context-y;
+
+                &:not([class*=-right]):not([class*=-left]) {
+                    #{$start}: 50%;
+                    transform: translate(-50%, 0);
+
+                    text-align: center;
+                }
+            }
+
+            &--align-bottom {
+                bottom: $spacing-hero-context-y;
+                
+                &:not([class*=-right]):not([class*=-left]) {
+                    #{$start}: 50%;
+                    transform: translate(-50%, 0);
+
+                    text-align: center;
+                }
+            }
+
+            &--align-left {
+                margin: 0;
+
+                #{$start}: $spacing-hero-context-x;
+                text-align: $start;
+            }
+
+            &--align-right {
+                margin: 0;
+
+                #{$end}: $spacing-hero-context-x;
+                text-align: $end;
+            }
+
+            &:not([class*=-top]):not([class*=-bottom]) {
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &:not([class*=-right]):not([class*=-left]):not([class*=-align]) {
+                width: $sizing-hero-content-max-width;
+                margin: 0 auto;
+
+                top: 50%;
+                #{$start}: 50%;
+
+                transform: translate(-50%, -50%);
+                
+                text-align: center;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 100%;
+    }
+}

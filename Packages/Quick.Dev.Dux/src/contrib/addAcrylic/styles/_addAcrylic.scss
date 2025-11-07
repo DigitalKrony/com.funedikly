@@ -1,0 +1,6 @@
+@mixin add-acrylic ($blur: 30px) {
+    @supports ((backdrop-filter: blur($blur)) or (-webkit-backdrop-filter: blur($blur))) {
+        backdrop-filter: blur($blur);
+        -webkit-backdrop-filter: blur($blur);
+    }
+}

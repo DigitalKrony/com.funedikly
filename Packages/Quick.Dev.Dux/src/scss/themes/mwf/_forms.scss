@@ -1,0 +1,359 @@
+// Input
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search-md],
+input[type=search],
+textarea.form-control {
+    &:focus {
+        border: 1px solid #a9a9a9;
+        color: #616161;
+        outline: 1px solid #0050c5;
+        box-shadow: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        color: #d2d2d2;
+        border-color: #d2d2d2;
+        background-color: transparent;
+    }
+}
+
+textarea {
+    font-size: 1rem;
+}
+
+label {
+    margin-bottom: .3rem;
+    transition: color .3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+// Checkbox & radio
+%hide-radio-checkbox {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+%base-radio-checkbox-label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 1px;
+    }
+}
+
+// checkbox
+input[type="checkbox"] {
+    @extend %hide-radio-checkbox;
+
+    + label {
+        @extend %base-radio-checkbox-label;
+
+        &:before,
+        &:after {
+            z-index: 1;
+            transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+        }
+
+        &:after {
+            // color
+            height: 20px;
+            width: 20px;
+        }
+
+        &:before {
+            // arrow
+            border-width: 1px;
+            transform: (rotateZ(40deg));
+            transform-origin: (100% 100%);
+        }
+    }
+
+    &:not(:checked) {
+        + label {
+            &:before {
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                left: 6px;
+                top: 10px;
+            }
+
+            &:after {
+                background-color: transparent;
+                z-index: 0;
+            }
+        }
+    }
+
+    &:checked {
+        +label:before {
+            top: 0;
+            width: 8px;
+            height: 16px;
+            border-color: transparent white white transparent;
+        }
+        +label:after {
+            border-color: $blue;
+            background-color: $blue;
+            z-index: 0;
+        }
+    }
+
+    &:hover + label:after {
+        border-color: rgba($black-base, .6);
+    }
+
+    &:focus + label:after {
+        border-style: dashed;
+        border-color: $black-base;
+    }
+
+    &:indeterminate {
+        +label:before {
+            left: -5px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border: 5px solid black;
+            transform: (rotate(90deg));
+            -webkit-backface-visibility: hidden;
+            transform-origin: (100% 100%);
+        }
+        +label:after {
+            border-color: $blue;
+        }
+    }
+
+    &:disabled {
+        + label {
+            cursor: not-allowed !important;
+        }
+        &:not(:checked) {
+            +label:before {
+                background-color: transparent;
+                border-color: $grey;
+            }
+            +label:after {
+                border-color: transparent;
+                background-color: $grey;
+            }
+        }
+        &:checked {
+            +label:before {
+                background-color: transparent;
+            }
+            +label:after {
+                background-color: $grey;
+                border-color: $grey;
+            }
+        }
+        &:indeterminate {
+            +label:after {
+                border-color: $grey;
+                background-color: transparent;
+            }
+            +label:before {
+                border-color: $grey;
+            }
+        }
+    }
+}
+
+// radio
+input[type=radio] {
+    @extend %hide-radio-checkbox;
+
+    + label {
+        @extend %base-radio-checkbox-label;
+
+        &:before,
+        &:after {
+            z-index: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border-width: 0.0938rem;
+            transition: all .3s ease;
+        }
+
+        &:after {
+            border: none;
+        }
+    }
+
+    &:checked {
+        + label:after {
+            background-color: black;
+            transform: (scale(.5));
+        }
+
+        &:disabled + label:after {
+            background-color: $grey;
+        }
+    }
+
+    &:disabled {
+        + label {
+            cursor: not-allowed;
+
+            &:before {
+                border-color: $grey;
+            }
+        }
+    }
+
+    /*Border-color*/
+    &.with-gap-blue:checked+label:before {
+        border-color: $blue !important;
+    }
+}
+
+// Slider
+$thumb-width: 129px !default;
+$thumb-height: 6px !default;
+$thumb-border-radius: 3px !default;
+$thumb-color: theme-color("primary") !default; // flatten-overlay(#FFF, #000, 60%);
+
+$track-height: 2px !default;
+$track-color: rgba(theme-color("dark"), 0.2) !default;
+
+
+// Credit for the boilerplate for this slider code goes to
+// http://danielstern.ca/range.css/#/ and
+// http://www.cssportal.com/style-input-range/
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+    
+    // WEBKIT
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: $track-height;
+        cursor: pointer;
+        box-shadow: none;
+        background: $track-color;
+        border-radius: 0;
+        border: 0;
+    }
+
+    &:focus::-webkit-slider-runnable-track {
+        background: $track-color;
+    }
+    
+    &::-webkit-slider-thumb {
+        box-shadow: none;
+        border: 0;
+        height: $thumb-height;
+        width: $thumb-width;
+        border-radius: $thumb-border-radius;
+        background: $thumb-color;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -2px;
+    }
+    
+    &:focus:not(.x-hidden-focus)::-webkit-slider-thumb {
+        // outline: 1px dashed #000;
+        outline-offset: 2px;
+    }    
+    
+    // FIREFOX
+    &::-moz-range-track {
+        width: 100%;
+        height: $track-height;
+        cursor: pointer;
+        box-shadow: none;
+        background: $track-color;
+        border-radius: 0;
+        border: 0;
+    }
+    
+    &::-moz-range-thumb {
+        box-shadow: none;
+        border: 0;
+        height: $thumb-height;
+        width: $thumb-width;
+        border-radius: 3px;
+        background: $thumb-color;
+        cursor: pointer;
+    }
+    
+    &:focus:not(.x-hidden-focus)::-moz-range-thumb {
+        // outline: 1px dashed #000;
+        outline-offset: 2px;
+    }
+    
+    // IE/EDGE
+    &::-ms-track {
+        width: 100%;
+        height: $track-height;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+    
+    &::-ms-tooltip {
+        display: none;
+    }
+    
+    &::-ms-fill-upper,
+    &::-ms-fill-lower {
+        background: $track-color;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    &::-ms-thumb {
+        box-shadow: none;
+        border: 0;
+        height: $thumb-height;
+        width: $thumb-width;
+        margin: 0px;
+        border-radius: $thumb-border-radius;
+        background: $thumb-color;
+        cursor: pointer;
+    }
+    
+    &:focus:not(.x-hidden-focus)::-ms-thumb {
+        // outline: 1px dashed #000;
+        outline-offset: 2px;
+    }
+    
+    &:focus::-ms-fill-lower,
+    &:focus::-ms-fill-upper {
+        background: $track-color;
+    }
+}

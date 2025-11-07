@@ -1,0 +1,20 @@
+@import "node_modules/bootstrap/scss/type";
+
+
+$paragraphs: () !default;
+$paragraphs: map-merge((
+    "1": 18px,
+    "2": 16px,
+    "3": 14px,
+    "4": 12px,
+    "5": 10px,
+    "6": 8px,
+), $paragraphs);
+
+.p {
+    @each $key, $value in $paragraphs {
+        &#{$key} {
+            font-size: $value;
+        }
+    }
+}

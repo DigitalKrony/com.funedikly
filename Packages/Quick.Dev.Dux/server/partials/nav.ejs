@@ -1,0 +1,27 @@
+<style>
+    #server-nav.navbar * {
+        text-transform: capitalize;
+    }
+</style>
+
+<nav id="server-nav" class="navbar navbar-expand-lg bg-light">
+    <div class="collapse navbar-collapse container" id="navbarNavDropdown">
+        <a class="navbar-brand" href="/">DUX</a>
+        <ul class="navbar-nav mr-auto">
+        <% for (let group in nav) { %>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="<%= group %>-menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <%= group %>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="<%= group %>-menu">
+                <% for (let link of nav[group]) { %>
+                    <a class="dropdown-item" href="<%= link.url%>">
+                        <%= link.title %>
+                    </a>
+                <% } %>
+                </div>
+            </li>
+        <% } %>
+        </ul>
+    </div>
+</nav>

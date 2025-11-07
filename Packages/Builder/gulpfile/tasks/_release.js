@@ -1,12 +1,12 @@
 const release = (gulp) => {
-  gulp.task('release:local', (callback) => {
+  gulp.task('release:local', (done) => {
     const { local } = gulp.config.release;
-    callback();
+    done();
   });
 
-  gulp.task('release:remote', (callback) => {
+  gulp.task('release:remote', (done) => {
     const { local } = gulp.config.release;
-    callback();
+    done();
   });
 }
 

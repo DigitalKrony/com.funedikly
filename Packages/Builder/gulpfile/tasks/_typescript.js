@@ -11,6 +11,7 @@ const devOptions = {
 };
 
 const loud = env.RUN_LOUD || false;
+const buildDirectory = env.BUILD_DIR || './';
 
 const readConfigFile = (filePath) => {
   const tsConfig = ts.readConfigFile(filePath, ts.sys.readFile);
@@ -27,48 +28,43 @@ const readConfigFile = (filePath) => {
 }
 
 const typescript = (gulp) => {
-  gulp.task('typescript', (callback) => {
-    const { typescript } = gulp.config;
-    const buildDirectory = env.BUILD_DIR || 'dest';
+  const { typescript } = gulp.config;
 
-    if (!!typescript) {
-      console.log('Compiling TypeScript...');
+  Object.keys(typescript).forEach((key) => {
+    const { req, tsconfig } = typescript[key];
 
-      Object.keys(typescript).forEach((key) => {
-        const tsConfigPath = typescript[key].tsconfig;
-        const tsConfig = readConfigFile(tsConfigPath);
+    gulp.task(`typescript:${key}`, done => {
+      const tsConfig = readConfigFile(tsconfig);
 
-        if (tsConfig.errors.length > 0) {
-          console.error(`Errors in tsconfig for ${key}:`, parsedConfig.errors);
-          callback(new Error(`TypeScript compilation failed for ${key}`));
-          return;
+      if (tsConfig.errors.length > 0) {
+        console.error(`Errors in tsconfig for ${key}:`, tsConfig.errors);
+        done(new Error(`TypeScript compilation failed for ${key}`));
+        return;
+      }
+
+      ts.createProgram(
+        tsConfig.fileNames,
+        { ...tsConfig.options, ...devOptions }
+      ).emit(undefined, (fileName, data) => {
+        const outputPath = path.join(buildDirectory, path.relative(process.cwd(), fileName));
+        const outputDir = path.dirname(outputPath);
+
+        // Ensure the output directory exists
+        if (!fs.existsSync(outputDir)) {
+          fs.mkdirSync(outputDir, { recursive: true });
         }
 
-        ts.createProgram(
-          tsConfig.fileNames,
-          { ...tsConfig.options, ...devOptions }
-        ).emit(undefined, (fileName, data) => {
-          const outputPath = path.join(buildDirectory, path.relative(process.cwd(), fileName));
-          const outputDir = path.dirname(outputPath);
+        // Write the emitted file
+        fs.writeFile(outputPath, data, err => {
+          if (err) return false;
+          done();
+        })
 
-          // Ensure the output directory exists
-          if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir, { recursive: true });
-          }
-
-          // Write the emitted file
-          fs.writeFileSync(outputPath, data);
-
-          loud && console.log(`Compiled ${fileName} to ${outputPath}`);
-        });
-
+        loud && console.log(`Compiled ${fileName} to ${outputPath}`);
       });
-    } else {
-      console.log('No TypeScript files to compile.');
-    }
-
-    callback();
+    });
   });
+
 };
 
 export default typescript;

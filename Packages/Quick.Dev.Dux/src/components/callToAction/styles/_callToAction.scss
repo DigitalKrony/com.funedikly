@@ -1,0 +1,73 @@
+$cta-distance: .3em !default;
+$cta-speed: 200ms !default;
+
+.call-to-action {
+    &:hover {
+        text-decoration: none;
+    }
+
+    @at-root a#{&}:hover &__string {
+        text-decoration: underline;
+    }
+
+    &__string,
+    &__glyph {
+        display: inline-block;
+        position: relative;
+        transition: $cta-speed ease-in-out;
+    }
+
+    &__string {
+        #{$start}: 0;
+    }
+
+    &__glyph {
+        #{$start}: 0;
+    }
+
+    &__glyph + &__string {
+        #{$start}: auto;
+        #{$end}: 0;
+    }
+
+    &__string + &__glyph {
+        #{$start}: auto;
+        #{$end}: 0;
+    }
+
+    &--motion#{&}:hover &__string {
+        #{$start}: -$cta-distance;
+    }
+
+    &--motion#{&}:hover &__glyph {
+        #{$start}: -$cta-distance;
+    }
+
+    &--motion#{&}:hover &__string + &__glyph {
+        #{$start}: auto;
+        #{$end}: -$cta-distance;
+    }
+
+    &--motion#{&}:hover &__glyph + &__string {
+        #{$start}: auto;
+        #{$end}: -$cta-distance;
+    }
+
+    &--motion-revelio#{&} &__string {
+        #{$start}: $cta-distance;
+    }
+
+    &--motion-revelio#{&}:hover &__string {
+        #{$start}: -$cta-distance;
+    }
+
+    &--motion-revelio &__string + &__glyph {
+        opacity: 0;
+        #{$end}: $cta-distance;
+    }
+    
+    &--motion-revelio#{&}:hover &__string + &__glyph {
+        opacity: 1;
+        #{$end}: -$cta-distance;
+    }
+}
