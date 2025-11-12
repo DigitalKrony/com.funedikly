@@ -1,3 +1,14 @@
 {
-  "name": "com.funedikly"
+  "name": "@df/com.funedikly",
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "setup-env": "node ./scripts/setup-env/preinstall && node ./scripts/setup-env"
+  },
+  "globalDependencies": {
+    "@typescript-eslint/parser": "^8.42.0",
+    "component_scaffold": "^0.6.0",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "name": "@df/setup-env",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node ./"
+  }
+}
