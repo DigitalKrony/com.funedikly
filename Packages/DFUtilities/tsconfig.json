@@ -7,7 +7,7 @@
     "useUnknownInCatchVariables": false,
     "downlevelIteration": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
     }
   },
   "typeRoots": ["node_modules/@types"],

@@ -1,6 +1,5 @@
 {
   "name": "@df/com.funedikly",
-  "packageManager": "yarn@4.9.2",
   "scripts": {
     "setup-env": "node ./scripts/setup-env/preinstall && node ./scripts/setup-env"
   },

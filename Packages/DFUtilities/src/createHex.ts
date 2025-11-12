@@ -63,8 +63,8 @@ export const CreateUniqueId = (args: {
   return `${!!packagePrefix ? packagePrefix : ''}${!!packagePrefix ? delimiter : ''}${!!componentName ? componentName : ''}${!!componentName ? delimiter : ''}${idEnumerator}`;
 };
 
-export const CreateHexKey = (args: { lengths: number[]; delimiter?: string }): string => {
-  const { lengths, delimiter = '-' } = args;
+export const CreateHexKey = (args?: { lengths: number[]; delimiter?: string }): string => {
+  const { lengths, delimiter = '-' } = args!;
   let stringToReturn = '';
 
   for (const [index, value] of lengths.entries()) {
