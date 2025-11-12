@@ -38,6 +38,7 @@ app.set('views', [
     path.join(__dirname, 'server/templates'),
     path.join(__dirname, 'src/pages')
 ]);
+
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -75,6 +76,7 @@ app.use(`/assets`, express.static('./assets'));
 
 app.use(`/_api/`, require('./server/_api/css'));
 app.use(`/_api/`, require('./server/_api/img'));
+app.use(`/_api/`, require('./server/_api/js'));
 app.use('/', require('./server/routes/index'));
 app.use('/users/', require('./server/routes/users'));
 
@@ -150,6 +152,7 @@ const buildServerMap = () => {
 
     utils.save('.tmp/data/serverMap.json', JSON.stringify(navMap));
 };
+
 
 buildServerMap();
 

@@ -5,18 +5,22 @@
   "themeCookieName": "cssTheme",
   "scripts": {
     "build": "",
-    "start": "nodemon ./server",
+    "start:watch": "browser-sync start --config bs-config.js",
+    "start:server": "nodemon ./server",
+    "start": "npm-run-all --parallel start:*",
     "postinstall": "node dev.server.setup.js"
   },
   "dependencies": {
     "@popperjs/core": "~2.9.1",
     "autoprefixer": "^10.2.5",
     "bootstrap": "^4.6.0",
+    "browser-sync": "^3.0.4",
     "cookie-parser": "~1.4.5",
     "css-mqpacker": "~7.0.0",
     "debug": "~4.3.1",
     "ejs": "~3.1.6",
     "express": "~4.17.1",
+    "file-loader": "^6.2.0",
     "font-awesome": "^4.7.0",
     "globule": "^1.3.2",
     "gulp": "^4.0.2",
@@ -25,12 +29,18 @@
     "jquery": "^3.6.0",
     "morgan": "~1.10.0",
     "nodemon": "^3.1.10",
+    "npm-run-all": "^4.1.5",
     "popper.js": "^1.14.4",
     "sass": "~1.13.3",
     "sass-embedded": "^1.93.3",
-    "save": "^2.3.2"
+    "save": "^2.3.2",
+    "three": "^0.181.0",
+    "typescript": "^5.9.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.102.1"
   },
   "devDependencies": {
+    "@types/three": "^0.181.0",
     "pureimage": "^0.1.6"
   }
 }

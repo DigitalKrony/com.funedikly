@@ -1,0 +1,15 @@
+{
+  "extends": "../../common/config/typescript/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "lib",
+    "rootDir": "src",
+    "baseUrl": "./src/",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "typeRoots": ["node_modules/@types"],
+  "include": ["./src/**/*"],
+  "exclude": ["lib", "lib-cjs", "node_modules"]
+}

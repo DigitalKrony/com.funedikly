@@ -1,16 +1,14 @@
 'use strict';
 
 const fs = require('node:fs');
+const sassRenderer = require('../../../local_modules/sassRenderer');
 
 const express = require('express');
 const router = express.Router();
 
-const sassRenderer = require('../../../local_modules/sassRenderer');
-
 const _package = JSON.parse(fs.readFileSync(`package.json`));
 
 router.get('/css/:version/:region/:theme/:file*', (req, res, next) => {
-    res.header('Content-Type', 'text/css');
     const cookies = req.cookies;
 
     let qsp = req.query;
@@ -73,6 +71,7 @@ router.get('/css/:version/:region/:theme/:file*', (req, res, next) => {
     let theSass = sassRenderer.compile(config);
     let header = fs.readFileSync(`${__dirname}/header.scss`);
     if (!minify) { header = `/** \r ${JSON.stringify(config)} \r */\r\r${header}`; };
+    res.header('Content-Type', 'text/css');
     res.send(`${header}\r\r${theSass}`);
 });
 

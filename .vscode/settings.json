@@ -127,5 +127,8 @@
   },
   "editor.formatOnPaste": true,
   "eslint.lintTask.options": ". --ignore-pattern '_tpl/*'",
-  "notebook.formatOnSave.enabled": true
+  "notebook.formatOnSave.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
 }

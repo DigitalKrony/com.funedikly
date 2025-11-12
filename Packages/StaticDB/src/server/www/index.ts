@@ -14,14 +14,14 @@ import http from 'http';
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '5000');
+const port = normalizePort(process.env.PORT || '5000');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+const server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -35,7 +35,7 @@ server.on('listening', onListening);
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val: any) {
+const normalizePort = (val: any) =>  {
     var port = parseInt(val, 10);
 
     if (isNaN(port)) {
@@ -55,7 +55,7 @@ function normalizePort(val: any) {
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error: any) {
+const onError = (error: any) => {
     if (error.syscall !== 'listen') {
         throw error;
     }
@@ -81,7 +81,7 @@ function onError(error: any) {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() {
+const onListening = () => {
     var addr = server.address();
     var bind = typeof addr === 'string'
         ? 'pipe ' + addr
