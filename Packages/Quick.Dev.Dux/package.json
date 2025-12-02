@@ -11,8 +11,11 @@
     "postinstall": "node dev.server.setup.js"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
     "@popperjs/core": "~2.9.1",
     "autoprefixer": "^10.2.5",
+    "babel-loader": "^10.0.0",
     "bootstrap": "^4.6.0",
     "browser-sync": "^3.0.4",
     "cookie-parser": "~1.4.5",
@@ -34,7 +37,9 @@
     "sass": "~1.22.1",
     "sass-embedded": "^1.93.3",
     "save": "^2.3.2",
+    "serve-index": "^1.9.1",
     "three": "^0.181.0",
+    "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.102.1"

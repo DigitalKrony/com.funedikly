@@ -1,7 +1,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
-const createError = require('http-errors');
+
 const express = require('express');
+const serveIndex = require('serve-index')
+const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const glob = require('globule');
@@ -73,6 +75,7 @@ app.use((req, res, next) => {
 app.use(`/assets`, express.static('./.tmp'));
 app.use(`/assets`, express.static('./src/assets'));
 app.use(`/assets`, express.static('./assets'));
+app.use(`/assets`, serveIndex('./assets', {'icons': true}))
 
 app.use(`/_api/`, require('./server/_api/css'));
 app.use(`/_api/`, require('./server/_api/img'));
