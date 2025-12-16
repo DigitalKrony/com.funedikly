@@ -24,7 +24,16 @@ router.get('/css/:version/:region/:theme/:file*', (req, res, next) => {
             start: 'left',
             end: 'right',
             ...qsp
-        }
+        },
+        verbose: false,
+        silenceDeprecations: [
+            'legacy-js-api', 
+            'mixed-decls', 
+            'color-functions', 
+            'global-builtin', 
+            'import', 
+            'slash-div'
+        ],
     };
 
     if (params.direction === 'rtl' || (params.region !== 'hebrew' && params.regions !== 'arabic')) {

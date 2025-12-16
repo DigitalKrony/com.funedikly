@@ -1,20 +1,19 @@
-"use strict";
+'use strict';
 
-const fs = require("node:fs");
-const path = require("node:path");
-const typescript = require("typescript");
-const webpack = require("webpack");
-const utils = require("../../../local_modules/utils");
+const fs = require('node:fs');
+const path = require('node:path');
+const typescript = require('typescript');
+const webpack = require('webpack');
+const utils = require('../../../local_modules/utils');
 
-const router = require("express").Router();
-// const router = express.Router();
+const router = require('express').Router();
 
 const tsConfig = JSON.parse(fs.readFileSync(`tsconfig.json`));
 
-router.get("/js/:version/:file*", (req, res, next) => {
+router.get('/js/:version/:file*', (req, res, next) => {
   const qsp = req.query;
   const params = req.params;
-  const minify = params.file.indexOf("min") === -1 ? false : true;
+  const minify = params.file.indexOf('min') === -1 ? false : true;
 
   const config = {};
   const srcPath = fs.readdirSync(`./src/js`, { withFileTypes: true });
@@ -29,20 +28,43 @@ router.get("/js/:version/:file*", (req, res, next) => {
     }
   }
 
-  webpack({
-    mode: "none",
+  const renderer = webpack({
+    mode: 'none',
     entry: config.index,
+    target: ['web', 'es6'],
     output: {
-      path: path.resolve(process.cwd(), ".tmp/js"),
+      path: path.resolve(process.cwd(), '.tmp/js'),
       filename: `${config.name}.js`,
     },
-  }).run();
-
-  res.header("Content-Type", "application/javascript");
-
-  setTimeout(() => {
+    resolve: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+    },
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-typescript'],
+            },
+          },
+          exclude: /node_modules/,
+          include: path.resolve(__dirname, 'src'),
+        },
+        {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/,
+        },
+      ],
+    },
+  });
+  renderer.run();
+  renderer.hooks.done.tap('done', (stats) => {
+    res.header('Content-Type', 'application/javascript');
     res.sendFile(`${process.cwd()}/.tmp/js/${config.name}.js`);
-  }, 500);
+  });
 });
 
 module.exports = router;
