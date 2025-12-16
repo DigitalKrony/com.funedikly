@@ -23,7 +23,7 @@
     "@wordpress/element": "~6.34.0",
     "@wordpress/data": "~10.34.0",
     "@wordpress/i18n": "~5.26.0",
-    "@wordpress/scripts": "~30.23.0",
+    "@wordpress/scripts": "~30.27.0",
     "bootstrap": "~5.3.6",
     "chalk": "~5.4.1",
     "dotenv": "~16.5.0",
