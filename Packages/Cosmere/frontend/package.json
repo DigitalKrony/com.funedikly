@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@fluentui/react-context-selector": "^9.1.76",
-    "@griffel/react": "^1.5.30",
+    "@griffel/react": "^1.5.32",
     "@storybook/react": "^9.0.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
