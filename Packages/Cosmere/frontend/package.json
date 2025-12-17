@@ -15,7 +15,7 @@
     "@griffel/react": "^1.5.30",
     "@storybook/react": "^9.0.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.2.0",
     "storybook-addon-performance": "^0.17.3"
   },
   "devDependencies": {
