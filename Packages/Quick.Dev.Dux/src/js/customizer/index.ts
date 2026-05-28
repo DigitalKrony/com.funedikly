@@ -7,190 +7,228 @@ import {
   MeshBasicMaterial,
   GridHelper,
   DirectionalLightHelper,
-  TextureLoader,
+  ShadowMaterial,
+  PCFSoftShadowMap,
   SphereGeometry,
   PlaneGeometry,
-  BackSide,
   Color,
   Mesh,
-  Vector3,
-  RepeatWrapping,
 } from 'three';
-import { Water } from 'three/examples/jsm/objects/Water.js';
 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { DragControls } from 'three/examples/jsm/controls/DragControls.js';
-import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls.js';
 
-import { Grass } from './Grass';
+const _int_3d_viewer = (fileObj: any) => {
+  const isDev = false;
+  let mouseIsDown = false;
 
-console.log('Three.js version:', REVISION);
+  isDev && console.log('Three.js version:', REVISION);
 
-const isDev = false;
-let mouseIsDown = false;
+  /** SCENE / CANVAS */
+  const scene = new Scene();
+  scene.background = new Color(0xdddddd);
 
-/** SCENE / CANVAS */
-const scene = new Scene();
-scene.background = new Color(0xdddddd);
+  /** RENDERER */
+  const renderer = new WebGLRenderer({ antialias: true });
+  renderer.setSize(500, 500);
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = PCFSoftShadowMap;
+  const viewWindow = document.getElementById('customizer-view');
+  viewWindow?.appendChild(renderer.domElement);
 
-/** RENDERER */
-const renderer = new WebGLRenderer({ antialias: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+  /** CAMERA */
+  const camera = new PerspectiveCamera(3, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(-40, 20, -30);
+  camera.lookAt(0, 0, 0);
 
-/** CAMERA */
-const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(-30, 30, 10);
-camera.lookAt(0, 0, 0);
+  if (isDev) {
+    /** ADD GRID IN DEV */
+    const size = 100;
+    const divisions = 10;
+    const centerLineColor = 0x444444;
+    const gridLineColor = 0x888888;
+    const gridHelper = new GridHelper(size, divisions, centerLineColor, gridLineColor);
+    scene.add(gridHelper);
+  }
 
-/** ADD GRID IN DEV */
-const size = 100;
-const divisions = 10;
-const centerLineColor = 0x444444;
-const gridLineColor = 0x888888;
-const gridHelper = new GridHelper(size, divisions, centerLineColor, gridLineColor);
-isDev && scene.add(gridHelper);
+  const floorGeometry = new PlaneGeometry(100, 100);
+  const floorMaterial = new ShadowMaterial({ color: 0x101010, opacity: 0.25 });
+  const floor = new Mesh(floorGeometry, floorMaterial);
+  floor.rotation.x = -Math.PI / 2;
+  floor.receiveShadow = true;
+  floor.position.y = -1.1;
+  scene.add(floor);
 
-/** LIGHTS */
-let lightBack = new DirectionalLight(new Color('hsla(46, 100%, 93%, 1.00)'), 3);
-lightBack.position.set(15, 20, 20);
-lightBack.target.position.set(0, 0, 0);
-scene.add(lightBack);
-scene.add(lightBack.target);
+  const lightIntensity = 2;
 
-if (isDev) {
-  const lightBackHelper = new DirectionalLightHelper(lightBack, 2);
-  scene.add(lightBackHelper);
+  /** LIGHTS */
+  let lightBack = new DirectionalLight(new Color('hsla(48, 23%, 74%, 1.00)'), lightIntensity);
+  lightBack.position.set(15, 20, 20);
+  lightBack.target.position.set(0, 0, 0);
+  lightBack.castShadow = false;
+  scene.add(lightBack);
+  scene.add(lightBack.target);
 
-  const handleGeometry = new SphereGeometry(1, 16, 16);
-  const handleMaterial = new MeshBasicMaterial({ color: 0xff0000 });
-  const lightHandle = new Mesh(handleGeometry, handleMaterial);
-  lightHandle.position.copy(lightBack.position);
-  scene.add(lightHandle);
+  if (isDev) {
+    const lightBackHelper = new DirectionalLightHelper(lightBack, 2);
+    scene.add(lightBackHelper);
 
-  const controls = new DragControls([lightHandle], camera, renderer.domElement);
+    const handleGeometry = new SphereGeometry(1, 16, 16);
+    const handleMaterial = new MeshBasicMaterial({ color: 0xff0000 });
+    const lightHandle = new Mesh(handleGeometry, handleMaterial);
+    lightHandle.position.copy(lightBack.position);
+    scene.add(lightHandle);
 
-  controls.addEventListener('dragstart', (event) => {
-    // event.object.material.color.setHex(0xff0000);
+    const controls = new DragControls([lightHandle], camera, renderer.domElement);
+
+    controls.addEventListener('dragstart', (event) => {
+      // event.object.material.color.setHex(0xff0000);
+    });
+
+    controls.addEventListener('dragend', (event) => {
+      // event.object.material.color.setHex(0xffffff);
+      lightBack.position.copy(event.object.position);
+      lightBack.target.position.set(0, 0, 0);
+      lightBack.target.updateMatrixWorld();
+    });
+  }
+
+  let lightFront = new DirectionalLight(new Color('hsla(47, 30%, 85%, 1.00)'), lightIntensity);
+  lightFront.position.set(-15, 20, -20);
+  lightFront.castShadow = true;
+  scene.add(lightFront);
+
+  if (isDev) {
+    const lightFrontHelper = new DirectionalLightHelper(lightFront, 2);
+    scene.add(lightFrontHelper);
+
+    const handleGeometry = new SphereGeometry(1, 16, 16);
+    const handleMaterial = new MeshBasicMaterial({ color: 0xff0000 });
+    const lightHandle = new Mesh(handleGeometry, handleMaterial);
+    lightHandle.position.copy(lightFront.position);
+    scene.add(lightHandle);
+  }
+
+  /** CONTROLS */
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.enablePan = false;
+  controls.maxPolarAngle = Math.PI / 2;
+  controls.maxDistance = 60;
+
+  // const Loader_MTL = new MTLLoader();
+  // const Loader_OBJ = new OBJLoader();
+
+  // Loader_MTL.load(
+  //   '/assets/3d/Woodfired/4x3_Hottub.mtl',
+  //   (materials: any) => {
+  //     materials.preload();
+
+  //     Loader_OBJ.setMaterials(materials);
+  //     Loader_OBJ.load(
+  //       '/assets/3d/Woodfired/4x3_Hottub.obj',
+  //       (object: any) => {
+  //         const scaleFactor = 0.1;
+
+  //         object.position.set(0, 0, 0);
+  //         object.scale.set(scaleFactor, scaleFactor, scaleFactor);
+  //         object.rotation.x = -90 * (Math.PI / 180);
+
+  //         object.traverse((child: any) => {
+  //           if (child.isMesh) {
+  //             child.castShadow = true;
+  //             child.receiveShadow = true;
+  //             child.material.shininess = 50; // Increase shininess for a glossy look
+  //             child.material.reflectivity = 1; // Increase reflectivity
+  //           }
+  //         });
+
+  //         scene.add(object);
+  //       },
+  //       (xhr: any) => {
+  //         console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+  //       },
+  //       (error: any) => {
+  //         console.error('An error happened', error);
+  //       }
+  //     );
+  //   },
+  //   (xhr) => {
+  //     console.log((xhr.loaded / xhr.total) * 100 + '% of MTL loaded');
+  //   },
+  //   // Optional: onError callback for MTL
+  //   (error) => {
+  //     console.error('An error occurred loading the MTL:', error);
+  //   }
+  // );
+
+  /** FILE LOADER */
+  const Loader_GLB = new GLTFLoader();
+  Loader_GLB.load(fileObj[0].url, (gltf) => {
+    let model = gltf.scene;
+    model.traverse((child) => {
+      if ((child as any).isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+      }
+    });
+    const scaleFactor = 0.7;
+    model.rotation.y = Math.PI;
+    model.rotation.x = 90 * (Math.PI / 180);
+    model.position.set(0, -1.1, 0);
+
+    model.scale.set(scaleFactor, scaleFactor, scaleFactor);
+    scene.add(model);
   });
 
-  controls.addEventListener('dragend', (event) => {
-    // event.object.material.color.setHex(0xffffff);
-    lightBack.position.copy(event.object.position);
-    lightBack.target.position.set(0, 0, 0);
-    lightBack.target.updateMatrixWorld();
+  renderer.setAnimationLoop((time) => {
+    controls.update();
+    renderer.render(scene, camera);
   });
-}
 
-let lightFront = new DirectionalLight(new Color('hsla(46, 100%, 93%, 1.00)'), 3);
-lightFront.position.set(-15, 20, -20);
-scene.add(lightFront);
+  renderer.domElement.addEventListener(
+    'mousedown',
+    () => {
+      if (mouseIsDown === false) {
+        mouseIsDown = true;
+      }
+    },
+    false
+  );
 
-if (isDev) {
-  const lightFrontHelper = new DirectionalLightHelper(lightFront, 2);
-  scene.add(lightFrontHelper);
-
-  const handleGeometry = new SphereGeometry(1, 16, 16);
-  const handleMaterial = new MeshBasicMaterial({ color: 0xff0000 });
-  const lightHandle = new Mesh(handleGeometry, handleMaterial);
-  lightHandle.position.copy(lightFront.position);
-  scene.add(lightHandle);
-}
-
-/** CONTROLS */
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.enablePan = false;
-controls.maxPolarAngle = Math.PI / 2.3;
-controls.maxDistance = 60;
-
-const fControls = new FirstPersonControls(camera, renderer.domElement);
-fControls.movementSpeed = 100;
-fControls.lookSpeed = 0.1;
-fControls.enabled = true;
-
-/** BUILD BACKGROUND */
-const loader = new TextureLoader();
-const texture = loader.load(`/assets/images/Lakeside_View_Day.jpg`);
-
-const sky = new SphereGeometry(80, 60, 40);
-const skyMesh = new MeshBasicMaterial({
-  map: texture,
-  side: BackSide,
-});
-const backgroundSphere = new Mesh(sky, skyMesh);
-scene.add(backgroundSphere);
-
-const grass = new Grass(60, 200000);
-scene.add(grass);
-
-const waterGeometry = new PlaneGeometry(10000, 10000);
-const water = new Water(waterGeometry, {
-  textureWidth: 512,
-  textureHeight: 512,
-  waterNormals: new TextureLoader().load('/assets/images/waternormals.jpg', (texture) => {
-    texture.wrapS = texture.wrapT = RepeatWrapping;
-  }),
-  sunDirection: new Vector3(),
-  sunColor: 0xffffff,
-  waterColor: 0x001e0f,
-  distortionScale: 3.7,
-  fog: scene.fog !== undefined,
-});
-water.rotation.x = -Math.PI / 2;
-water.position.y = -0.5;
-scene.add(water);
-
-/** FILE LOADER */
-const objLoader = new GLTFLoader();
-objLoader.load(`/assets/3d/Woodfired/8x6_Hottub.glb`, (gltf) => {
-  let root = gltf.scene;
-  root.background = new Color(`rgba(0, 0, 0, 1)`);
-  root.traverse((child) => {
-    if (child.isMesh) {
-      child.castShadow = true;
-      child.receiveShadow = true;
-    }
-  });
-  const scaleFactor = 5;
-  root.rotation.y = Math.PI;
-  root.scale.set(scaleFactor, scaleFactor, scaleFactor);
-  scene.add(root);
-});
-
-renderer.setAnimationLoop((time) => {
-  grass.update(time);
-  water.material.uniforms['time'].value += 1.0 / 60.0;
-
-  controls.update();
-  renderer.render(scene, camera);
-});
-
-renderer.domElement.addEventListener(
-  'mousedown',
-  () => {
-    if (mouseIsDown === false) {
-      mouseIsDown = true;
-    }
-  },
-  false
-);
-
-renderer.domElement.addEventListener(
-  'mouseUp',
-  () => {
-    if (mouseIsDown === true) {
-      mouseIsDown = false;
-    }
-  },
-  false
-);
-
-const onWindowResize = () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.domElement.addEventListener(
+    'mouseUp',
+    () => {
+      if (mouseIsDown === true) {
+        mouseIsDown = false;
+      }
+    },
+    false
+  );
 };
 
-window.addEventListener('resize', onWindowResize);
+const fileObj = [
+  {
+    id: 3,
+    name: 'wood-fired_4ftx3ft',
+    filename: '4x3.glb',
+    url: '/assets/3d/wood-fired/4x3.glb',
+  },
+  {
+    id: 4,
+    name: 'wood-fired_6ftx3ft',
+    filename: '6x3.glb',
+    url: '/assets/3d/wood-fired/6x3.glb',
+  },
+  {
+    id: 5,
+    name: 'wood-fired_5ftx3ft',
+    filename: '5x3.glb',
+    url: '/assets/3d/wood-fired/5x3.glb',
+  },
+];
+
+(window as any)._int_3d_viewer = _int_3d_viewer;
+
+_int_3d_viewer(fileObj);
