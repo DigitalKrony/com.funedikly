@@ -1,0 +1,17 @@
+#customizer {
+  &-modal {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  &-view {
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+    margin-inline: 12px;
+  }
+}
+
+.customizer {
+}
