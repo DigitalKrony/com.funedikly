@@ -376,12 +376,12 @@
   dependencies:
     "@swc/helpers" "^0.5.1"
 
-"@fluentui/react-context-selector@^9.1.76":
-  version "9.1.76"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-context-selector/-/react-context-selector-9.1.76.tgz#83541784a9d401de7034123709f6bfb2fa368421"
-  integrity sha512-GmkHiLuMBzYOVvPkXNhMJTusx9hf43+VizFjAhSfZWOnNwLjiekjDocs7S2XD0f3MmcVx+aB2tRdTDHxGAF/1A==
+"@fluentui/react-context-selector@^9.2.12":
+  version "9.2.12"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-context-selector/-/react-context-selector-9.2.12.tgz#7785c9fec6ec2ec58f9d0aed6f15b3f628ce16c8"
+  integrity sha512-4hj+rv+4Uwn9EeDyXD1YCEpVkm0iMLG403QAGd5vZZhcgB2tg/iazewKeTff+HMRkusx+lWBYzBEGcRohY/FiA==
   dependencies:
-    "@fluentui/react-utilities" "^9.19.0"
+    "@fluentui/react-utilities" "^9.25.4"
     "@swc/helpers" "^0.5.1"
 
 "@fluentui/react-shared-contexts@^9.23.1":
@@ -392,12 +392,28 @@
     "@fluentui/react-theme" "^9.1.24"
     "@swc/helpers" "^0.5.1"
 
+"@fluentui/react-shared-contexts@^9.26.0":
+  version "9.26.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-shared-contexts/-/react-shared-contexts-9.26.0.tgz#d57b284196de78d96e187ed4ba4e7878f68917bb"
+  integrity sha512-r52B+LUevs930pe45pFsppM9XNvY+ojgRgnDE+T/6aiwR/Mo4YoGrtjhLEzlQBeTGuySICTeaAiXfuH6Keo5Dg==
+  dependencies:
+    "@fluentui/react-theme" "^9.2.0"
+    "@swc/helpers" "^0.5.1"
+
 "@fluentui/react-theme@^9.1.24":
   version "9.1.24"
   resolved "https://registry.yarnpkg.com/@fluentui/react-theme/-/react-theme-9.1.24.tgz#8ad614df32a60278719a073ea7e308f5016aae34"
   integrity sha512-OhVKYD7CMYHxzJEn4PtIszledj8hbQJNWBMfIZsp4Sytdp9vCi0txIQUx4BhS1WqtQPhNGCF16eW9Q3NRrnIrQ==
   dependencies:
     "@fluentui/tokens" "1.0.0-alpha.21"
+    "@swc/helpers" "^0.5.1"
+
+"@fluentui/react-theme@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-theme/-/react-theme-9.2.0.tgz#5de3737ad3af89fcbe4caecba3cbf147409bd9a1"
+  integrity sha512-Q0zp/MY1m5RjlkcwMcjn/PQRT2T+q3bgxuxWbhgaD07V+tLzBhGROvuqbsdg4YWF/IK21zPfLhmGyifhEu0DnQ==
+  dependencies:
+    "@fluentui/tokens" "1.0.0-alpha.22"
     "@swc/helpers" "^0.5.1"
 
 "@fluentui/react-utilities@^9.19.0":
@@ -409,10 +425,26 @@
     "@fluentui/react-shared-contexts" "^9.23.1"
     "@swc/helpers" "^0.5.1"
 
+"@fluentui/react-utilities@^9.25.4":
+  version "9.25.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.25.4.tgz#dae7bdb70200257a16a8b7740e635d763bbeb314"
+  integrity sha512-vvEIFTfqkcBnKNJhlm8csdGNtOWDWDkqAM4tGlW7jLlFrhNkOfDsqdNuBElENPNJ1foHyVTF5ZSr20kVoKWPjQ==
+  dependencies:
+    "@fluentui/keyboard-keys" "^9.0.8"
+    "@fluentui/react-shared-contexts" "^9.26.0"
+    "@swc/helpers" "^0.5.1"
+
 "@fluentui/tokens@1.0.0-alpha.21":
   version "1.0.0-alpha.21"
   resolved "https://registry.yarnpkg.com/@fluentui/tokens/-/tokens-1.0.0-alpha.21.tgz#25738cabb95aa5a90dad92397325ce70044ad5f7"
   integrity sha512-xQ1T56sNgDFGl+kJdIwhz67mHng8vcwO7Dvx5Uja4t+NRULQBgMcJ4reUo4FGF3TjufHj08pP0/OnKQgnOaSVg==
+  dependencies:
+    "@swc/helpers" "^0.5.1"
+
+"@fluentui/tokens@1.0.0-alpha.22":
+  version "1.0.0-alpha.22"
+  resolved "https://registry.yarnpkg.com/@fluentui/tokens/-/tokens-1.0.0-alpha.22.tgz#5a1916f654c37669be20d9c4ccedb3576783ee62"
+  integrity sha512-i9fgYyyCWFRdUi+vQwnV6hp7wpLGK4p09B+O/f2u71GBXzPuniubPYvrIJYtl444DD6shLjYToJhQ1S6XTFwLg==
   dependencies:
     "@swc/helpers" "^0.5.1"
 
