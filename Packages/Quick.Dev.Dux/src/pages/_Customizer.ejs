@@ -1,7 +1,186 @@
-<%
-  const thing = viewModel.banner;
-%>
+<% const thing=viewModel.banner; %>
 
-<script src="/_api/js/latest/customizer"></script>
+  <div id="customizer-modal" class="customizer-modal">
+    <div id="customizer-view"></div>
 
-<!-- "three-addons": "^1.2.0", -->
+    <div>
+      <div>
+        <h1>Design Your Tub</h1>
+        <h2>Starting at: $7999</h2>
+        <p>
+          *Price is an estimate only and excludes final shipping charges and applicable taxes. Your dedicated
+          Snorkel expert will confirm the final project quote during your consultation.
+        </p>
+      </div>
+
+      <div id="customizer_options" class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4 class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#custom_one"
+              aria-expanded="true" aria-controls="custom_one">
+              Tub Diameter
+            </h4>
+            <a href="#" class="learn-more-link">Learn more</a>
+          </div>
+
+          <div id="custom_one" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#customizer_options">
+            <div class="accordion-body">
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      <h5 class="card-title">5' diameter</h5>
+                      <p class="card-text">Ideal for 3 people, offering a cozy and relaxed experience</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <h5 class="card-title">6' diameter</h5>
+                      <p class="card-text">Comfortably fits 4–5 people with a laid-back, lounge-like feel</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      <h5 class="card-title">7' diameter</h5>
+                      <p class="card-text">
+                        Spacious enough for 5–6 people, perfect for stretching out and relaxing
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4 class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#custom_two"
+              aria-expanded="true" aria-controls="custom_two">
+              Tub Height
+            </h4>
+            <a href="#" class="learn-more-link">Learn more</a>
+          </div>
+
+          <div id="custom_two" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#customizer_options">
+            <div class="accordion-body">
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="height" id="height_one" />
+                    <label class="form-check-label" for="height_one">
+                      <h5 class="card-title">3' height</h5>
+                      <p class="card-text">
+                        It has a 31” water depth, offering a more laid-back, lounging experience
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="height" id="height_two" />
+                    <label class="form-check-label" for="height_two">
+                      <h5 class="card-title">4' height</h5>
+                      <p class="card-text">
+                        It has a 43” water depth, giving the feel of sitting in a formal dining chair
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4 class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#custom_three"
+              aria-expanded="true" aria-controls="custom_three">
+              Heating System
+            </h4>
+            <a href="#" class="learn-more-link">Learn more</a>
+          </div>
+
+          <div id="custom_three" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#customizer_options">
+            <div class="accordion-body">
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="heating" id="heating_one" />
+                    <label class="form-check-label" for="heating_one">
+                      <h5 class="card-title">Wood-fired</h5>
+                      <p class="card-text">
+                        The most economical to maintain, with the comforting sound of a crackling fire
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="heating" id="heating_two" />
+                    <label class="form-check-label" for="heating_two">
+                      <h5 class="card-title">Electric Heating</h5>
+                      <p class="card-text">Simple to install, low-cost to run, and ready when you are</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="heating" id="heating_three" />
+                    <label class="form-check-label" for="heating_three">
+                      <h5 class="card-title">Gas Heating</h5>
+                      <p class="card-text">
+                        Rapid heat-up times, and gas is usually cheaper than electric per unit of heat
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <div class="card">
+                  <div class="card-body">
+                    <input class="form-check-input" type="radio" name="heating" id="heating_four" />
+                    <label class="form-check-label" for="heating_four">
+                      <h5 class="card-title">Heat Pump</h5>
+                      <p class="card-text">
+                        Includes a chilling function and offers an extra heat boost during colder months
+                      </p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/_api/js/latest/customizer"></script>
+
+  <!-- "three-addons": "^1.2.0", -->
