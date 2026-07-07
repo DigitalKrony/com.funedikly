@@ -102,9 +102,9 @@
   ],
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "onFocusChange",
-  "notebook.defaultFormatter": "dbaeumer.vscode-eslint",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
@@ -115,7 +115,7 @@
 ],
  "[typescript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.workingDirectories": [
     {
