@@ -1,4 +1,8 @@
-import fs from 'fs';
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
+import fs from 'node:fs';
 import { BuildDirectory } from './buildDirectory';
 
 export const Save = (src: string, data: any, cb?: (err?: any) => void) => {

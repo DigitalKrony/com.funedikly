@@ -1,13 +1,21 @@
 {
   "extends": "../../common/config/typescript/tsconfig.json",
   "compilerOptions": {
+    "target":"esnext",
     "outDir": "lib",
     "rootDir": "src",
-    "baseUrl": "./src/",
+    "types": ["node"],
+
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "useUnknownInCatchVariables": false,
-    "downlevelIteration": true,
+
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./src/*"],
     }
   },
   "typeRoots": ["node_modules/@types"],

@@ -1,5 +1,9 @@
-import fs from 'fs';
-import path from 'path';
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
+import fs from 'node:fs';
+import path from 'node:path';
 
 export const BuildDirectory = (targetDir: string, toFile?: boolean) => {
     let pathParse = path.parse(path.resolve(targetDir)).dir.split(path.sep) as any;

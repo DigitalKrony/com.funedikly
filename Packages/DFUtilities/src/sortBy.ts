@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 export function SortBy<T>(objArray: T[], property: string, nullValue?: string | number) {
   const jsonSort = (prop: string) => {
     return (a: T, b: T) => {

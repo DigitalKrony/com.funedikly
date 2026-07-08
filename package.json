@@ -9,5 +9,9 @@
     "eslint": "^9.34.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.4"
-  }
+  },
+  "workspaces": [
+    "Packages/DFUtilities",
+    "Packages/StaticDB"
+  ]
 }

@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 export const JSONMerge = (obj1: any, obj2: any) => {
   for (const p in obj2) {
     try {

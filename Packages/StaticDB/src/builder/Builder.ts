@@ -2,8 +2,8 @@
  * Copyright (C) Design:Funedikly. All rights reserved.
  */
 
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import js_beautify from 'js-beautify';
 import { faker } from '@faker-js/faker';
 

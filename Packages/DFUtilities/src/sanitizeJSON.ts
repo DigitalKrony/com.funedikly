@@ -1,3 +1,7 @@
+/*!
+ * Copyright (C) Design:Funedikly. All rights reserved.
+ */
+
 export const SanitizeJSON = (inputString: string) => {
   inputString = inputString.trim();
   if (!inputString.startsWith('{')) {
