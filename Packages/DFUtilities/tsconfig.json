@@ -20,5 +20,5 @@
   },
   "typeRoots": ["node_modules/@types"],
   "include": ["./src/**/*"],
-  "exclude": ["./lib", "./node_modules"]
+  "exclude": ["lib", "lib-cjs", "node_modules"]
 }
