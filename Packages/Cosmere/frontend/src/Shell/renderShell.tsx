@@ -2,21 +2,43 @@
  * Copyright (C) Design:Funedikly. All rights reserved.
  */
 
-import * as React from 'react';
-import { getSlots } from '@fluentui/react-utilities';
+/** @jsxRuntime automatic */
+/** @jsxImportSource @fluentui/react-jsx-runtime */
 
-import type { ShellContextValues, ShellSlots, ShellState } from './Shell.types';
+import { assertSlots } from '@fluentui/react-utilities';
+import { useErrorBoundary } from 'use-error-boundary';
+
+import { Stage, Sun, Planet, DevGUI } from './../Components';
+
+import { type ShellContextValues, type ShellSlots, type ShellState } from './Shell.types';
 import { ShellContext } from './context/ShellContext';
 
 /**
  * Render the final JSX of  Shell
  */
 export const renderShell = (state: ShellState, contextValues: ShellContextValues) => {
-  const { slots, slotProps } = getSlots<ShellSlots>(state);
+  const { isDev } = state;
+
+  assertSlots<ShellSlots>(state);
+
+  const { ErrorBoundary, didCatch, error } = useErrorBoundary();
+
+  if (didCatch) {
+    return <>{error.message}</>;
+  }
 
   return (
     <ShellContext.Provider value={contextValues.shell}>
-      <slots.root {...slotProps.root}>{slotProps.root.children}</slots.root>
+      <ErrorBoundary>
+        <state.root>
+          <Stage>
+            <Sun />
+            <Planet size={8} position={[10, -20, 20]} />
+          </Stage>
+
+          {isDev && <DevGUI />}
+        </state.root>
+      </ErrorBoundary>
     </ShellContext.Provider>
   );
 };

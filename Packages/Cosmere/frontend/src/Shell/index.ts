@@ -3,4 +3,5 @@
  */
 
 export { Shell } from './Shell';
-export type { ShellProps } from './Shell.types';
+export { type ShellProps } from './Shell.types';
+export * from './context';

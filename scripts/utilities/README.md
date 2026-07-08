@@ -1,1 +1,1 @@
-# Utilities for the LAMB repositoy
+# Utilities for the LAMB repository

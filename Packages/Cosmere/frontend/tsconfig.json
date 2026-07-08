@@ -1,11 +1,36 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
+  "baseDir": "./src",
+  "extends": "./../../../.common/config/typescript/tsconfig.app.json",
   "compilerOptions": {
-      "noUnusedLocals": false, // Disable TS6133 for local variables
-      "noUnusedParameters": false // Disable TS6133 for function parameters
-  }
+    "outDir": "./dist",
+    "ignoreDeprecations": "5.0",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["node", "react", "react-dom"],
+    "composite": true,
+    "declarationMap": true,
+    "paths": {
+      "@app": ["./app"],
+      "@app/*": ["./app/*"],
+      "@shell": ["./app/layout/shell"],
+      "@shell/*": ["./app/layout/shell/*"],
+      "@api": ["./api"],
+      "@api/*": ["./api/*"],
+      "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
+      "@router": ["./router"],
+      "@router/*": ["./router/*"],
+      "@providers": ["./providers"],
+      "@providers/*": ["./providers/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist/", "./lib"],
+  "include": [
+    "./src/**/*",
+    "src/**/*.json",
+    "./vite.config.ts",
+    "./vite-env.d.ts",
+    "./global.d.ts"
+  ]
 }

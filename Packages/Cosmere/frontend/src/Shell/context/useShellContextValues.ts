@@ -8,7 +8,7 @@ import type { ShellState } from './../Shell.types';
 export const useShellContextValues =  (state: ShellState): ShellContextValues => {
   // const {  } = state;
 
-  const shell: ShellContextValue = {};
+  const shell: ShellContextValue = {...state};
 
   return { shell };
 }
